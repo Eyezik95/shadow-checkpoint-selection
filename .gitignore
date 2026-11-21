@@ -20,3 +20,6 @@ paper/*
 paper/figures/*
 !paper/figures/fig_fdrnet_epochs.pdf
 !paper/figures/fig_fdrnet_epochs.png
+
+# submission notes name the authors: never publish
+submission_form.md
