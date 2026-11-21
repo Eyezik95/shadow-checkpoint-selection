@@ -49,10 +49,6 @@ BiFPN neck used in your dissertation's BiFPN-RARM model:
     than a general accuracy problem. Validate with an ablation:
     BiFPN-RARM alone vs. BiFPN-RAN alone vs. this combined model,
     same data/schedule, before adopting it as your final model.
-  - Swapping the shadow detector after your Re-ID pipeline has already
-    been validated against BiFPN-RARM's masks means the whole
-    downstream evaluation (gait stripes, has_stripe flags, etc.) would
-    need to be re-run for a fair comparison.
 """
 
 import torch

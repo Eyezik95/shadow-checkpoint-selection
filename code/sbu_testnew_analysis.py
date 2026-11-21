@@ -22,7 +22,7 @@ import numpy as np
 
 REPO = Path(__file__).resolve().parents[1] / "dev_models"
 sys.path.insert(0, str(REPO))
-from src.data.coco import file_sha256  # noqa: E402
+from src.data.hashing import file_sha256  # noqa: E402
 from src.eval.shadow_metrics import THRESHOLDS, ber_from_counts  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]

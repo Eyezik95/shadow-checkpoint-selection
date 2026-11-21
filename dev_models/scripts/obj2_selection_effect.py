@@ -28,7 +28,7 @@ sys.path.insert(0, str(ROOT))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from obj2_fair_comparison import HELDOUT, ORIGINAL, SEEDS  # noqa: E402
-from src.data.coco import file_sha256  # noqa: E402
+from src.data.hashing import file_sha256  # noqa: E402
 from src.eval.shadow_metrics import THRESHOLDS, ber_from_counts  # noqa: E402
 
 PROTOCOLS = ("thesis256", "native")

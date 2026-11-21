@@ -1,28 +1,4 @@
-"""Loss functions for the multi-cue framework.
-
-The triplet loss here replaces the original implementation, which produced NaN.
-Two faults were present in that version and both are corrected below:
-
-  1. The self-distance on the diagonal was treated as a valid positive pair.
-     `dist * mask` leaves the diagonal at 0 and `mask` is True there, so when an
-     identity appeared exactly once in a batch the "hardest positive" was the
-     anchor itself at distance 0. The loss was then well defined but meaningless,
-     and no attracting force acted on the embedding.
-
-  2. `dist.clamp(min=1e-12).sqrt()` is finite in the forward pass but its
-     gradient, d/dx sqrt(x) = 1/(2*sqrt(x)), is ~5e5 at x = 1e-12. Backward
-     through the zero-valued diagonal produced gradients large enough to
-     destabilise training and, combined with (1), yielded NaN.
-
-The corrected version masks the diagonal explicitly, adds an epsilon before the
-square root, and skips anchors that have no valid positive or no valid negative
-in the batch rather than silently producing a degenerate value.
-
-Note that fix (1) only matters if batches actually contain repeated identities.
-Use `PKSampler` from `src.data.sampler` to guarantee that; without it, a batch
-drawn uniformly from a corpus with one clip per identity contains no positive
-pairs at all and metric learning cannot work regardless of the loss.
-"""
+"""Segmentation losses and the balanced error rate used for shadow detection."""
 
 from __future__ import annotations
 
@@ -30,83 +6,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-__all__ = ["BatchHardTripletLoss", "BCEDiceLoss", "DeepSupervisionLoss", "balanced_error_rate"]
-
-
-def _pairwise_euclidean(x: torch.Tensor, eps: float = 1e-8) -> torch.Tensor:
-    """Numerically stable pairwise Euclidean distance matrix.
-
-    Uses the squared-norm expansion, clamps negatives introduced by floating
-    point error, adds `eps` *before* the square root so the gradient stays
-    bounded, and zeroes the diagonal afterwards.
-    """
-    sq = x.pow(2).sum(dim=1, keepdim=True)              # (n, 1)
-    dist_sq = sq + sq.t() - 2.0 * (x @ x.t())           # (n, n)
-    dist_sq = dist_sq.clamp(min=0.0)
-    dist = torch.sqrt(dist_sq + eps)
-    # the diagonal is exactly zero by definition; remove the eps artefact and
-    # detach it from the graph so it contributes no gradient
-    n = x.size(0)
-    eye = torch.eye(n, dtype=torch.bool, device=x.device)
-    dist = dist.masked_fill(eye, 0.0)
-    return dist
-
-
-class BatchHardTripletLoss(nn.Module):
-    """Batch-hard triplet loss (Hermans, Beyer & Leibe, 2017).
-
-    For every anchor the most distant positive and the closest negative within
-    the mini-batch are selected, and the margin is enforced between them.
-
-    Anchors with no valid positive (identity appears once) or no valid negative
-    (batch is a single identity) are excluded from the mean. If no anchor in the
-    batch is valid the loss is zero, which keeps the step a no-op instead of
-    poisoning the parameters with NaN.
-    """
-
-    def __init__(self, margin: float = 0.3, eps: float = 1e-8):
-        super().__init__()
-        self.margin = float(margin)
-        self.eps = float(eps)
-
-    def forward(self, embeddings: torch.Tensor, labels: torch.Tensor):
-        n = embeddings.size(0)
-        dist = _pairwise_euclidean(embeddings, self.eps)
-
-        same = labels.view(n, 1).eq(labels.view(1, n))
-        eye = torch.eye(n, dtype=torch.bool, device=embeddings.device)
-        pos_mask = same & ~eye        # same identity, not the anchor itself
-        neg_mask = ~same
-
-        has_pos = pos_mask.any(dim=1)
-        has_neg = neg_mask.any(dim=1)
-        valid = has_pos & has_neg
-
-        stats = {
-            "valid_anchors": int(valid.sum().item()),
-            "batch_size": n,
-            "mean_pos_per_anchor": float(pos_mask.sum(dim=1).float().mean().item()),
-        }
-
-        if not bool(valid.any()):
-            # No usable triplet in this batch. Return a real zero that is still
-            # connected to the graph so the optimiser step is well defined.
-            return embeddings.sum() * 0.0, stats
-
-        # hardest positive: maximum distance among same-identity pairs
-        d_pos = dist.masked_fill(~pos_mask, float("-inf")).max(dim=1).values
-        # hardest negative: minimum distance among different-identity pairs
-        d_neg = dist.masked_fill(~neg_mask, float("inf")).min(dim=1).values
-
-        d_pos = d_pos[valid]
-        d_neg = d_neg[valid]
-
-        loss = F.relu(d_pos - d_neg + self.margin).mean()
-
-        stats["mean_d_pos"] = float(d_pos.mean().item())
-        stats["mean_d_neg"] = float(d_neg.mean().item())
-        stats["active_fraction"] = float((d_pos - d_neg + self.margin > 0).float().mean().item())
-        return loss, stats
+__all__ = ["BCEDiceLoss", "DeepSupervisionLoss", "balanced_error_rate"]
 
 
 class BCEDiceLoss(nn.Module):

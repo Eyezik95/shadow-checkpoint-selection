@@ -50,7 +50,7 @@ import torch.nn.functional as F
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.data.coco import file_sha256  # noqa: E402
+from src.data.hashing import file_sha256  # noqa: E402
 from src.eval.shadow_metrics import BAND_WIDTHS, THRESHOLDS, ber_from_counts, cross_fit, image_counts  # noqa: E402
 from src.models.shadow import load_siran  # noqa: E402
 from src.training.obj2_train_v3 import ISTDDataset  # noqa: E402

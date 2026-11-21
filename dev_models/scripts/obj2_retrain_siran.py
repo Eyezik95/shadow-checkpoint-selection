@@ -64,7 +64,7 @@ from torch.utils.data import DataLoader
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from src.data.coco import file_sha256  # noqa: E402
+from src.data.hashing import file_sha256  # noqa: E402
 from src.models import obj2_variants as variants  # noqa: E402
 from src.models.siran_notebook import BiFPN_SIRAN_ShadowDetector, get_discriminative_param_groups  # noqa: E402
 from src.training import obj2_train_v3 as nb  # noqa: E402

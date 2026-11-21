@@ -27,7 +27,7 @@ import numpy as np
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from src.data.coco import file_sha256  # noqa: E402
+from src.data.hashing import file_sha256  # noqa: E402
 from src.eval.shadow_metrics import THRESHOLDS, ber_from_counts, cross_fit  # noqa: E402
 
 ORIGINAL = "results/obj2/obj2_counts_siran@original_20261102_212753.npz"
