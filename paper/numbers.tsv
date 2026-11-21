@@ -309,6 +309,11 @@ ec-heldout-diff-band10shareoferrors-hi	\textminus 0.46	obj2_error_components_202
 sbu-p1-unetpp	4.74	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/unetpp
 sbu-fair-unetpp-mean	6.61	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/mean
 sbu-fair-unetpp-sd	0.13	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/sd
+sbu-fair-unetpp-s0	6.59	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/per_seed_ber/0
+sbu-fair-unetpp-s1	6.57	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/per_seed_ber/1
+sbu-fair-unetpp-s2	6.50	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/per_seed_ber/2
+sbu-fair-unetpp-s3	6.84	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/per_seed_ber/3
+sbu-fair-unetpp-s4	6.54	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/per_seed_ber/4
 sbu-orig-unetpp	6.58	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/original_ber
 sbu-sel-unetpp-diff	+0.02	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/heldout_minus_original
 sbu-sel-unetpp-diff-lo	\textminus 0.09	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/ci95/0
@@ -316,6 +321,11 @@ sbu-sel-unetpp-diff-hi	+0.14	obj2_sbu_analysis_20261111_115652.json	results/sele
 sbu-p1-ran	6.28	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/ran
 sbu-fair-ran-mean	5.62	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/mean
 sbu-fair-ran-sd	0.07	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/sd
+sbu-fair-ran-s0	5.68	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/per_seed_ber/0
+sbu-fair-ran-s1	5.68	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/per_seed_ber/1
+sbu-fair-ran-s2	5.66	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/per_seed_ber/2
+sbu-fair-ran-s3	5.52	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/per_seed_ber/3
+sbu-fair-ran-s4	5.59	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/per_seed_ber/4
 sbu-orig-ran	5.79	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/original_ber
 sbu-sel-ran-diff	\textminus 0.17	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/heldout_minus_original
 sbu-sel-ran-diff-lo	\textminus 0.28	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/ci95/0
@@ -323,6 +333,11 @@ sbu-sel-ran-diff-hi	\textminus 0.06	obj2_sbu_analysis_20261111_115652.json	resul
 sbu-p1-siran	5.79	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/siran
 sbu-fair-siran-mean	7.17	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/mean
 sbu-fair-siran-sd	0.33	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/sd
+sbu-fair-siran-s0	7.40	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/per_seed_ber/0
+sbu-fair-siran-s1	6.86	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/per_seed_ber/1
+sbu-fair-siran-s2	7.62	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/per_seed_ber/2
+sbu-fair-siran-s3	7.02	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/per_seed_ber/3
+sbu-fair-siran-s4	6.93	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/per_seed_ber/4
 sbu-orig-siran	7.25	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/original_ber
 sbu-sel-siran-diff	\textminus 0.09	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/heldout_minus_original
 sbu-sel-siran-diff-lo	\textminus 0.28	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/ci95/0
@@ -330,6 +345,11 @@ sbu-sel-siran-diff-hi	+0.11	obj2_sbu_analysis_20261111_115652.json	results/selec
 sbu-p1-rarm	5.76	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/rarm
 sbu-fair-rarm-mean	7.34	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/mean
 sbu-fair-rarm-sd	0.12	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/sd
+sbu-fair-rarm-s0	7.44	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/per_seed_ber/0
+sbu-fair-rarm-s1	7.30	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/per_seed_ber/1
+sbu-fair-rarm-s2	7.15	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/per_seed_ber/2
+sbu-fair-rarm-s3	7.44	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/per_seed_ber/3
+sbu-fair-rarm-s4	7.37	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/per_seed_ber/4
 sbu-orig-rarm	7.25	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/original_ber
 sbu-sel-rarm-diff	+0.09	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/heldout_minus_original
 sbu-sel-rarm-diff-lo	\textminus 0.04	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/ci95/0
@@ -373,6 +393,11 @@ sbu-fair_pairs-siran-rarm-hi	+0.56	obj2_sbu_analysis_20261111_115652.json	result
 sbunew-p1-unetpp	8.53	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/unetpp
 sbunew-fair-unetpp-mean	9.67	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/mean
 sbunew-fair-unetpp-sd	0.13	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/sd
+sbunew-fair-unetpp-s0	9.68	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/per_seed_ber/0
+sbunew-fair-unetpp-s1	9.62	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/per_seed_ber/1
+sbunew-fair-unetpp-s2	9.57	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/per_seed_ber/2
+sbunew-fair-unetpp-s3	9.90	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/per_seed_ber/3
+sbunew-fair-unetpp-s4	9.59	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/per_seed_ber/4
 sbunew-orig-unetpp	9.58	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/original_ber
 sbunew-sel-unetpp-diff	+0.10	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/heldout_minus_original
 sbunew-sel-unetpp-diff-lo	\textminus 0.01	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/ci95/0
@@ -380,6 +405,11 @@ sbunew-sel-unetpp-diff-hi	+0.21	sbu_testnew_analysis_20261120_231129.json	result
 sbunew-p1-ran	10.27	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/ran
 sbunew-fair-ran-mean	8.84	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/mean
 sbunew-fair-ran-sd	0.05	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/sd
+sbunew-fair-ran-s0	8.91	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/per_seed_ber/0
+sbunew-fair-ran-s1	8.86	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/per_seed_ber/1
+sbunew-fair-ran-s2	8.85	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/per_seed_ber/2
+sbunew-fair-ran-s3	8.78	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/per_seed_ber/3
+sbunew-fair-ran-s4	8.80	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/per_seed_ber/4
 sbunew-orig-ran	9.16	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/original_ber
 sbunew-sel-ran-diff	\textminus 0.32	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/heldout_minus_original
 sbunew-sel-ran-diff-lo	\textminus 0.42	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/ci95/0
@@ -387,6 +417,11 @@ sbunew-sel-ran-diff-hi	\textminus 0.22	sbu_testnew_analysis_20261120_231129.json
 sbunew-p1-siran	9.69	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/siran
 sbunew-fair-siran-mean	10.32	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/mean
 sbunew-fair-siran-sd	0.26	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/sd
+sbunew-fair-siran-s0	10.52	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/per_seed_ber/0
+sbunew-fair-siran-s1	10.10	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/per_seed_ber/1
+sbunew-fair-siran-s2	10.68	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/per_seed_ber/2
+sbunew-fair-siran-s3	10.14	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/per_seed_ber/3
+sbunew-fair-siran-s4	10.17	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/per_seed_ber/4
 sbunew-orig-siran	10.25	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/original_ber
 sbunew-sel-siran-diff	+0.08	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/heldout_minus_original
 sbunew-sel-siran-diff-lo	\textminus 0.11	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/ci95/0
@@ -394,6 +429,11 @@ sbunew-sel-siran-diff-hi	+0.26	sbu_testnew_analysis_20261120_231129.json	results
 sbunew-p1-rarm	8.88	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/rarm
 sbunew-fair-rarm-mean	9.55	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/mean
 sbunew-fair-rarm-sd	0.13	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/sd
+sbunew-fair-rarm-s0	9.52	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/per_seed_ber/0
+sbunew-fair-rarm-s1	9.57	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/per_seed_ber/1
+sbunew-fair-rarm-s2	9.38	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/per_seed_ber/2
+sbunew-fair-rarm-s3	9.74	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/per_seed_ber/3
+sbunew-fair-rarm-s4	9.56	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/per_seed_ber/4
 sbunew-orig-rarm	9.70	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/original_ber
 sbunew-sel-rarm-diff	\textminus 0.14	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/heldout_minus_original
 sbunew-sel-rarm-diff-lo	\textminus 0.26	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/ci95/0

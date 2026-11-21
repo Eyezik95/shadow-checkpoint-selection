@@ -155,6 +155,10 @@ def sbu(tag, path, keys):
         put(f"{tag}-p1-{a}", v["ber"] if isinstance(v, dict) else v, "p2", f, ["results", p1k, a])
         put(f"{tag}-fair-{a}-mean", d[fairk][a]["mean"], "p2", f, ["results", fairk, a, "mean"])
         put(f"{tag}-fair-{a}-sd", d[fairk][a]["sd"], "p2", f, ["results", fairk, a, "sd"])
+        per = d[fairk][a]["per_seed_ber"]                     # seeds 0-4, in order (analysis scripts)
+        assert len(per) == 5, (tag, a, len(per))
+        for i, v in enumerate(per):
+            put(f"{tag}-fair-{a}-s{i}", v, "p2", f, ["results", fairk, a, "per_seed_ber", str(i)])
         s = d[selk][a]
         put(f"{tag}-orig-{a}", s["original_ber"], "p2", f, ["results", selk, a, "original_ber"])
         put(f"{tag}-sel-{a}-diff", s["heldout_minus_original"], "s2", f, ["results", selk, a, "heldout_minus_original"])
