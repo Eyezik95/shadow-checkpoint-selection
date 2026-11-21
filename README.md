@@ -1,7 +1,7 @@
-# Selected on the Test Set — code and results
+# Is Your Shadow Detector Really Better? — code and results
 
-Code, per-image confusion counts and result files for the paper *Selected on the Test Set: Checkpoint
-Choice, Seed Variance and Label Noise in Shadow-Detection Benchmarks* (under double-blind review).
+Code, per-image confusion counts and result files for the paper *Is Your Shadow Detector Really Better? Checkpoint
+Choice, Seed Variance and Label Noise in Benchmark Rankings* (under double-blind review).
 Every number in the paper is produced from the files in this repository by `code/make_numbers.py`.
 
 ## Layout
