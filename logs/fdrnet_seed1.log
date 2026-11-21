@@ -1,0 +1,90 @@
+Loaded pretrained weights for efficientnet-b3
+fdrnet_istd_seed1_20261121_012516: train 1210, val 120, test 540; device mps
+  batch 25/151  loss_det 0.1654  mps 5.3 GiB  58s
+  batch 50/151  loss_det 0.1749  mps 5.3 GiB  114s
+  batch 75/151  loss_det 0.1097  mps 5.3 GiB  171s
+  batch 100/151  loss_det 0.1613  mps 5.3 GiB  228s
+  batch 125/151  loss_det 0.1261  mps 5.3 GiB  284s
+  batch 150/151  loss_det 0.1135  mps 5.3 GiB  341s
+epoch  1/10: val BER 12.25  test BER 3.19  (368s)
+  batch 25/151  loss_det 0.1472  mps 5.3 GiB  57s
+  batch 50/151  loss_det 0.1081  mps 5.3 GiB  113s
+  batch 75/151  loss_det 0.1404  mps 5.3 GiB  170s
+  batch 100/151  loss_det 0.1130  mps 5.3 GiB  226s
+  batch 125/151  loss_det 0.0882  mps 5.3 GiB  283s
+  batch 150/151  loss_det 0.1022  mps 5.3 GiB  340s
+epoch  2/10: val BER 7.65  test BER 2.72  (367s)
+  batch 25/151  loss_det 0.1279  mps 6.3 GiB  57s
+  batch 50/151  loss_det 0.1310  mps 6.3 GiB  114s
+  batch 75/151  loss_det 0.0953  mps 6.3 GiB  171s
+  batch 100/151  loss_det 0.0886  mps 6.3 GiB  228s
+  batch 125/151  loss_det 0.1072  mps 6.3 GiB  285s
+  batch 150/151  loss_det 0.1097  mps 6.3 GiB  342s
+epoch  3/10: val BER 2.08  test BER 2.63  (369s)
+  batch 25/151  loss_det 0.1000  mps 6.3 GiB  57s
+  batch 50/151  loss_det 0.0909  mps 6.3 GiB  114s
+  batch 75/151  loss_det 0.1027  mps 6.3 GiB  174s
+  batch 100/151  loss_det 0.1255  mps 6.3 GiB  232s
+  batch 125/151  loss_det 0.0842  mps 6.3 GiB  291s
+  batch 150/151  loss_det 0.0865  mps 6.3 GiB  352s
+epoch  4/10: val BER 2.83  test BER 1.95  (379s)
+  batch 25/151  loss_det 0.0822  mps 6.3 GiB  57s
+  batch 50/151  loss_det 0.0882  mps 6.3 GiB  114s
+  batch 75/151  loss_det 0.0937  mps 6.3 GiB  171s
+  batch 100/151  loss_det 0.0931  mps 6.3 GiB  227s
+  batch 125/151  loss_det 0.0980  mps 6.3 GiB  284s
+  batch 150/151  loss_det 0.0782  mps 6.3 GiB  341s
+epoch  5/10: val BER 5.17  test BER 1.93  (368s)
+  batch 25/151  loss_det 0.0805  mps 6.3 GiB  57s
+  batch 50/151  loss_det 0.1044  mps 6.3 GiB  114s
+  batch 75/151  loss_det 0.0864  mps 6.3 GiB  171s
+  batch 100/151  loss_det 0.0772  mps 6.3 GiB  228s
+  batch 125/151  loss_det 0.1040  mps 6.3 GiB  284s
+  batch 150/151  loss_det 0.0636  mps 6.3 GiB  341s
+epoch  6/10: val BER 4.67  test BER 1.65  (369s)
+  batch 25/151  loss_det 0.0920  mps 6.3 GiB  58s
+  batch 50/151  loss_det 0.0755  mps 6.3 GiB  115s
+  batch 75/151  loss_det 0.1030  mps 6.3 GiB  172s
+  batch 100/151  loss_det 0.0742  mps 6.3 GiB  230s
+  batch 125/151  loss_det 0.0611  mps 6.3 GiB  287s
+  batch 150/151  loss_det 0.0546  mps 6.3 GiB  345s
+epoch  7/10: val BER 3.53  test BER 1.66  (372s)
+  batch 25/151  loss_det 0.0678  mps 6.3 GiB  58s
+  batch 50/151  loss_det 0.0704  mps 6.3 GiB  114s
+  batch 75/151  loss_det 0.0806  mps 6.3 GiB  172s
+  batch 100/151  loss_det 0.0658  mps 6.3 GiB  229s
+  batch 125/151  loss_det 0.0860  mps 6.3 GiB  289s
+  batch 150/151  loss_det 0.0733  mps 6.3 GiB  351s
+epoch  8/10: val BER 3.89  test BER 1.66  (380s)
+  batch 25/151  loss_det 0.0490  mps 6.3 GiB  60s
+  batch 50/151  loss_det 0.0967  mps 6.3 GiB  117s
+  batch 75/151  loss_det 0.0783  mps 6.3 GiB  174s
+  batch 100/151  loss_det 0.0719  mps 6.3 GiB  233s
+  batch 125/151  loss_det 0.0846  mps 6.3 GiB  297s
+  batch 150/151  loss_det 0.0863  mps 6.3 GiB  358s
+epoch  9/10: val BER 3.92  test BER 1.61  (388s)
+  batch 25/151  loss_det 0.0847  mps 6.3 GiB  62s
+  batch 50/151  loss_det 0.0800  mps 6.3 GiB  121s
+  batch 75/151  loss_det 0.0658  mps 6.3 GiB  181s
+  batch 100/151  loss_det 0.0922  mps 6.3 GiB  238s
+  batch 125/151  loss_det 0.0939  mps 6.3 GiB  295s
+  batch 150/151  loss_det 0.0666  mps 6.3 GiB  353s
+epoch 10/10: val BER 3.63  test BER 1.67  (381s)
+{
+ "last": {
+  "epoch": 10,
+  "test_ber": 1.6656094312756387,
+  "val_ber": 3.630001135097749
+ },
+ "val": {
+  "epoch": 3,
+  "test_ber": 2.6303758338097394,
+  "val_ber": 2.083485358594994
+ },
+ "test": {
+  "epoch": 9,
+  "test_ber": 1.6135355321020617,
+  "val_ber": 3.9189264948441327
+ },
+ "inflation_test_minus_val_rule": 1.0168403017076777
+}

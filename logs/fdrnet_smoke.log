@@ -1,0 +1,27 @@
+Loaded pretrained weights for efficientnet-b3
+fdrnet_istd_seed0_smoke_20261120_232250: train 1210, val 120, test 540; device mps
+  batch 1/151  loss_det 0.1574  mps 5.3 GiB  4s
+  batch 2/151  loss_det 0.2014  mps 5.3 GiB  7s
+  batch 3/151  loss_det 0.1360  mps 5.3 GiB  9s
+  batch 4/151  loss_det 0.2410  mps 5.3 GiB  12s
+  batch 5/151  loss_det 0.2205  mps 5.5 GiB  14s
+  batch 6/151  loss_det 0.2070  mps 5.5 GiB  16s
+epoch  1/1: val BER 13.81  test BER 12.18  (43s)
+{
+ "last": {
+  "epoch": 1,
+  "test_ber": 12.179552321395825,
+  "val_ber": 13.809683337392919
+ },
+ "val": {
+  "epoch": 1,
+  "test_ber": 12.179552321395825,
+  "val_ber": 13.809683337392919
+ },
+ "test": {
+  "epoch": 1,
+  "test_ber": 12.179552321395825,
+  "val_ber": 13.809683337392919
+ },
+ "inflation_test_minus_val_rule": 0.0
+}

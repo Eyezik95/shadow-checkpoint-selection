@@ -1,0 +1,136 @@
+{
+  "experiment": "obj2_siran_selection_bias_seeds",
+  "thesis_refs": [
+    "Section 4.4",
+    "Table 4.2",
+    "Eq 3.13"
+  ],
+  "created_utc": "2026-11-03T01:44:44.526421+00:00",
+  "config": {
+    "original_counts": "results/obj2/obj2_counts_siran@original_20261102_212753.npz",
+    "heldout_counts": {
+      "0": "results/obj2/obj2_counts_siran@heldout_20261102_212753.npz",
+      "1": "results/obj2/obj2_counts_siran@heldout_seed1_20261103_024305.npz",
+      "2": "results/obj2/obj2_counts_siran@heldout_seed2_20261103_024305.npz"
+    },
+    "sha256": {
+      "results/obj2/obj2_counts_siran@original_20261102_212753.npz": "404fa86b93f2fd8ab0163b2df09f4693fcbb29682a856c35e709c3a1a6e6c007",
+      "results/obj2/obj2_counts_siran@heldout_20261102_212753.npz": "b2d5f2ad5b9d91d368dcf9cdfba98a054ba346e2a52f8fe7bf1b0d920cb866b5",
+      "results/obj2/obj2_counts_siran@heldout_seed1_20261103_024305.npz": "2d92cf69b44243a4d941e7681b62a5df024252adfabba23e23b5bce9cc76cbc1",
+      "results/obj2/obj2_counts_siran@heldout_seed2_20261103_024305.npz": "693169671d72fcc2687b3bd7242bef8c65c069be4f8cdc9b39df0039b14af7bf"
+    },
+    "tau": 0.5,
+    "bootstrap": {
+      "unit": "test scene",
+      "scenes": 46,
+      "draws": 10000,
+      "rng_seed": 0,
+      "ci": "percentile 2.5/97.5"
+    },
+    "sd": "sample SD over seeds (ddof 1)"
+  },
+  "results": {
+    "thesis256": {
+      "original": {
+        "ber_tau_0.50": 2.631956278048607,
+        "cross_fitted_ber": 2.3303804638668675
+      },
+      "heldout_per_seed": {
+        "0": {
+          "ber_tau_0.50": 2.7384937417348207,
+          "cross_fitted_ber": 2.4270831796285934,
+          "diff_vs_original_tau_0.50": 0.10653746368621375,
+          "bootstrap_scenes_ci95": [
+            -0.12838909788053238,
+            0.4758843613383577
+          ]
+        },
+        "1": {
+          "ber_tau_0.50": 3.4363969045319127,
+          "cross_fitted_ber": 2.988877433362383,
+          "diff_vs_original_tau_0.50": 0.8044406264833057,
+          "bootstrap_scenes_ci95": [
+            0.23139150934114144,
+            1.631385332519748
+          ]
+        },
+        "2": {
+          "ber_tau_0.50": 2.8991185603576906,
+          "cross_fitted_ber": 2.5851556285283106,
+          "diff_vs_original_tau_0.50": 0.26716228230908357,
+          "bootstrap_scenes_ci95": [
+            -0.04402099244728464,
+            0.7085962493887704
+          ]
+        }
+      },
+      "heldout_seed_mean": {
+        "ber_tau_0.50": {
+          "mean": 3.0246697355414747,
+          "sd": 0.3654990141615542
+        },
+        "cross_fitted_ber": {
+          "mean": 2.667038747173096,
+          "sd": 0.28970990614979547
+        },
+        "diff_vs_original_tau_0.50": 0.3927134574928677,
+        "bootstrap_scenes_ci95": [
+          0.0750620099935284,
+          0.860183312203201
+        ],
+        "seeds_worse_than_original": 3
+      }
+    },
+    "native": {
+      "original": {
+        "ber_tau_0.50": 2.6350532639786595,
+        "cross_fitted_ber": 2.365887847404249
+      },
+      "heldout_per_seed": {
+        "0": {
+          "ber_tau_0.50": 2.7407751684013744,
+          "cross_fitted_ber": 2.488403535239999,
+          "diff_vs_original_tau_0.50": 0.1057219044227149,
+          "bootstrap_scenes_ci95": [
+            -0.1299396264183991,
+            0.4765516964106413
+          ]
+        },
+        "1": {
+          "ber_tau_0.50": 3.4400533311124866,
+          "cross_fitted_ber": 3.0467989332773935,
+          "diff_vs_original_tau_0.50": 0.8050000671338271,
+          "bootstrap_scenes_ci95": [
+            0.2310709756935419,
+            1.6328681463872599
+          ]
+        },
+        "2": {
+          "ber_tau_0.50": 2.9008807023340557,
+          "cross_fitted_ber": 2.6416034401386344,
+          "diff_vs_original_tau_0.50": 0.26582743835539624,
+          "bootstrap_scenes_ci95": [
+            -0.045351656738900833,
+            0.7065845534331541
+          ]
+        }
+      },
+      "heldout_seed_mean": {
+        "ber_tau_0.50": {
+          "mean": 3.0272364006159727,
+          "sd": 0.366362947194978
+        },
+        "cross_fitted_ber": {
+          "mean": 2.725601969552009,
+          "sd": 0.28851892458735223
+        },
+        "diff_vs_original_tau_0.50": 0.3921831366373132,
+        "bootstrap_scenes_ci95": [
+          0.07431480043629042,
+          0.861174014001255
+        ],
+        "seeds_worse_than_original": 3
+      }
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "experiment": "obj2_siran_phase2_heldout_validation",
+  "run": "siran_phase2_heldout_timing_20261102_194500",
+  "thesis_refs": [
+    "Section 3.3.7",
+    "Algorithm 3.2",
+    "Table 4.2"
+  ],
+  "created_utc": "2026-11-02T18:45:00.979742+00:00",
+  "config": {
+    "istd": "data/raw/istd/ISTD_Dataset",
+    "sbu_ckpt": "data/raw/checkpoints/sbu_pretrained_bifpn_siran_efficientnet_b5.pth",
+    "val_frac": 0.1,
+    "split_seed": 0,
+    "seed": 0,
+    "epochs": 1,
+    "batch_size": 4,
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "dropout_p": 0.1,
+    "grad_clip": 1.0,
+    "patience": 10,
+    "overfit_gap": 0.1,
+    "overfit_patience": 5,
+    "out": "results/obj2",
+    "ckpt_dir": "checkpoints/obj2",
+    "tag": "timing",
+    "device": "mps",
+    "sbu_ckpt_sha256": "6c8b7eda2d82a839dd74e351e3101813ecf86c4605b57a4349726cdfb11f5aa5",
+    "base_lr_phase2": 1e-05,
+    "param_group_sizes": [
+      501,
+      40,
+      48
+    ],
+    "param_group_lrs": [
+      1.0000000000000002e-06,
+      5e-06,
+      1e-05
+    ],
+    "train_images": 1210,
+    "val_images": 120,
+    "val_scenes": [
+      "34",
+      "39",
+      "50",
+      "52",
+      "54",
+      "6",
+      "62",
+      "63",
+      "66"
+    ],
+    "assumptions": {
+      "batch_size": "4 (Section 4.4.1)",
+      "dropout_p": "0.1 (script default)"
+    },
+    "torch": "2.15.0"
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.56150318869073,
+      "train_iou": 0.6963580828590361,
+      "train_ber": 11.882471768855762,
+      "val_loss": 0.1774790596216917,
+      "val_iou": 0.8091155658165614,
+      "val_ber": 10.685542258207814,
+      "val_shadow_err": 20.894973894065938,
+      "val_nonshadow_err": 0.47611062234967916,
+      "gap": -0.1127574829575253,
+      "lrs": [
+        1.0000000000000002e-06,
+        5e-06,
+        1e-05
+      ],
+      "time_s": 197.9749380419962
+    }
+  ],
+  "best": {
+    "epoch": 1,
+    "val_iou": 0.8091155658165614,
+    "val_ber": 10.685542258207814,
+    "checkpoint": "checkpoints/obj2/siran_phase2_heldout_timing_20261102_194500.pth",
+    "checkpoint_sha256": "a70e0f3da89c847e4e7884173a88f32c0ffcaf64b475b0b059b036be14aa7eaf"
+  },
+  "completed_utc": "2026-11-02T18:48:20.519904+00:00"
+}

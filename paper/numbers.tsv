@@ -1,0 +1,545 @@
+key	value	source	path
+orig-siran-ber	2.63	obj2_eval_20261102_212753.json	models/siran@original/thesis256/native_tau_0.50/ber
+orig-siran-ber-testsel	2.33	obj2_eval_20261102_212753.json	models/siran@original/thesis256/test_selected_BIASED/ber
+orig-siran-tau-testsel	0.10	obj2_eval_20261102_212753.json	models/siran@original/thesis256/test_selected_BIASED/tau
+orig-siran-ber-xfit	2.33	obj2_eval_20261102_212753.json	models/siran@original/thesis256/cross_fitted/ber
+orig-siran-iou-meanimg	0.886	obj2_eval_20261102_212753.json	models/siran@original/thesis256/iou_tau_0.50/mean_per_image
+orig-siran-shadowerr	4.08	obj2_eval_20261102_212753.json	models/siran@original/thesis256/native_tau_0.50/shadow_err
+orig-siran-nonshadowerr	1.19	obj2_eval_20261102_212753.json	models/siran@original/thesis256/native_tau_0.50/nonshadow_err
+sweep-siran-05-shadowerr	2.52	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/0
+sweep-siran-05-nonshadowerr	2.13	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/0
+sweep-siran-05-ber	2.33	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/0
+sweep-siran-05-ioupooled	0.875	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/0
+sweep-siran-10-shadowerr	2.89	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/1
+sweep-siran-10-nonshadowerr	1.76	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/1
+sweep-siran-10-ber	2.33	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/1
+sweep-siran-10-ioupooled	0.888	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/1
+sweep-siran-15-shadowerr	3.11	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/2
+sweep-siran-15-nonshadowerr	1.59	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/2
+sweep-siran-15-ber	2.35	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/2
+sweep-siran-15-ioupooled	0.893	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/2
+sweep-siran-20-shadowerr	3.28	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/3
+sweep-siran-20-nonshadowerr	1.49	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/3
+sweep-siran-20-ber	2.38	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/3
+sweep-siran-20-ioupooled	0.896	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/3
+sweep-siran-25-shadowerr	3.43	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/4
+sweep-siran-25-nonshadowerr	1.42	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/4
+sweep-siran-25-ber	2.42	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/4
+sweep-siran-25-ioupooled	0.898	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/4
+sweep-siran-30-shadowerr	3.56	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/5
+sweep-siran-30-nonshadowerr	1.36	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/5
+sweep-siran-30-ber	2.46	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/5
+sweep-siran-30-ioupooled	0.899	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/5
+sweep-siran-35-shadowerr	3.69	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/6
+sweep-siran-35-nonshadowerr	1.31	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/6
+sweep-siran-35-ber	2.50	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/6
+sweep-siran-35-ioupooled	0.900	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/6
+sweep-siran-40-shadowerr	3.82	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/7
+sweep-siran-40-nonshadowerr	1.26	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/7
+sweep-siran-40-ber	2.54	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/7
+sweep-siran-40-ioupooled	0.901	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/7
+sweep-siran-45-shadowerr	3.95	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/8
+sweep-siran-45-nonshadowerr	1.22	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/8
+sweep-siran-45-ber	2.58	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/8
+sweep-siran-45-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/8
+sweep-siran-50-shadowerr	4.08	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/9
+sweep-siran-50-nonshadowerr	1.19	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/9
+sweep-siran-50-ber	2.63	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/9
+sweep-siran-50-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/9
+sweep-siran-55-shadowerr	4.21	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/10
+sweep-siran-55-nonshadowerr	1.15	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/10
+sweep-siran-55-ber	2.68	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/10
+sweep-siran-55-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/10
+sweep-siran-60-shadowerr	4.36	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/11
+sweep-siran-60-nonshadowerr	1.12	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/11
+sweep-siran-60-ber	2.74	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/11
+sweep-siran-60-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/11
+sweep-siran-65-shadowerr	4.52	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/12
+sweep-siran-65-nonshadowerr	1.09	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/12
+sweep-siran-65-ber	2.80	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/12
+sweep-siran-65-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/12
+sweep-siran-70-shadowerr	4.71	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/13
+sweep-siran-70-nonshadowerr	1.05	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/13
+sweep-siran-70-ber	2.88	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/13
+sweep-siran-70-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/13
+sweep-siran-75-shadowerr	4.92	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/14
+sweep-siran-75-nonshadowerr	1.02	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/14
+sweep-siran-75-ber	2.97	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/14
+sweep-siran-75-ioupooled	0.902	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/14
+sweep-siran-80-shadowerr	5.19	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/15
+sweep-siran-80-nonshadowerr	0.98	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/15
+sweep-siran-80-ber	3.08	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/15
+sweep-siran-80-ioupooled	0.901	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/15
+sweep-siran-85-shadowerr	5.53	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/16
+sweep-siran-85-nonshadowerr	0.93	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/16
+sweep-siran-85-ber	3.23	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/16
+sweep-siran-85-ioupooled	0.900	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/16
+sweep-siran-90-shadowerr	6.02	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/17
+sweep-siran-90-nonshadowerr	0.87	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/17
+sweep-siran-90-ber	3.45	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/17
+sweep-siran-90-ioupooled	0.898	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/17
+sweep-siran-95-shadowerr	6.94	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/shadow_err/18
+sweep-siran-95-nonshadowerr	0.79	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/nonshadow_err/18
+sweep-siran-95-ber	3.86	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/ber/18
+sweep-siran-95-ioupooled	0.893	obj2_eval_20261102_212753.json	models/siran@original/thesis256/sweep/iou_pooled/18
+orig-siran-band2	11.57	obj2_eval_20261102_212753.json	models/siran@original/thesis256/boundary_band_error_pct/k=2/tau_0.50
+orig-siran-band5	7.92	obj2_eval_20261102_212753.json	models/siran@original/thesis256/boundary_band_error_pct/k=5/tau_0.50
+orig-siran-band10	5.82	obj2_eval_20261102_212753.json	models/siran@original/thesis256/boundary_band_error_pct/k=10/tau_0.50
+orig-ran-ber	3.02	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/native_tau_0.50/ber
+orig-ran-ber-testsel	2.28	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/test_selected_BIASED/ber
+orig-ran-tau-testsel	0.10	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/test_selected_BIASED/tau
+orig-ran-ber-xfit	2.33	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/cross_fitted/ber
+orig-ran-iou-meanimg	0.885	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/iou_tau_0.50/mean_per_image
+orig-ran-shadowerr	5.29	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/native_tau_0.50/shadow_err
+orig-ran-nonshadowerr	0.75	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/native_tau_0.50/nonshadow_err
+orig-ran-band2	12.39	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/boundary_band_error_pct/k=2/tau_0.50
+orig-ran-band5	8.28	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/boundary_band_error_pct/k=5/tau_0.50
+orig-ran-band10	5.89	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/boundary_band_error_pct/k=10/tau_0.50
+orig-rarm-ber	3.54	obj2_eval_20261102_194216.json	models/rarm/thesis256/native_tau_0.50/ber
+orig-rarm-ber-testsel	3.24	obj2_eval_20261102_194216.json	models/rarm/thesis256/test_selected_BIASED/ber
+orig-rarm-tau-testsel	0.20	obj2_eval_20261102_194216.json	models/rarm/thesis256/test_selected_BIASED/tau
+orig-rarm-ber-xfit	3.36	obj2_eval_20261102_194216.json	models/rarm/thesis256/cross_fitted/ber
+orig-rarm-iou-meanimg	0.829	obj2_eval_20261102_194216.json	models/rarm/thesis256/iou_tau_0.50/mean_per_image
+orig-rarm-shadowerr	4.15	obj2_eval_20261102_194216.json	models/rarm/thesis256/native_tau_0.50/shadow_err
+orig-rarm-nonshadowerr	2.94	obj2_eval_20261102_194216.json	models/rarm/thesis256/native_tau_0.50/nonshadow_err
+orig-rarm-band2	18.77	obj2_eval_20261102_194216.json	models/rarm/thesis256/boundary_band_error_pct/k=2/tau_0.50
+orig-rarm-band5	12.35	obj2_eval_20261102_194216.json	models/rarm/thesis256/boundary_band_error_pct/k=5/tau_0.50
+orig-rarm-band10	8.90	obj2_eval_20261102_194216.json	models/rarm/thesis256/boundary_band_error_pct/k=10/tau_0.50
+orig-ranone-ber	3.39	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/native_tau_0.50/ber
+orig-ranone-ber-testsel	3.08	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/test_selected_BIASED/ber
+orig-ranone-tau-testsel	0.20	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/test_selected_BIASED/tau
+orig-ranone-ber-xfit	3.08	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/cross_fitted/ber
+orig-ranone-iou-meanimg	0.842	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/iou_tau_0.50/mean_per_image
+orig-ranone-shadowerr	3.95	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/native_tau_0.50/shadow_err
+orig-ranone-nonshadowerr	2.82	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/native_tau_0.50/nonshadow_err
+orig-ranone-band2	15.63	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/boundary_band_error_pct/k=2/tau_0.50
+orig-ranone-band5	10.43	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/boundary_band_error_pct/k=5/tau_0.50
+orig-ranone-band10	7.68	obj2_eval_20261103_060340.json	models/ran_iter1/thesis256/boundary_band_error_pct/k=10/tau_0.50
+orig-unetpp-ber	2.49	obj2_eval_20261103_202935.json	models/unetpp/thesis256/native_tau_0.50/ber
+orig-unetpp-ber-testsel	2.13	obj2_eval_20261103_202935.json	models/unetpp/thesis256/test_selected_BIASED/ber
+orig-unetpp-tau-testsel	0.10	obj2_eval_20261103_202935.json	models/unetpp/thesis256/test_selected_BIASED/tau
+orig-unetpp-ber-xfit	2.18	obj2_eval_20261103_202935.json	models/unetpp/thesis256/cross_fitted/ber
+orig-unetpp-iou-meanimg	0.882	obj2_eval_20261103_202935.json	models/unetpp/thesis256/iou_tau_0.50/mean_per_image
+orig-unetpp-shadowerr	3.66	obj2_eval_20261103_202935.json	models/unetpp/thesis256/native_tau_0.50/shadow_err
+orig-unetpp-nonshadowerr	1.32	obj2_eval_20261103_202935.json	models/unetpp/thesis256/native_tau_0.50/nonshadow_err
+orig-unetpp-band2	11.59	obj2_eval_20261103_202935.json	models/unetpp/thesis256/boundary_band_error_pct/k=2/tau_0.50
+orig-unetpp-band5	7.70	obj2_eval_20261103_202935.json	models/unetpp/thesis256/boundary_band_error_pct/k=5/tau_0.50
+orig-unetpp-band10	5.56	obj2_eval_20261103_202935.json	models/unetpp/thesis256/boundary_band_error_pct/k=10/tau_0.50
+sb-orig-ber	2.63	obj2_seed_bias_20261111_115734.json	results/thesis256/original/ber_tau_0.50
+sb-orig-xfit	2.33	obj2_seed_bias_20261111_115734.json	results/thesis256/original/cross_fitted_ber
+sb-s0-ber	2.74	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/0/ber_tau_0.50
+sb-s0-xfit	2.43	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/0/cross_fitted_ber
+sb-s0-diff	+0.11	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/0/diff_vs_original_tau_0.50
+sb-s0-diff-lo	\textminus 0.13	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/0/bootstrap_scenes_ci95/0
+sb-s0-diff-hi	+0.48	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/0/bootstrap_scenes_ci95/1
+sb-s1-ber	3.44	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/1/ber_tau_0.50
+sb-s1-xfit	2.99	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/1/cross_fitted_ber
+sb-s1-diff	+0.80	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/1/diff_vs_original_tau_0.50
+sb-s1-diff-lo	+0.23	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/1/bootstrap_scenes_ci95/0
+sb-s1-diff-hi	+1.63	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/1/bootstrap_scenes_ci95/1
+sb-s2-ber	2.90	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/2/ber_tau_0.50
+sb-s2-xfit	2.59	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/2/cross_fitted_ber
+sb-s2-diff	+0.27	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/2/diff_vs_original_tau_0.50
+sb-s2-diff-lo	\textminus 0.04	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/2/bootstrap_scenes_ci95/0
+sb-s2-diff-hi	+0.71	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/2/bootstrap_scenes_ci95/1
+sb-s3-ber	2.90	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/3/ber_tau_0.50
+sb-s3-xfit	2.61	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/3/cross_fitted_ber
+sb-s3-diff	+0.27	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/3/diff_vs_original_tau_0.50
+sb-s3-diff-lo	\textminus 0.06	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/3/bootstrap_scenes_ci95/0
+sb-s3-diff-hi	+0.76	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/3/bootstrap_scenes_ci95/1
+sb-s4-ber	3.15	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/4/ber_tau_0.50
+sb-s4-xfit	2.69	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/4/cross_fitted_ber
+sb-s4-diff	+0.52	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/4/diff_vs_original_tau_0.50
+sb-s4-diff-lo	+0.19	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/4/bootstrap_scenes_ci95/0
+sb-s4-diff-hi	+0.98	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/4/bootstrap_scenes_ci95/1
+sb-mean-ber	3.02	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/ber_tau_0.50/mean
+sb-sd-ber	0.27	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/ber_tau_0.50/sd
+sb-mean-xfit	2.66	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/cross_fitted_ber/mean
+sb-sd-xfit	0.21	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/cross_fitted_ber/sd
+sb-mean-diff	+0.39	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/diff_vs_original_tau_0.50
+sb-mean-diff-lo	+0.09	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/bootstrap_scenes_ci95/0
+sb-mean-diff-hi	+0.85	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_seed_mean/bootstrap_scenes_ci95/1
+sb-seed-range	0.70	obj2_seed_bias_20261111_115734.json	results/thesis256/heldout_per_seed/*/ber_tau_0.50 (max-min)
+fair-unetpp-ber-mean	2.65	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/unetpp/seed_mean/ber/mean
+fair-unetpp-ber-sd	0.03	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/unetpp/seed_mean/ber/sd
+fair-unetpp-crossfittedber-mean	2.26	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/unetpp/seed_mean/cross_fitted_ber/mean
+fair-unetpp-crossfittedber-sd	0.05	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/unetpp/seed_mean/cross_fitted_ber/sd
+fair-unetpp-iou-mean	0.8997	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/unetpp/seed_mean/iou/mean
+fair-unetpp-iou-sd	0.0010	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/unetpp/seed_mean/iou/sd
+fair-ran-ber-mean	2.95	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/ran/seed_mean/ber/mean
+fair-ran-ber-sd	0.09	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/ran/seed_mean/ber/sd
+fair-ran-crossfittedber-mean	2.46	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/ran/seed_mean/cross_fitted_ber/mean
+fair-ran-crossfittedber-sd	0.08	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/ran/seed_mean/cross_fitted_ber/sd
+fair-ran-iou-mean	0.9113	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/ran/seed_mean/iou/mean
+fair-ran-iou-sd	0.0014	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/ran/seed_mean/iou/sd
+fair-siran-ber-mean	3.02	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/siran/seed_mean/ber/mean
+fair-siran-ber-sd	0.27	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/siran/seed_mean/ber/sd
+fair-siran-crossfittedber-mean	2.66	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/siran/seed_mean/cross_fitted_ber/mean
+fair-siran-crossfittedber-sd	0.21	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/siran/seed_mean/cross_fitted_ber/sd
+fair-siran-iou-mean	0.8975	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/siran/seed_mean/iou/mean
+fair-siran-iou-sd	0.0072	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/siran/seed_mean/iou/sd
+fair-rarm-ber-mean	3.23	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/rarm/seed_mean/ber/mean
+fair-rarm-ber-sd	0.03	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/rarm/seed_mean/ber/sd
+fair-rarm-crossfittedber-mean	3.23	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/rarm/seed_mean/cross_fitted_ber/mean
+fair-rarm-crossfittedber-sd	0.03	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/rarm/seed_mean/cross_fitted_ber/sd
+fair-rarm-iou-mean	0.8164	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/rarm/seed_mean/iou/mean
+fair-rarm-iou-sd	0.0044	obj2_fair_comparison_20261111_115646.json	results/thesis256/architectures/rarm/seed_mean/iou/sd
+pair-siran-ran	+0.07	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-ran/ber_diff
+pair-siran-ran-lo	\textminus 0.62	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-ran/bootstrap_scenes_ci95/0
+pair-siran-ran-hi	+0.94	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-ran/bootstrap_scenes_ci95/1
+pair-siran-rarm	\textminus 0.20	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-rarm/ber_diff
+pair-siran-rarm-lo	\textminus 1.46	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-rarm/bootstrap_scenes_ci95/0
+pair-siran-rarm-hi	+1.53	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-rarm/bootstrap_scenes_ci95/1
+pair-siran-unetpp	+0.38	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-unetpp/ber_diff
+pair-siran-unetpp-lo	\textminus 0.83	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-unetpp/bootstrap_scenes_ci95/0
+pair-siran-unetpp-hi	+1.94	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/siran-unetpp/bootstrap_scenes_ci95/1
+pair-ran-rarm	\textminus 0.28	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/ran-rarm/ber_diff
+pair-ran-rarm-lo	\textminus 1.16	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/ran-rarm/bootstrap_scenes_ci95/0
+pair-ran-rarm-hi	+0.77	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/ran-rarm/bootstrap_scenes_ci95/1
+pair-ran-unetpp	+0.30	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/ran-unetpp/ber_diff
+pair-ran-unetpp-lo	\textminus 0.37	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/ran-unetpp/bootstrap_scenes_ci95/0
+pair-ran-unetpp-hi	+1.10	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/ran-unetpp/bootstrap_scenes_ci95/1
+pair-rarm-unetpp	+0.58	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/rarm-unetpp/ber_diff
+pair-rarm-unetpp-lo	\textminus 0.36	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/rarm-unetpp/bootstrap_scenes_ci95/0
+pair-rarm-unetpp-hi	+1.41	obj2_fair_comparison_20261111_115646.json	results/thesis256/pairwise_seed_mean_ber/rarm-unetpp/bootstrap_scenes_ci95/1
+sel-unetpp-orig	2.49	obj2_selection_effect_20261111_115647.json	results/thesis256/unetpp/original_test_selected_ber
+sel-unetpp-diff	+0.16	obj2_selection_effect_20261111_115647.json	results/thesis256/unetpp/heldout_minus_original
+sel-unetpp-absdiff	0.16	obj2_selection_effect_20261111_115647.json	results/thesis256/unetpp/heldout_minus_original (abs)
+sel-unetpp-diff-lo	+0.02	obj2_selection_effect_20261111_115647.json	results/thesis256/unetpp/bootstrap_scenes_ci95/0
+sel-unetpp-diff-hi	+0.37	obj2_selection_effect_20261111_115647.json	results/thesis256/unetpp/bootstrap_scenes_ci95/1
+sel-unetpp-worse	5	obj2_selection_effect_20261111_115647.json	results/thesis256/unetpp/seeds_worse_than_original
+sel-ran-orig	3.02	obj2_selection_effect_20261111_115647.json	results/thesis256/ran/original_test_selected_ber
+sel-ran-diff	\textminus 0.07	obj2_selection_effect_20261111_115647.json	results/thesis256/ran/heldout_minus_original
+sel-ran-absdiff	0.07	obj2_selection_effect_20261111_115647.json	results/thesis256/ran/heldout_minus_original (abs)
+sel-ran-diff-lo	\textminus 0.23	obj2_selection_effect_20261111_115647.json	results/thesis256/ran/bootstrap_scenes_ci95/0
+sel-ran-diff-hi	+0.21	obj2_selection_effect_20261111_115647.json	results/thesis256/ran/bootstrap_scenes_ci95/1
+sel-ran-worse	1	obj2_selection_effect_20261111_115647.json	results/thesis256/ran/seeds_worse_than_original
+sel-siran-orig	2.63	obj2_selection_effect_20261111_115647.json	results/thesis256/siran/original_test_selected_ber
+sel-siran-diff	+0.39	obj2_selection_effect_20261111_115647.json	results/thesis256/siran/heldout_minus_original
+sel-siran-absdiff	0.39	obj2_selection_effect_20261111_115647.json	results/thesis256/siran/heldout_minus_original (abs)
+sel-siran-diff-lo	+0.09	obj2_selection_effect_20261111_115647.json	results/thesis256/siran/bootstrap_scenes_ci95/0
+sel-siran-diff-hi	+0.85	obj2_selection_effect_20261111_115647.json	results/thesis256/siran/bootstrap_scenes_ci95/1
+sel-siran-worse	5	obj2_selection_effect_20261111_115647.json	results/thesis256/siran/seeds_worse_than_original
+sel-rarm-orig	3.54	obj2_selection_effect_20261111_115647.json	results/thesis256/rarm/original_test_selected_ber
+sel-rarm-diff	\textminus 0.31	obj2_selection_effect_20261111_115647.json	results/thesis256/rarm/heldout_minus_original
+sel-rarm-absdiff	0.31	obj2_selection_effect_20261111_115647.json	results/thesis256/rarm/heldout_minus_original (abs)
+sel-rarm-diff-lo	\textminus 0.62	obj2_selection_effect_20261111_115647.json	results/thesis256/rarm/bootstrap_scenes_ci95/0
+sel-rarm-diff-hi	\textminus 0.08	obj2_selection_effect_20261111_115647.json	results/thesis256/rarm/bootstrap_scenes_ci95/1
+sel-rarm-worse	0	obj2_selection_effect_20261111_115647.json	results/thesis256/rarm/seeds_worse_than_original
+ec-original-siran-shadowerr	4.08	obj2_error_components_20261111_115829.json	results/original/mean/siran/shadow_err
+ec-original-siran-nonshadowerr	1.19	obj2_error_components_20261111_115829.json	results/original/mean/siran/nonshadow_err
+ec-original-siran-band2errrate	11.57	obj2_error_components_20261111_115829.json	results/original/mean/siran/band2_err_rate
+ec-original-siran-band2shareoferrors	42.93	obj2_error_components_20261111_115829.json	results/original/mean/siran/band2_share_of_errors
+ec-original-siran-band5errrate	7.92	obj2_error_components_20261111_115829.json	results/original/mean/siran/band5_err_rate
+ec-original-siran-band5shareoferrors	53.46	obj2_error_components_20261111_115829.json	results/original/mean/siran/band5_share_of_errors
+ec-original-siran-band10errrate	5.82	obj2_error_components_20261111_115829.json	results/original/mean/siran/band10_err_rate
+ec-original-siran-band10shareoferrors	64.05	obj2_error_components_20261111_115829.json	results/original/mean/siran/band10_share_of_errors
+ec-original-ran-shadowerr	5.29	obj2_error_components_20261111_115829.json	results/original/mean/ran/shadow_err
+ec-original-ran-nonshadowerr	0.75	obj2_error_components_20261111_115829.json	results/original/mean/ran/nonshadow_err
+ec-original-ran-band2errrate	12.39	obj2_error_components_20261111_115829.json	results/original/mean/ran/band2_err_rate
+ec-original-ran-band2shareoferrors	51.59	obj2_error_components_20261111_115829.json	results/original/mean/ran/band2_share_of_errors
+ec-original-ran-band5errrate	8.28	obj2_error_components_20261111_115829.json	results/original/mean/ran/band5_err_rate
+ec-original-ran-band5shareoferrors	62.73	obj2_error_components_20261111_115829.json	results/original/mean/ran/band5_share_of_errors
+ec-original-ran-band10errrate	5.89	obj2_error_components_20261111_115829.json	results/original/mean/ran/band10_err_rate
+ec-original-ran-band10shareoferrors	72.80	obj2_error_components_20261111_115829.json	results/original/mean/ran/band10_share_of_errors
+ec-original-diff-shadowerr	\textminus 1.21	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/shadow_err/diff
+ec-original-diff-shadowerr-lo	\textminus 2.81	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/shadow_err/bootstrap_scenes_ci95/0
+ec-original-diff-shadowerr-hi	+0.41	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/shadow_err/bootstrap_scenes_ci95/1
+ec-original-diff-nonshadowerr	+0.44	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/nonshadow_err/diff
+ec-original-diff-nonshadowerr-lo	+0.03	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/nonshadow_err/bootstrap_scenes_ci95/0
+ec-original-diff-nonshadowerr-hi	+1.05	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/nonshadow_err/bootstrap_scenes_ci95/1
+ec-original-diff-band2errrate	\textminus 0.82	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band2_err_rate/diff
+ec-original-diff-band2errrate-lo	\textminus 1.37	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band2_err_rate/bootstrap_scenes_ci95/0
+ec-original-diff-band2errrate-hi	\textminus 0.32	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band2_err_rate/bootstrap_scenes_ci95/1
+ec-original-diff-band2shareoferrors	\textminus 8.67	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band2_share_of_errors/diff
+ec-original-diff-band2shareoferrors-lo	\textminus 13.60	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band2_share_of_errors/bootstrap_scenes_ci95/0
+ec-original-diff-band2shareoferrors-hi	+1.99	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band2_share_of_errors/bootstrap_scenes_ci95/1
+ec-original-diff-band5errrate	\textminus 0.36	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band5_err_rate/diff
+ec-original-diff-band5errrate-lo	\textminus 0.86	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band5_err_rate/bootstrap_scenes_ci95/0
+ec-original-diff-band5errrate-hi	+0.17	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band5_err_rate/bootstrap_scenes_ci95/1
+ec-original-diff-band5shareoferrors	\textminus 9.27	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band5_share_of_errors/diff
+ec-original-diff-band5shareoferrors-lo	\textminus 15.12	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band5_share_of_errors/bootstrap_scenes_ci95/0
+ec-original-diff-band5shareoferrors-hi	+2.85	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band5_share_of_errors/bootstrap_scenes_ci95/1
+ec-original-diff-band10errrate	\textminus 0.07	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band10_err_rate/diff
+ec-original-diff-band10errrate-lo	\textminus 0.58	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band10_err_rate/bootstrap_scenes_ci95/0
+ec-original-diff-band10errrate-hi	+0.53	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band10_err_rate/bootstrap_scenes_ci95/1
+ec-original-diff-band10shareoferrors	\textminus 8.75	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band10_share_of_errors/diff
+ec-original-diff-band10shareoferrors-lo	\textminus 16.03	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band10_share_of_errors/bootstrap_scenes_ci95/0
+ec-original-diff-band10shareoferrors-hi	+3.70	obj2_error_components_20261111_115829.json	results/original/siran_minus_ran/band10_share_of_errors/bootstrap_scenes_ci95/1
+ec-heldout-siran-shadowerr	4.94	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/shadow_err
+ec-heldout-siran-nonshadowerr	1.11	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/nonshadow_err
+ec-heldout-siran-band2errrate	12.10	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/band2_err_rate
+ec-heldout-siran-band2shareoferrors	43.17	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/band2_share_of_errors
+ec-heldout-siran-band5errrate	8.38	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/band5_err_rate
+ec-heldout-siran-band5shareoferrors	54.34	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/band5_share_of_errors
+ec-heldout-siran-band10errrate	6.17	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/band10_err_rate
+ec-heldout-siran-band10shareoferrors	65.23	obj2_error_components_20261111_115829.json	results/heldout/mean/siran/band10_share_of_errors
+ec-heldout-ran-shadowerr	5.13	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/shadow_err
+ec-heldout-ran-nonshadowerr	0.77	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/nonshadow_err
+ec-heldout-ran-band2errrate	12.28	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/band2_err_rate
+ec-heldout-ran-band2shareoferrors	51.36	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/band2_share_of_errors
+ec-heldout-ran-band5errrate	8.27	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/band5_err_rate
+ec-heldout-ran-band5shareoferrors	62.94	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/band5_share_of_errors
+ec-heldout-ran-band10errrate	5.94	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/band10_err_rate
+ec-heldout-ran-band10shareoferrors	73.69	obj2_error_components_20261111_115829.json	results/heldout/mean/ran/band10_share_of_errors
+ec-heldout-diff-shadowerr	\textminus 0.19	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/shadow_err/diff
+ec-heldout-diff-shadowerr-lo	\textminus 1.80	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/shadow_err/bootstrap_scenes_ci95/0
+ec-heldout-diff-shadowerr-hi	+1.69	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/shadow_err/bootstrap_scenes_ci95/1
+ec-heldout-diff-nonshadowerr	+0.34	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/nonshadow_err/diff
+ec-heldout-diff-nonshadowerr-lo	+0.03	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/nonshadow_err/bootstrap_scenes_ci95/0
+ec-heldout-diff-nonshadowerr-hi	+0.72	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/nonshadow_err/bootstrap_scenes_ci95/1
+ec-heldout-diff-band2errrate	\textminus 0.18	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band2_err_rate/diff
+ec-heldout-diff-band2errrate-lo	\textminus 0.69	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band2_err_rate/bootstrap_scenes_ci95/0
+ec-heldout-diff-band2errrate-hi	+0.41	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band2_err_rate/bootstrap_scenes_ci95/1
+ec-heldout-diff-band2shareoferrors	\textminus 8.19	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band2_share_of_errors/diff
+ec-heldout-diff-band2shareoferrors-lo	\textminus 15.15	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band2_share_of_errors/bootstrap_scenes_ci95/0
+ec-heldout-diff-band2shareoferrors-hi	\textminus 1.90	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band2_share_of_errors/bootstrap_scenes_ci95/1
+ec-heldout-diff-band5errrate	+0.10	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band5_err_rate/diff
+ec-heldout-diff-band5errrate-lo	\textminus 0.44	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band5_err_rate/bootstrap_scenes_ci95/0
+ec-heldout-diff-band5errrate-hi	+0.76	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band5_err_rate/bootstrap_scenes_ci95/1
+ec-heldout-diff-band5shareoferrors	\textminus 8.60	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band5_share_of_errors/diff
+ec-heldout-diff-band5shareoferrors-lo	\textminus 15.89	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band5_share_of_errors/bootstrap_scenes_ci95/0
+ec-heldout-diff-band5shareoferrors-hi	\textminus 1.21	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band5_share_of_errors/bootstrap_scenes_ci95/1
+ec-heldout-diff-band10errrate	+0.23	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_err_rate/diff
+ec-heldout-diff-band10errrate-lo	\textminus 0.32	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_err_rate/bootstrap_scenes_ci95/0
+ec-heldout-diff-band10errrate-hi	+0.93	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_err_rate/bootstrap_scenes_ci95/1
+ec-heldout-diff-band10shareoferrors	\textminus 8.45	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_share_of_errors/diff
+ec-heldout-diff-band10shareoferrors-lo	\textminus 16.20	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_share_of_errors/bootstrap_scenes_ci95/0
+ec-heldout-diff-band10shareoferrors-hi	\textminus 0.46	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_share_of_errors/bootstrap_scenes_ci95/1
+sbu-p1-unetpp	4.74	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/unetpp
+sbu-fair-unetpp-mean	6.61	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/mean
+sbu-fair-unetpp-sd	0.13	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/sd
+sbu-orig-unetpp	6.58	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/original_ber
+sbu-sel-unetpp-diff	+0.02	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/heldout_minus_original
+sbu-sel-unetpp-diff-lo	\textminus 0.09	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/ci95/0
+sbu-sel-unetpp-diff-hi	+0.14	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/unetpp/ci95/1
+sbu-p1-ran	6.28	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/ran
+sbu-fair-ran-mean	5.62	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/mean
+sbu-fair-ran-sd	0.07	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/ran/sd
+sbu-orig-ran	5.79	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/original_ber
+sbu-sel-ran-diff	\textminus 0.17	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/heldout_minus_original
+sbu-sel-ran-diff-lo	\textminus 0.28	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/ci95/0
+sbu-sel-ran-diff-hi	\textminus 0.06	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/ran/ci95/1
+sbu-p1-siran	5.79	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/siran
+sbu-fair-siran-mean	7.17	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/mean
+sbu-fair-siran-sd	0.33	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/siran/sd
+sbu-orig-siran	7.25	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/original_ber
+sbu-sel-siran-diff	\textminus 0.09	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/heldout_minus_original
+sbu-sel-siran-diff-lo	\textminus 0.28	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/ci95/0
+sbu-sel-siran-diff-hi	+0.11	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/siran/ci95/1
+sbu-p1-rarm	5.76	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/rarm
+sbu-fair-rarm-mean	7.34	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/mean
+sbu-fair-rarm-sd	0.12	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/rarm/sd
+sbu-orig-rarm	7.25	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/original_ber
+sbu-sel-rarm-diff	+0.09	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/heldout_minus_original
+sbu-sel-rarm-diff-lo	\textminus 0.04	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/ci95/0
+sbu-sel-rarm-diff-hi	+0.22	obj2_sbu_analysis_20261111_115652.json	results/selection_effect_on_sbu/rarm/ci95/1
+sbu-phase1_pairs-unetpp-ran	\textminus 1.54	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-ran/ber_diff
+sbu-phase1_pairs-unetpp-ran-lo	\textminus 2.15	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-ran/ci95/0
+sbu-phase1_pairs-unetpp-ran-hi	\textminus 0.96	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-ran/ci95/1
+sbu-phase1_pairs-unetpp-siran	\textminus 1.06	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-siran/ber_diff
+sbu-phase1_pairs-unetpp-siran-lo	\textminus 1.56	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-siran/ci95/0
+sbu-phase1_pairs-unetpp-siran-hi	\textminus 0.50	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-siran/ci95/1
+sbu-phase1_pairs-unetpp-rarm	\textminus 1.02	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-rarm/ber_diff
+sbu-phase1_pairs-unetpp-rarm-lo	\textminus 1.61	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-rarm/ci95/0
+sbu-phase1_pairs-unetpp-rarm-hi	\textminus 0.49	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/unetpp-rarm/ci95/1
+sbu-phase1_pairs-ran-siran	+0.49	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/ran-siran/ber_diff
+sbu-phase1_pairs-ran-siran-lo	\textminus 0.02	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/ran-siran/ci95/0
+sbu-phase1_pairs-ran-siran-hi	+1.01	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/ran-siran/ci95/1
+sbu-phase1_pairs-ran-rarm	+0.52	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/ran-rarm/ber_diff
+sbu-phase1_pairs-ran-rarm-lo	+0.05	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/ran-rarm/ci95/0
+sbu-phase1_pairs-ran-rarm-hi	+1.00	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/ran-rarm/ci95/1
+sbu-phase1_pairs-siran-rarm	+0.03	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/siran-rarm/ber_diff
+sbu-phase1_pairs-siran-rarm-lo	\textminus 0.51	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/siran-rarm/ci95/0
+sbu-phase1_pairs-siran-rarm-hi	+0.58	obj2_sbu_analysis_20261111_115652.json	results/phase1_pairs/siran-rarm/ci95/1
+sbu-fair_pairs-unetpp-ran	+0.98	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-ran/ber_diff
+sbu-fair_pairs-unetpp-ran-lo	+0.46	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-ran/ci95/0
+sbu-fair_pairs-unetpp-ran-hi	+1.58	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-ran/ci95/1
+sbu-fair_pairs-unetpp-siran	\textminus 0.56	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-siran/ber_diff
+sbu-fair_pairs-unetpp-siran-lo	\textminus 1.23	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-siran/ci95/0
+sbu-fair_pairs-unetpp-siran-hi	+0.08	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-siran/ci95/1
+sbu-fair_pairs-unetpp-rarm	\textminus 0.73	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-rarm/ber_diff
+sbu-fair_pairs-unetpp-rarm-lo	\textminus 1.30	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-rarm/ci95/0
+sbu-fair_pairs-unetpp-rarm-hi	\textminus 0.15	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/unetpp-rarm/ci95/1
+sbu-fair_pairs-ran-siran	\textminus 1.54	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/ran-siran/ber_diff
+sbu-fair_pairs-ran-siran-lo	\textminus 2.25	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/ran-siran/ci95/0
+sbu-fair_pairs-ran-siran-hi	\textminus 0.91	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/ran-siran/ci95/1
+sbu-fair_pairs-ran-rarm	\textminus 1.72	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/ran-rarm/ber_diff
+sbu-fair_pairs-ran-rarm-lo	\textminus 2.31	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/ran-rarm/ci95/0
+sbu-fair_pairs-ran-rarm-hi	\textminus 1.17	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/ran-rarm/ci95/1
+sbu-fair_pairs-siran-rarm	\textminus 0.17	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/siran-rarm/ber_diff
+sbu-fair_pairs-siran-rarm-lo	\textminus 0.88	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/siran-rarm/ci95/0
+sbu-fair_pairs-siran-rarm-hi	+0.56	obj2_sbu_analysis_20261111_115652.json	results/fair_pairs/siran-rarm/ci95/1
+sbunew-p1-unetpp	8.53	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/unetpp
+sbunew-fair-unetpp-mean	9.67	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/mean
+sbunew-fair-unetpp-sd	0.13	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/unetpp/sd
+sbunew-orig-unetpp	9.58	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/original_ber
+sbunew-sel-unetpp-diff	+0.10	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/heldout_minus_original
+sbunew-sel-unetpp-diff-lo	\textminus 0.01	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/ci95/0
+sbunew-sel-unetpp-diff-hi	+0.21	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/unetpp/ci95/1
+sbunew-p1-ran	10.27	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/ran
+sbunew-fair-ran-mean	8.84	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/mean
+sbunew-fair-ran-sd	0.05	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/ran/sd
+sbunew-orig-ran	9.16	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/original_ber
+sbunew-sel-ran-diff	\textminus 0.32	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/heldout_minus_original
+sbunew-sel-ran-diff-lo	\textminus 0.42	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/ci95/0
+sbunew-sel-ran-diff-hi	\textminus 0.22	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/ran/ci95/1
+sbunew-p1-siran	9.69	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/siran
+sbunew-fair-siran-mean	10.32	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/mean
+sbunew-fair-siran-sd	0.26	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/siran/sd
+sbunew-orig-siran	10.25	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/original_ber
+sbunew-sel-siran-diff	+0.08	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/heldout_minus_original
+sbunew-sel-siran-diff-lo	\textminus 0.11	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/ci95/0
+sbunew-sel-siran-diff-hi	+0.26	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/siran/ci95/1
+sbunew-p1-rarm	8.88	sbu_testnew_analysis_20261120_231129.json	results/phase1_in_domain/rarm
+sbunew-fair-rarm-mean	9.55	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/mean
+sbunew-fair-rarm-sd	0.13	sbu_testnew_analysis_20261120_231129.json	results/fair_phase2/rarm/sd
+sbunew-orig-rarm	9.70	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/original_ber
+sbunew-sel-rarm-diff	\textminus 0.14	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/heldout_minus_original
+sbunew-sel-rarm-diff-lo	\textminus 0.26	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/ci95/0
+sbunew-sel-rarm-diff-hi	\textminus 0.02	sbu_testnew_analysis_20261120_231129.json	results/selection_effect/rarm/ci95/1
+sbunew-fair_pairs-unetpp-ran	+0.83	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-ran/ber_diff
+sbunew-fair_pairs-unetpp-ran-lo	+0.32	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-ran/ci95/0
+sbunew-fair_pairs-unetpp-ran-hi	+1.39	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-ran/ci95/1
+sbunew-fair_pairs-unetpp-siran	\textminus 0.65	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-siran/ber_diff
+sbunew-fair_pairs-unetpp-siran-lo	\textminus 1.26	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-siran/ci95/0
+sbunew-fair_pairs-unetpp-siran-hi	\textminus 0.05	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-siran/ci95/1
+sbunew-fair_pairs-unetpp-rarm	+0.12	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-rarm/ber_diff
+sbunew-fair_pairs-unetpp-rarm-lo	\textminus 0.44	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-rarm/ci95/0
+sbunew-fair_pairs-unetpp-rarm-hi	+0.69	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/unetpp-rarm/ci95/1
+sbunew-fair_pairs-ran-siran	\textminus 1.48	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/ran-siran/ber_diff
+sbunew-fair_pairs-ran-siran-lo	\textminus 2.12	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/ran-siran/ci95/0
+sbunew-fair_pairs-ran-siran-hi	\textminus 0.89	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/ran-siran/ci95/1
+sbunew-fair_pairs-ran-rarm	\textminus 0.71	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/ran-rarm/ber_diff
+sbunew-fair_pairs-ran-rarm-lo	\textminus 1.26	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/ran-rarm/ci95/0
+sbunew-fair_pairs-ran-rarm-hi	\textminus 0.16	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/ran-rarm/ci95/1
+sbunew-fair_pairs-siran-rarm	+0.77	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/siran-rarm/ber_diff
+sbunew-fair_pairs-siran-rarm-lo	+0.10	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/siran-rarm/ci95/0
+sbunew-fair_pairs-siran-rarm-hi	+1.48	sbu_testnew_analysis_20261120_231129.json	results/fair_pairs/siran-rarm/ci95/1
+hist-rarm-p1-iou-first	0.502	phase1_history_bifpn_rarm.json	train_iou/0
+hist-rarm-p1-iou-last	0.800	phase1_history_bifpn_rarm.json	train_iou/-1
+hist-rarm-p2-valiou-first	0.811	phase2_history_bifpn_rarm.json	val_iou/0
+hist-rarm-p2-valiou-last	0.846	phase2_history_bifpn_rarm.json	val_iou/-1
+hist-unetpp-p2-valiou-first	0.851	phase2_history_unetplusplus.json	val_iou/0
+hist-unetpp-p2-valiou-max	0.897	phase2_history_unetplusplus.json	val_iou/max
+orig-max-threshold-gain	0.74	obj2_eval_20261102_194216.json	models/ran@iter2/thesis256/native_tau_0.50/ber - test_selected_BIASED/ber (max over models)
+orig-valtest-maxdiff	0.002	obj2_eval_20261102_194216.json	models/rarm/|meta/val_ber - thesis256/native_tau_0.50/ber| (max of 4)
+sbunew-rise-min	2.2	sbu_testnew_analysis_20261120_231129.json	relabelled minus original, phase1/fair-mean/original, min of 12
+sbunew-rise-max	4.0	sbu_testnew_analysis_20261120_231129.json	relabelled minus original, phase1/fair-mean/original, max of 12
+fdr-s0-last-ber	1.68	fdrnet_istd_seed0_20261121_002245.json	selection/last/test_ber
+fdr-s0-last-epoch	10	fdrnet_istd_seed0_20261121_002245.json	selection/last/epoch
+fdr-s0-val-ber	2.32	fdrnet_istd_seed0_20261121_002245.json	selection/val/test_ber
+fdr-s0-val-epoch	4	fdrnet_istd_seed0_20261121_002245.json	selection/val/epoch
+fdr-s0-test-ber	1.62	fdrnet_istd_seed0_20261121_002245.json	selection/test/test_ber
+fdr-s0-test-epoch	9	fdrnet_istd_seed0_20261121_002245.json	selection/test/epoch
+fdr-s1-last-ber	1.67	fdrnet_istd_seed1_20261121_012516.json	selection/last/test_ber
+fdr-s1-last-epoch	10	fdrnet_istd_seed1_20261121_012516.json	selection/last/epoch
+fdr-s1-val-ber	2.63	fdrnet_istd_seed1_20261121_012516.json	selection/val/test_ber
+fdr-s1-val-epoch	3	fdrnet_istd_seed1_20261121_012516.json	selection/val/epoch
+fdr-s1-test-ber	1.61	fdrnet_istd_seed1_20261121_012516.json	selection/test/test_ber
+fdr-s1-test-epoch	9	fdrnet_istd_seed1_20261121_012516.json	selection/test/epoch
+fdr-s2-last-ber	1.57	fdrnet_istd_seed2_20261121_022745.json	selection/last/test_ber
+fdr-s2-last-epoch	10	fdrnet_istd_seed2_20261121_022745.json	selection/last/epoch
+fdr-s2-val-ber	1.57	fdrnet_istd_seed2_20261121_022745.json	selection/val/test_ber
+fdr-s2-val-epoch	10	fdrnet_istd_seed2_20261121_022745.json	selection/val/epoch
+fdr-s2-test-ber	1.57	fdrnet_istd_seed2_20261121_022745.json	selection/test/test_ber
+fdr-s2-test-epoch	10	fdrnet_istd_seed2_20261121_022745.json	selection/test/epoch
+fdr-s3-last-ber	1.80	fdrnet_istd_seed3_20261121_033123.json	selection/last/test_ber
+fdr-s3-last-epoch	10	fdrnet_istd_seed3_20261121_033123.json	selection/last/epoch
+fdr-s3-val-ber	1.80	fdrnet_istd_seed3_20261121_033123.json	selection/val/test_ber
+fdr-s3-val-epoch	10	fdrnet_istd_seed3_20261121_033123.json	selection/val/epoch
+fdr-s3-test-ber	1.73	fdrnet_istd_seed3_20261121_033123.json	selection/test/test_ber
+fdr-s3-test-epoch	9	fdrnet_istd_seed3_20261121_033123.json	selection/test/epoch
+fdr-s4-last-ber	1.92	fdrnet_istd_seed4_20261121_043309.json	selection/last/test_ber
+fdr-s4-last-epoch	10	fdrnet_istd_seed4_20261121_043309.json	selection/last/epoch
+fdr-s4-val-ber	1.92	fdrnet_istd_seed4_20261121_043309.json	selection/val/test_ber
+fdr-s4-val-epoch	10	fdrnet_istd_seed4_20261121_043309.json	selection/val/epoch
+fdr-s4-test-ber	1.78	fdrnet_istd_seed4_20261121_043309.json	selection/test/test_ber
+fdr-s4-test-epoch	8	fdrnet_istd_seed4_20261121_043309.json	selection/test/epoch
+fdr-last-mean	1.73	fdrnet_analysis_20261121_053602.json	summary/last/mean
+fdr-last-sd	0.14	fdrnet_analysis_20261121_053602.json	summary/last/sd
+fdr-last-min	1.57	fdrnet_analysis_20261121_053602.json	summary/last/min
+fdr-last-max	1.92	fdrnet_analysis_20261121_053602.json	summary/last/max
+fdr-last-range	0.36	fdrnet_analysis_20261121_053602.json	summary/last/range
+fdr-val-mean	2.05	fdrnet_analysis_20261121_053602.json	summary/val/mean
+fdr-val-sd	0.43	fdrnet_analysis_20261121_053602.json	summary/val/sd
+fdr-val-min	1.57	fdrnet_analysis_20261121_053602.json	summary/val/min
+fdr-val-max	2.63	fdrnet_analysis_20261121_053602.json	summary/val/max
+fdr-val-range	1.06	fdrnet_analysis_20261121_053602.json	summary/val/range
+fdr-test-mean	1.66	fdrnet_analysis_20261121_053602.json	summary/test/mean
+fdr-test-sd	0.09	fdrnet_analysis_20261121_053602.json	summary/test/sd
+fdr-test-min	1.57	fdrnet_analysis_20261121_053602.json	summary/test/min
+fdr-test-max	1.78	fdrnet_analysis_20261121_053602.json	summary/test/max
+fdr-test-range	0.21	fdrnet_analysis_20261121_053602.json	summary/test/range
+fdr-d-testlast	\textminus 0.066	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_last/mean
+fdr-d-testlast-sd	0.052	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_last/sd
+fdr-d-testlast-min	\textminus 0.144	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_last/min
+fdr-d-testlast-max	+0.000	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_last/max
+fdr-d-testlast-lo	\textminus 0.139	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_last/bootstrap_scenes_ci95/0
+fdr-d-testlast-hi	\textminus 0.012	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_last/bootstrap_scenes_ci95/1
+fdr-d-vallast	+0.321	fdrnet_analysis_20261121_053602.json	mean_diffs/val_minus_last/mean
+fdr-d-vallast-sd	0.454	fdrnet_analysis_20261121_053602.json	mean_diffs/val_minus_last/sd
+fdr-d-vallast-min	+0.000	fdrnet_analysis_20261121_053602.json	mean_diffs/val_minus_last/min
+fdr-d-vallast-max	+0.965	fdrnet_analysis_20261121_053602.json	mean_diffs/val_minus_last/max
+fdr-d-vallast-lo	+0.189	fdrnet_analysis_20261121_053602.json	mean_diffs/val_minus_last/bootstrap_scenes_ci95/0
+fdr-d-vallast-hi	+0.479	fdrnet_analysis_20261121_053602.json	mean_diffs/val_minus_last/bootstrap_scenes_ci95/1
+fdr-d-testval	\textminus 0.387	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_val/mean
+fdr-d-testval-sd	0.448	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_val/sd
+fdr-d-testval-min	\textminus 1.017	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_val/min
+fdr-d-testval-max	+0.000	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_val/max
+fdr-d-testval-lo	\textminus 0.563	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_val/bootstrap_scenes_ci95/0
+fdr-d-testval-hi	\textminus 0.241	fdrnet_analysis_20261121_053602.json	mean_diffs/test_minus_val/bootstrap_scenes_ci95/1
+fdr-s0-d-testlast	\textminus 0.062	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/test_minus_last/ber_diff
+fdr-s0-d-testlast-lo	\textminus 0.206	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/test_minus_last/bootstrap_scenes_ci95/0
+fdr-s0-d-testlast-hi	+0.032	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/test_minus_last/bootstrap_scenes_ci95/1
+fdr-s0-d-vallast	+0.640	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/val_minus_last/ber_diff
+fdr-s0-d-vallast-lo	+0.259	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/val_minus_last/bootstrap_scenes_ci95/0
+fdr-s0-d-vallast-hi	+1.099	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/val_minus_last/bootstrap_scenes_ci95/1
+fdr-s0-d-testval	\textminus 0.702	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/test_minus_val/ber_diff
+fdr-s0-d-testval-lo	\textminus 1.141	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/test_minus_val/bootstrap_scenes_ci95/0
+fdr-s0-d-testval-hi	\textminus 0.348	fdrnet_analysis_20261121_053602.json	per_seed/0/diffs/test_minus_val/bootstrap_scenes_ci95/1
+fdr-s0-val-valber	2.02	fdrnet_analysis_20261121_053602.json	per_seed/0/rules/val/val_ber
+fdr-s1-d-testlast	\textminus 0.052	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/test_minus_last/ber_diff
+fdr-s1-d-testlast-lo	\textminus 0.114	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/test_minus_last/bootstrap_scenes_ci95/0
+fdr-s1-d-testlast-hi	\textminus 0.003	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/test_minus_last/bootstrap_scenes_ci95/1
+fdr-s1-d-vallast	+0.965	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/val_minus_last/ber_diff
+fdr-s1-d-vallast-lo	+0.543	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/val_minus_last/bootstrap_scenes_ci95/0
+fdr-s1-d-vallast-hi	+1.510	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/val_minus_last/bootstrap_scenes_ci95/1
+fdr-s1-d-testval	\textminus 1.017	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/test_minus_val/ber_diff
+fdr-s1-d-testval-lo	\textminus 1.579	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/test_minus_val/bootstrap_scenes_ci95/0
+fdr-s1-d-testval-hi	\textminus 0.585	fdrnet_analysis_20261121_053602.json	per_seed/1/diffs/test_minus_val/bootstrap_scenes_ci95/1
+fdr-s1-val-valber	2.08	fdrnet_analysis_20261121_053602.json	per_seed/1/rules/val/val_ber
+fdr-s2-d-testlast	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/test_minus_last/ber_diff
+fdr-s2-d-testlast-lo	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/test_minus_last/bootstrap_scenes_ci95/0
+fdr-s2-d-testlast-hi	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/test_minus_last/bootstrap_scenes_ci95/1
+fdr-s2-d-vallast	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/val_minus_last/ber_diff
+fdr-s2-d-vallast-lo	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/val_minus_last/bootstrap_scenes_ci95/0
+fdr-s2-d-vallast-hi	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/val_minus_last/bootstrap_scenes_ci95/1
+fdr-s2-d-testval	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/test_minus_val/ber_diff
+fdr-s2-d-testval-lo	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/test_minus_val/bootstrap_scenes_ci95/0
+fdr-s2-d-testval-hi	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/2/diffs/test_minus_val/bootstrap_scenes_ci95/1
+fdr-s2-val-valber	2.38	fdrnet_analysis_20261121_053602.json	per_seed/2/rules/val/val_ber
+fdr-s3-d-testlast	\textminus 0.073	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/test_minus_last/ber_diff
+fdr-s3-d-testlast-lo	\textminus 0.167	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/test_minus_last/bootstrap_scenes_ci95/0
+fdr-s3-d-testlast-hi	+0.002	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/test_minus_last/bootstrap_scenes_ci95/1
+fdr-s3-d-vallast	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/val_minus_last/ber_diff
+fdr-s3-d-vallast-lo	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/val_minus_last/bootstrap_scenes_ci95/0
+fdr-s3-d-vallast-hi	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/val_minus_last/bootstrap_scenes_ci95/1
+fdr-s3-d-testval	\textminus 0.073	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/test_minus_val/ber_diff
+fdr-s3-d-testval-lo	\textminus 0.167	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/test_minus_val/bootstrap_scenes_ci95/0
+fdr-s3-d-testval-hi	+0.002	fdrnet_analysis_20261121_053602.json	per_seed/3/diffs/test_minus_val/bootstrap_scenes_ci95/1
+fdr-s3-val-valber	1.83	fdrnet_analysis_20261121_053602.json	per_seed/3/rules/val/val_ber
+fdr-s4-d-testlast	\textminus 0.144	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/test_minus_last/ber_diff
+fdr-s4-d-testlast-lo	\textminus 0.334	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/test_minus_last/bootstrap_scenes_ci95/0
+fdr-s4-d-testlast-hi	+0.001	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/test_minus_last/bootstrap_scenes_ci95/1
+fdr-s4-d-vallast	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/val_minus_last/ber_diff
+fdr-s4-d-vallast-lo	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/val_minus_last/bootstrap_scenes_ci95/0
+fdr-s4-d-vallast-hi	+0.000	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/val_minus_last/bootstrap_scenes_ci95/1
+fdr-s4-d-testval	\textminus 0.144	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/test_minus_val/ber_diff
+fdr-s4-d-testval-lo	\textminus 0.334	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/test_minus_val/bootstrap_scenes_ci95/0
+fdr-s4-d-testval-hi	+0.001	fdrnet_analysis_20261121_053602.json	per_seed/4/diffs/test_minus_val/bootstrap_scenes_ci95/1
+fdr-s4-val-valber	1.65	fdrnet_analysis_20261121_053602.json	per_seed/4/rules/val/val_ber
+fdr-pub-istd-nocrf	1.53	code/upstream/FDRNet/README.md @ ea7e147 (Results table, L30-33)	ISTD/w/o CRF
+fdr-pub-istd-crf	1.55	code/upstream/FDRNet/README.md @ ea7e147 (Results table, L30-33)	ISTD/w/ CRF
+fdr-ep1-test-mean	4.33	fdrnet_analysis_20261121_053602.json	curves/test_ber/mean/0
+fdr-ep3-test-mean	2.26	fdrnet_analysis_20261121_053602.json	curves/test_ber/mean/2

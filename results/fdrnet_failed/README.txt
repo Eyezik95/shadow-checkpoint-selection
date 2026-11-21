@@ -1,0 +1,1 @@
+Seed 0, first attempt (started 2026-11-20 23:25): MPS out of memory during epoch 10 training under PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.5 (cap 5.92 GiB; allocated 5.74 GiB). JSON holds epochs 1-9 only. Not used in the paper. Rerun from scratch with torch.mps.empty_cache() after each epoch and ratio 0.6.

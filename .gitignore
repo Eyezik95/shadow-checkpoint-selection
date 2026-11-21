@@ -1,0 +1,22 @@
+# environment and caches
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# datasets are not redistributed (SBU, ISTD and the relabelled SBU test set: obtain from their authors)
+data/*
+!data/istd_struct/
+data/istd_struct/*
+!data/istd_struct/split.json
+# trained weights
+checkpoints/
+# FDRNet is cloned at a fixed commit by code/setup_fdrnet.sh
+code/upstream/
+# manuscript sources stay out of the code release
+paper/*
+!paper/audit_verified.md
+!paper/numbers.tsv
+!paper/figures/
+paper/figures/*
+!paper/figures/fig_fdrnet_epochs.pdf
+!paper/figures/fig_fdrnet_epochs.png

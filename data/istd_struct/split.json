@@ -1,0 +1,19 @@
+{
+ "counts": {
+  "train_heldout": 1210,
+  "val_heldout": 120,
+  "test": 540
+ },
+ "val_scenes": [
+  "34",
+  "39",
+  "50",
+  "52",
+  "54",
+  "6",
+  "62",
+  "63",
+  "66"
+ ],
+ "rule": "scene = stem before '-', val_frac 0.10, random.Random(0)"
+}

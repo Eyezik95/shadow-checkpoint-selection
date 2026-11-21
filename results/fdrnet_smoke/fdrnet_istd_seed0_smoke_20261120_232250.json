@@ -1,0 +1,104 @@
+{
+ "experiment": "FDRNet on ISTD, per-epoch held-out-val and test BER (checkpoint-selection study)",
+ "run": "fdrnet_istd_seed0_smoke_20261120_232250",
+ "created_utc": "2026-11-20T22:22:50.775632+00:00",
+ "config": {
+  "seed": 0,
+  "data": "/Users/isaacolaleye/My projects/shadow-tmlr/data/istd_struct",
+  "epochs": 1,
+  "lr": 0.0005,
+  "wd": 0.0001,
+  "lr_step": 1,
+  "lr_gamma": 0.7,
+  "batch": 8,
+  "accum": 4,
+  "size": 512,
+  "th": 0.5,
+  "workers": 0,
+  "max_batches": 6,
+  "out": "/Users/isaacolaleye/My projects/shadow-tmlr/results/fdrnet_smoke",
+  "ckpt_dir": "/Users/isaacolaleye/My projects/shadow-tmlr/checkpoints/fdrnet_smoke",
+  "tag": "smoke",
+  "device": "mps",
+  "upstream": "https://github.com/rayleizhu/FDRNet",
+  "upstream_commit": "ea7e14730896225d12caaf4a4fb8c6ec3ec040ef",
+  "model_kwargs": {
+   "backbone": "efficientnet-b3",
+   "proj_planes": 16,
+   "pred_planes": 32,
+   "normalize": true,
+   "mu_init": 0.5,
+   "reweight_mode": "manual"
+  },
+  "aux_losses": "loss_det + 1.0*L1(f_inv(view2), f_inv) + 0.1*L1(delta_pred, delta), delta~U(-0.3,0.3)",
+  "mu_schedule": "after epoch e: mu = 1 - (e/total_ep)^2 (upstream)",
+  "split": {
+   "counts": {
+    "train_heldout": 1210,
+    "val_heldout": 120,
+    "test": 540
+   },
+   "val_scenes": [
+    "34",
+    "39",
+    "50",
+    "52",
+    "54",
+    "6",
+    "62",
+    "63",
+    "66"
+   ],
+   "rule": "scene = stem before '-', val_frac 0.10, random.Random(0)"
+  },
+  "train_images": 1210,
+  "val_images": 120,
+  "test_images": 540,
+  "ber": "pooled 100*(1-(TP/P+TN/N)/2), native mask resolution",
+  "torch": "2.15.0",
+  "efficientnet_pytorch": "0.7.1"
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "lr_after": 0.00035,
+   "train_loss_mean": [
+    0.19386808667331934,
+    0.03736584280462315,
+    0.23778161033988
+   ],
+   "val_ber": 13.809683337392919,
+   "val_pos_err": 8.436084208619942,
+   "val_neg_err": 19.183282466165885,
+   "test_ber": 12.179552321395825,
+   "test_pos_err": 6.513957279015403,
+   "test_neg_err": 17.84514736377624,
+   "seconds": 43.4
+  }
+ ],
+ "selection": {
+  "last": {
+   "epoch": 1,
+   "test_ber": 12.179552321395825,
+   "val_ber": 13.809683337392919
+  },
+  "val": {
+   "epoch": 1,
+   "test_ber": 12.179552321395825,
+   "val_ber": 13.809683337392919
+  },
+  "test": {
+   "epoch": 1,
+   "test_ber": 12.179552321395825,
+   "val_ber": 13.809683337392919
+  },
+  "inflation_test_minus_val_rule": 0.0
+ },
+ "completed_utc": "2026-11-20T22:23:34.481658+00:00",
+ "total_seconds": 43.7,
+ "checkpoint_sha256": {
+  "last": "f21f39b38b43a006e54b1b5296acc776018a67cc50ef3e37a4c4188e82a47848",
+  "val": "d9d1bf03591028f5b284242c165bb5429ec150f635f01f0360c5d14e74357b53",
+  "test": "c24dbe9678d0b4c1bd9416e74818b409a9667a6b3bb53cc72ab29c80a71b1bdc"
+ }
+}

@@ -1,0 +1,95 @@
+{
+  "experiment": "obj2_rarm_phase2_heldout_validation",
+  "run": "rarm_phase2_heldout_timing_20261103_060007",
+  "thesis_refs": [
+    "Section 3.3.7",
+    "Algorithm 3.2",
+    "Table 4.2"
+  ],
+  "created_utc": "2026-11-03T05:00:08.775911+00:00",
+  "config": {
+    "arch": "rarm",
+    "istd": "data/raw/istd/ISTD_Dataset",
+    "sbu_ckpt": "data/raw/checkpoints/sbu_pretrained_bifpn_rarm.pth",
+    "val_frac": 0.1,
+    "split_seed": 0,
+    "seed": 0,
+    "epochs": 1,
+    "batch_size": 8,
+    "lr": 0.0001,
+    "weight_decay": 0.001,
+    "dropout_p": 0.1,
+    "grad_clip": 1.0,
+    "patience": 10,
+    "overfit_gap": 0.1,
+    "overfit_patience": 5,
+    "out": "results/obj2",
+    "ckpt_dir": "checkpoints/obj2",
+    "tag": "timing",
+    "device": "mps",
+    "sbu_ckpt_sha256": "349ce7debf7eb8c6f63a2d6021e99b0e44f11e074a11a1a8fb47d6b49885e9f7",
+    "base_lr_phase2": 1e-05,
+    "param_group_sizes": [
+      27,
+      45,
+      40,
+      34
+    ],
+    "param_group_lrs": [
+      5.000000000000001e-07,
+      1.0000000000000002e-06,
+      5e-06,
+      1e-05
+    ],
+    "frozen_modules": [
+      "stem"
+    ],
+    "train_images": 1210,
+    "val_images": 120,
+    "val_scenes": [
+      "34",
+      "39",
+      "50",
+      "52",
+      "54",
+      "6",
+      "62",
+      "63",
+      "66"
+    ],
+    "assumptions": {
+      "batch_size": "8 (Section 4.4.1, custom-backbone configuration 'approximately eight')",
+      "dropout_p": "0.1 (script default)"
+    },
+    "torch": "2.15.0"
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 1.121596481455,
+      "train_iou": 0.6390482755868059,
+      "train_ber": 15.128548828252718,
+      "val_loss": 0.24304633475840093,
+      "val_iou": 0.8075179815292358,
+      "val_ber": 9.367262108084805,
+      "val_shadow_err": 14.336697034815804,
+      "val_nonshadow_err": 4.397827181353808,
+      "gap": -0.16846970594242994,
+      "lrs": [
+        5.000000000000001e-07,
+        1.0000000000000002e-06,
+        5e-06,
+        1e-05
+      ],
+      "time_s": 198.3125904169865
+    }
+  ],
+  "best": {
+    "epoch": 1,
+    "val_iou": 0.8075179815292358,
+    "val_ber": 9.367262108084805,
+    "checkpoint": "checkpoints/obj2/rarm_phase2_heldout_timing_20261103_060007.pth",
+    "checkpoint_sha256": "0595aadf383dfbacac25caa0e9ae0ee95685ae77deab76ee4e2c7d96168e23e0"
+  },
+  "completed_utc": "2026-11-03T05:03:29.573852+00:00"
+}

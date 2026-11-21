@@ -1,0 +1,274 @@
+{
+  "experiment": "sbu_testnew_reanalysis",
+  "created_utc": "2026-11-20T22:11:29.801541+00:00",
+  "config": {
+    "counts_files": {
+      "sbu_obj2_counts_unetpp@sbu_phase1_20261120_225818.npz": "8acb54bad439ea8579b4c430987bbce516835ac464c6c910b9386fcbe4207f84",
+      "sbu_obj2_counts_ran@sbu_phase1_20261120_225818.npz": "0cdee51891358fb6a6af08ccdc964f847d656f4fe4c01217e903740060d6e8dc",
+      "sbu_obj2_counts_siran@sbu_phase1_20261120_225818.npz": "79dc34984b1b932ffcd851bb9b592c371227d0392cda7eaab5ea6dad7871b748",
+      "sbu_obj2_counts_rarm@sbu_phase1_20261120_225818.npz": "d0a45ee862839a4f1e105de4579612983d481928d4c569ededdbd37d10c13b9f",
+      "sbu_obj2_counts_unetpp@heldout_seed0_20261120_225818.npz": "54d9fdd9de851ec1c862aebd73f5ddcf25665c9ee63a8a2830c9a5f00814ff2b",
+      "sbu_obj2_counts_unetpp@heldout_seed1_20261120_225818.npz": "ca0c93fc2c443fba208adff76e7b3d5806d4f005d816ea8f94ae7835310d838e",
+      "sbu_obj2_counts_unetpp@heldout_seed2_20261120_225818.npz": "94fbf3c8693cadaca6063ed34f62cf5ede9e0299a8f9bd88e7e3ccceb4485462",
+      "sbu_obj2_counts_unetpp@heldout_seed3_20261120_225818.npz": "e6760af835aaa36a4a3013db713b4b6e6778e68728b5b056fdf89c8481183d02",
+      "sbu_obj2_counts_unetpp@heldout_seed4_20261120_225818.npz": "95d206782c2da91a1c78abe61b894483f242aec68821169f67d1d4ecda752085",
+      "sbu_obj2_counts_ran@heldout_seed0_20261120_225818.npz": "3b4fee800ca37d033e4c0216426492e5a375f499ea66f81a73cb4f248c82f457",
+      "sbu_obj2_counts_ran@heldout_seed1_20261120_225818.npz": "4ad9a86a224a18bb6517e7e1f61ba0a829bce7560f0b5bbd6bc854674d1cc736",
+      "sbu_obj2_counts_ran@heldout_seed2_20261120_225818.npz": "ffab3c11c7411ae3b2045bea8eb8a3b24575c60ace91d6828e19dfcd82acd2f8",
+      "sbu_obj2_counts_ran@heldout_seed3_20261120_225818.npz": "1c03759b91b14be9a9445b4f24bbfade39394da27ef1ce1ea7ecedaf004331ec",
+      "sbu_obj2_counts_ran@heldout_seed4_20261120_225818.npz": "fb899924ffb8de93f0aac8581f1c4d6cdc854cafcb88f45c812169b756657114",
+      "sbu_obj2_counts_siran@heldout_seed0_20261120_225818.npz": "90bfa8a023085c0e42893b00ddcce2c7387145a409ab839b5e746e9048474390",
+      "sbu_obj2_counts_siran@heldout_seed1_20261120_225818.npz": "fe821a3b349efcf325e1f286bd9c4d329b770f3d47113d5d0bd0f163e9e95361",
+      "sbu_obj2_counts_siran@heldout_seed2_20261120_225818.npz": "2dff8db29969a83809cf7b43587be001a40bd9bca92cd5d46f475e1c44ff491d",
+      "sbu_obj2_counts_siran@heldout_seed3_20261120_225818.npz": "9c593a70fe4ecf978e7c3c630b5ee660a359d8012697c88a6e314f498fba4fa3",
+      "sbu_obj2_counts_siran@heldout_seed4_20261120_225818.npz": "92cbe921b3eae69e6b59e8771484fc8764e91c825364b45d43c250bc94a5730c",
+      "sbu_obj2_counts_rarm@heldout_seed0_20261120_225818.npz": "efe2bb7bea193696395a660a1efc5f749e7fc76a3562dcedda51985e33cda88c",
+      "sbu_obj2_counts_rarm@heldout_seed1_20261120_225818.npz": "deddf5335c0d581dad0fc5ddc105e99048cbeef8a58e0fb0658c34c51bd8d8a3",
+      "sbu_obj2_counts_rarm@heldout_seed2_20261120_225818.npz": "9d89d3df24f94181b2fa6eb11d5477549b9a94145c714f0f7f6169f5969abd18",
+      "sbu_obj2_counts_rarm@heldout_seed3_20261120_225818.npz": "910b40cbdd38efb416a6964f300fffda20631f75184b723358dab053adeae55e",
+      "sbu_obj2_counts_rarm@heldout_seed4_20261120_225818.npz": "5dfc8e14ae37fc004d52cc641f22071b697bdb073ce24accee18eba8b864862b",
+      "sbu_obj2_counts_unetpp@original_20261120_225818.npz": "dc6c2c7bbb4245791814dfc7f9f9f07947828b86539c6f55ad971b34d0423b9b",
+      "sbu_obj2_counts_ran@iter2_20261120_225818.npz": "19a24a32c66ee483205e628124754692cf3576f99c0e1df0dc002f66c3491b9a",
+      "sbu_obj2_counts_siran@original_20261120_225818.npz": "25097a7a36d245457e4c8789fb71286fe33ceed179ff7a3a34313bea9b0177fc",
+      "sbu_obj2_counts_rarm@original_20261120_225818.npz": "7cf78214b7b96ac1361ea520a383cd1dce6b531cd120f1eb0f2d60d82bf64a9b"
+    },
+    "original_label_analysis": "/Users/isaacolaleye/My projects/phd_multicue/results/obj2/obj2_sbu_analysis_20261111_115652.json",
+    "protocol": "thesis256",
+    "tau": 0.5,
+    "bootstrap": {
+      "unit": "image",
+      "images": 638,
+      "draws": 10000,
+      "rng_seed": 0
+    },
+    "dataset": "SBU-TestNew (SILT release refined_sbu/relabeled_sbu_test.zip, sha256 64e9b1287413501cad8cf22085a7ca702cc19d9e5737498b871a28c6e50e05d3)"
+  },
+  "results": {
+    "phase1_in_domain": {
+      "unetpp": 8.526534672344804,
+      "ran": 10.26844824328401,
+      "siran": 9.68651146124402,
+      "rarm": 8.882632168114034
+    },
+    "fair_phase2": {
+      "unetpp": {
+        "per_seed_ber": [
+          9.683919567167731,
+          9.619273654605136,
+          9.572021314486328,
+          9.899563020423237,
+          9.59345131046322
+        ],
+        "mean": 9.67364577342913,
+        "sd": 0.13309692255871117
+      },
+      "ran": {
+        "per_seed_ber": [
+          8.909239082854773,
+          8.858759908287846,
+          8.853060514191512,
+          8.780682410893698,
+          8.798978610242672
+        ],
+        "mean": 8.8401441052941,
+        "sd": 0.051278135564324354
+      },
+      "siran": {
+        "per_seed_ber": [
+          10.51790185246902,
+          10.102696412047909,
+          10.675669055123455,
+          10.136785679678393,
+          10.174005800803497
+        ],
+        "mean": 10.321411760024455,
+        "sd": 0.25872683343539987
+      },
+      "rarm": {
+        "per_seed_ber": [
+          9.51593724921227,
+          9.574980454147585,
+          9.383204184067147,
+          9.737584411819114,
+          9.55719387415315
+        ],
+        "mean": 9.553780034679853,
+        "sd": 0.12725305336739745
+      }
+    },
+    "fair_pairs": {
+      "unetpp-ran": {
+        "ber_diff": 0.83350166813503,
+        "ci95": [
+          0.3220322047307304,
+          1.3859523210756828
+        ]
+      },
+      "unetpp-siran": {
+        "ber_diff": -0.647765986595326,
+        "ci95": [
+          -1.26400650073683,
+          -0.04505348010552188
+        ]
+      },
+      "unetpp-rarm": {
+        "ber_diff": 0.11986573874927586,
+        "ci95": [
+          -0.441165264630053,
+          0.6905712049298949
+        ]
+      },
+      "ran-siran": {
+        "ber_diff": -1.481267654730356,
+        "ci95": [
+          -2.123844300922427,
+          -0.8883538986833103
+        ]
+      },
+      "ran-rarm": {
+        "ber_diff": -0.7136359293857542,
+        "ci95": [
+          -1.2640746072314974,
+          -0.1645195843280208
+        ]
+      },
+      "siran-rarm": {
+        "ber_diff": 0.7676317253446019,
+        "ci95": [
+          0.10310474136543728,
+          1.4812946370610345
+        ]
+      }
+    },
+    "selection_effect": {
+      "unetpp": {
+        "original_ber": 9.575582869393134,
+        "heldout_mean_ber": 9.67364577342913,
+        "heldout_minus_original": 0.09806290403599505,
+        "ci95": [
+          -0.011284474759985173,
+          0.2146268427975934
+        ],
+        "seeds_worse_than_original": 4
+      },
+      "ran": {
+        "original_ber": 9.159501454308796,
+        "heldout_mean_ber": 8.8401441052941,
+        "heldout_minus_original": -0.31935734901469637,
+        "ci95": [
+          -0.4154040222202972,
+          -0.22392870666812761
+        ],
+        "seeds_worse_than_original": 0
+      },
+      "siran": {
+        "original_ber": 10.246107739613972,
+        "heldout_mean_ber": 10.321411760024455,
+        "heldout_minus_original": 0.07530402041048312,
+        "ci95": [
+          -0.11231817648238258,
+          0.2647005580173649
+        ],
+        "seeds_worse_than_original": 2
+      },
+      "rarm": {
+        "original_ber": 9.696070576334055,
+        "heldout_mean_ber": 9.553780034679853,
+        "heldout_minus_original": -0.14229054165420152,
+        "ci95": [
+          -0.26496420857472686,
+          -0.024160567716268413
+        ],
+        "seeds_worse_than_original": 1
+      }
+    },
+    "side_by_side": {
+      "unetpp": {
+        "phase1_ber": {
+          "original_labels": 4.73683205163445,
+          "relabelled": 8.526534672344804
+        },
+        "fair_mean_ber": {
+          "original_labels": 6.608398470880083,
+          "relabelled": 9.67364577342913
+        },
+        "selection_effect": {
+          "original_labels": 0.024647923619769863,
+          "relabelled": 0.09806290403599505
+        }
+      },
+      "ran": {
+        "phase1_ber": {
+          "original_labels": 6.28034039042092,
+          "relabelled": 10.26844824328401
+        },
+        "fair_mean_ber": {
+          "original_labels": 5.623822943284604,
+          "relabelled": 8.8401441052941
+        },
+        "selection_effect": {
+          "original_labels": -0.16835502510767064,
+          "relabelled": -0.31935734901469637
+        }
+      },
+      "siran": {
+        "phase1_ber": {
+          "original_labels": 5.792911952069121,
+          "relabelled": 9.68651146124402
+        },
+        "fair_mean_ber": {
+          "original_labels": 7.16534721534465,
+          "relabelled": 10.321411760024455
+        },
+        "selection_effect": {
+          "original_labels": -0.08897683130320466,
+          "relabelled": 0.07530402041048312
+        }
+      },
+      "rarm": {
+        "phase1_ber": {
+          "original_labels": 5.759760511035921,
+          "relabelled": 8.882632168114034
+        },
+        "fair_mean_ber": {
+          "original_labels": 7.340234590345301,
+          "relabelled": 9.553780034679853
+        },
+        "selection_effect": {
+          "original_labels": 0.09166415499487801,
+          "relabelled": -0.14229054165420152
+        }
+      }
+    },
+    "ranking_best_first": {
+      "phase1": {
+        "original_labels": [
+          "unetpp",
+          "rarm",
+          "siran",
+          "ran"
+        ],
+        "relabelled": [
+          "unetpp",
+          "rarm",
+          "siran",
+          "ran"
+        ]
+      },
+      "fair": {
+        "original_labels": [
+          "ran",
+          "unetpp",
+          "siran",
+          "rarm"
+        ],
+        "relabelled": [
+          "ran",
+          "rarm",
+          "unetpp",
+          "siran"
+        ]
+      }
+    }
+  }
+}

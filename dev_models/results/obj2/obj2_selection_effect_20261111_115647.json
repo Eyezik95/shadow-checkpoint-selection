@@ -1,0 +1,241 @@
+{
+  "experiment": "obj2_selection_effect_all_models",
+  "thesis_refs": [
+    "Section 4.4.3",
+    "Section 4.4.4",
+    "Table 4.4",
+    "Eq 3.13"
+  ],
+  "created_utc": "2026-11-11T10:56:47.740235+00:00",
+  "config": {
+    "heldout_counts": {
+      "siran": [
+        "results/obj2/obj2_counts_siran@heldout_20261102_212753.npz",
+        "results/obj2/obj2_counts_siran@heldout_seed1_20261103_024305.npz",
+        "results/obj2/obj2_counts_siran@heldout_seed2_20261103_024305.npz",
+        "results/obj2/obj2_counts_siran@heldout_seed3_20261111_114930.npz",
+        "results/obj2/obj2_counts_siran@heldout_seed4_20261111_114930.npz"
+      ],
+      "ran": [
+        "results/obj2/obj2_counts_ran@heldout_seed0_20261103_190019.npz",
+        "results/obj2/obj2_counts_ran@heldout_seed1_20261103_190019.npz",
+        "results/obj2/obj2_counts_ran@heldout_seed2_20261103_190019.npz",
+        "results/obj2/obj2_counts_ran@heldout_seed3_20261111_114930.npz",
+        "results/obj2/obj2_counts_ran@heldout_seed4_20261111_114930.npz"
+      ],
+      "rarm": [
+        "results/obj2/obj2_counts_rarm@heldout_seed0_20261103_190019.npz",
+        "results/obj2/obj2_counts_rarm@heldout_seed1_20261103_190019.npz",
+        "results/obj2/obj2_counts_rarm@heldout_seed2_20261103_202904.npz",
+        "results/obj2/obj2_counts_rarm@heldout_seed3_20261111_114930.npz",
+        "results/obj2/obj2_counts_rarm@heldout_seed4_20261111_114930.npz"
+      ],
+      "unetpp": [
+        "results/obj2/obj2_counts_unetpp@heldout_seed0_20261103_230632.npz",
+        "results/obj2/obj2_counts_unetpp@heldout_seed1_20261103_230632.npz",
+        "results/obj2/obj2_counts_unetpp@heldout_seed2_20261103_230632.npz",
+        "results/obj2/obj2_counts_unetpp@heldout_seed3_20261111_114930.npz",
+        "results/obj2/obj2_counts_unetpp@heldout_seed4_20261111_114930.npz"
+      ]
+    },
+    "original_counts": {
+      "siran": "results/obj2/obj2_counts_siran@original_20261102_212753.npz",
+      "ran": "results/obj2/obj2_counts_ran@iter2_20261102_194216.npz",
+      "rarm": "results/obj2/obj2_counts_rarm_20261102_194216.npz",
+      "unetpp": "results/obj2/obj2_counts_unetpp_20261103_202935.npz"
+    },
+    "sha256": {
+      "results/obj2/obj2_counts_siran@heldout_20261102_212753.npz": "b2d5f2ad5b9d91d368dcf9cdfba98a054ba346e2a52f8fe7bf1b0d920cb866b5",
+      "results/obj2/obj2_counts_siran@heldout_seed1_20261103_024305.npz": "2d92cf69b44243a4d941e7681b62a5df024252adfabba23e23b5bce9cc76cbc1",
+      "results/obj2/obj2_counts_siran@heldout_seed2_20261103_024305.npz": "693169671d72fcc2687b3bd7242bef8c65c069be4f8cdc9b39df0039b14af7bf",
+      "results/obj2/obj2_counts_siran@heldout_seed3_20261111_114930.npz": "96932adeb267a5996a526fb3b402748760dcf95434ee5318e86becf4bebc14c5",
+      "results/obj2/obj2_counts_siran@heldout_seed4_20261111_114930.npz": "e6942c14aa7ab8c94e688451d5f0facf9eaaede3120498a689dd08327108fc8b",
+      "results/obj2/obj2_counts_ran@heldout_seed0_20261103_190019.npz": "be5381918be504b5f7a95cce0c6933389d9f315f921ac3fab81e1b29536acf11",
+      "results/obj2/obj2_counts_ran@heldout_seed1_20261103_190019.npz": "6e10317fe116c4c5235ab976ec816b6090997d123a54c3aef77a7f3dccfde8c0",
+      "results/obj2/obj2_counts_ran@heldout_seed2_20261103_190019.npz": "094053b28f2a6f0091a788a84578f45c1741c28546dc09986b6aa28a1e1bd492",
+      "results/obj2/obj2_counts_ran@heldout_seed3_20261111_114930.npz": "6733cc2e0075d87b2d246933d696b4ac48f33e34360854292c6c9793b86ff74a",
+      "results/obj2/obj2_counts_ran@heldout_seed4_20261111_114930.npz": "cc8dd765f1372e9d034f093394720c6f41726aa7a48335c381b89114838eb214",
+      "results/obj2/obj2_counts_rarm@heldout_seed0_20261103_190019.npz": "695ce0e5cc9d6774b41a96956f4c088010e310421195077175fed793251bfaf9",
+      "results/obj2/obj2_counts_rarm@heldout_seed1_20261103_190019.npz": "848931e6510d84e204b1cfebd4974409b2562d4e2587bfbc714dd0957de959c1",
+      "results/obj2/obj2_counts_rarm@heldout_seed2_20261103_202904.npz": "e17ec2baa291c7e3100515d91e4d142287e6b34cd45aeb5704a4801a1ff08f16",
+      "results/obj2/obj2_counts_rarm@heldout_seed3_20261111_114930.npz": "de0e462b4be44d3281e20448b1af052350b2006b7820ac139b21772e60077e38",
+      "results/obj2/obj2_counts_rarm@heldout_seed4_20261111_114930.npz": "51cb1525ae327cccf44d52c7dc48d0d8152e0ce1b48adf99322c2d5a0f066baa",
+      "results/obj2/obj2_counts_unetpp@heldout_seed0_20261103_230632.npz": "c613ab1a82d8d2dd291d2c36ded908aca85605d87a049eacf91e9765be71d5ca",
+      "results/obj2/obj2_counts_unetpp@heldout_seed1_20261103_230632.npz": "90077a47cbfdc3739259d726a41a25da807cddfa243af0aff0dc7d9c26ffc355",
+      "results/obj2/obj2_counts_unetpp@heldout_seed2_20261103_230632.npz": "349c7d68c4ef0c4946ca92ff66b188e9156ab4e0fbc97cc26280118304327e6b",
+      "results/obj2/obj2_counts_unetpp@heldout_seed3_20261111_114930.npz": "c4bb638397fe2780b7141b0c872edac12798dc751afab411ef1107b178ec8d14",
+      "results/obj2/obj2_counts_unetpp@heldout_seed4_20261111_114930.npz": "8bffaaec4e1a163dbf6b00bd7e9605008cc6e9649da815dd80c41de50f4c8493",
+      "results/obj2/obj2_counts_siran@original_20261102_212753.npz": "404fa86b93f2fd8ab0163b2df09f4693fcbb29682a856c35e709c3a1a6e6c007",
+      "results/obj2/obj2_counts_ran@iter2_20261102_194216.npz": "903437553b1fc9d7ed9abbc0eeb6fad97b217cf78b0307bc5b765498cf74bd59",
+      "results/obj2/obj2_counts_rarm_20261102_194216.npz": "ad79eaf0f1957ed4b0bb9a6a3736d7d5e8a40231c4bab13d0afe363833448d0d",
+      "results/obj2/obj2_counts_unetpp_20261103_202935.npz": "dc9bd562095f3ecf0c6650ce8aea531d719e1da0c7f1e2c906d2df3db1c34f21"
+    },
+    "tau": 0.5,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "bootstrap": {
+      "unit": "test scene",
+      "scenes": 46,
+      "draws": 10000,
+      "rng_seed": 0,
+      "ci": "percentile 2.5/97.5",
+      "statistic": "held-out seed-mean BER - original BER"
+    },
+    "sd": "sample SD over seeds (ddof 1)"
+  },
+  "results": {
+    "thesis256": {
+      "siran": {
+        "original_test_selected_ber": 2.631956278048607,
+        "heldout_seed_ber": [
+          2.7384937417348207,
+          3.4363969045319127,
+          2.8991185603576906,
+          2.897326528204765,
+          3.1485631884437413
+        ],
+        "heldout_mean_ber": 3.0239797846545864,
+        "heldout_sd_ber": 0.2732867352579753,
+        "heldout_minus_original": 0.3920235066059794,
+        "bootstrap_scenes_ci95": [
+          0.09116976590722636,
+          0.849313877454873
+        ],
+        "seeds_worse_than_original": 5
+      },
+      "ran": {
+        "original_test_selected_ber": 3.018100827149904,
+        "heldout_seed_ber": [
+          3.063397092035176,
+          2.96458004985371,
+          2.805874189541831,
+          2.954784558374862,
+          2.9584513734843996
+        ],
+        "heldout_mean_ber": 2.949417452657996,
+        "heldout_sd_ber": 0.09210910443813608,
+        "heldout_minus_original": -0.0686833744919082,
+        "bootstrap_scenes_ci95": [
+          -0.23440449139767838,
+          0.2138680477065314
+        ],
+        "seeds_worse_than_original": 1
+      },
+      "rarm": {
+        "original_test_selected_ber": 3.5417677128558065,
+        "heldout_seed_ber": [
+          3.1904938786858335,
+          3.226483393795234,
+          3.230318004846763,
+          3.2707289566672917,
+          3.2180421433263398
+        ],
+        "heldout_mean_ber": 3.2272132754642926,
+        "heldout_sd_ber": 0.02887996860635395,
+        "heldout_minus_original": -0.3145544373915139,
+        "bootstrap_scenes_ci95": [
+          -0.6246289373311746,
+          -0.07544992425538252
+        ],
+        "seeds_worse_than_original": 0
+      },
+      "unetpp": {
+        "original_test_selected_ber": 2.4893413012614936,
+        "heldout_seed_ber": [
+          2.662861816942681,
+          2.618770957370445,
+          2.6361695549239395,
+          2.687111899340463,
+          2.630829421679773
+        ],
+        "heldout_mean_ber": 2.6471487300514602,
+        "heldout_sd_ber": 0.02755048136520885,
+        "heldout_minus_original": 0.15780742878996667,
+        "bootstrap_scenes_ci95": [
+          0.015983319931396102,
+          0.37165187374008657
+        ],
+        "seeds_worse_than_original": 5
+      }
+    },
+    "native": {
+      "siran": {
+        "original_test_selected_ber": 2.6350532639786595,
+        "heldout_seed_ber": [
+          2.7407751684013744,
+          3.4400533311124866,
+          2.9008807023340557,
+          2.8985378654142373,
+          3.152114489534853
+        ],
+        "heldout_mean_ber": 3.0264723113594014,
+        "heldout_sd_ber": 0.2741343416319472,
+        "heldout_minus_original": 0.39141904738074196,
+        "bootstrap_scenes_ci95": [
+          0.0905900761311839,
+          0.8488884672476328
+        ],
+        "seeds_worse_than_original": 5
+      },
+      "ran": {
+        "original_test_selected_ber": 3.0243681355712826,
+        "heldout_seed_ber": [
+          3.070629229693813,
+          2.970192424622018,
+          2.813611409833223,
+          2.9635127612131424,
+          2.9671211519707383
+        ],
+        "heldout_mean_ber": 2.957013395466587,
+        "heldout_sd_ber": 0.09191134665653965,
+        "heldout_minus_original": -0.06735474010469567,
+        "bootstrap_scenes_ci95": [
+          -0.23248171355408803,
+          0.2159915056113489
+        ],
+        "seeds_worse_than_original": 1
+      },
+      "rarm": {
+        "original_test_selected_ber": 3.542258524447851,
+        "heldout_seed_ber": [
+          3.1887551981455937,
+          3.2258190300370937,
+          3.2281318792991005,
+          3.269511641868969,
+          3.217332864971535
+        ],
+        "heldout_mean_ber": 3.225910122864458,
+        "heldout_sd_ber": 0.028983162107010508,
+        "heldout_minus_original": -0.31634840158339284,
+        "bootstrap_scenes_ci95": [
+          -0.6269446134194815,
+          -0.07675526045052672
+        ],
+        "seeds_worse_than_original": 0
+      },
+      "unetpp": {
+        "original_test_selected_ber": 2.4790040441873407,
+        "heldout_seed_ber": [
+          2.655812580536208,
+          2.6104300300514414,
+          2.6291856978487926,
+          2.679347207170336,
+          2.623821074963363
+        ],
+        "heldout_mean_ber": 2.639719318114028,
+        "heldout_sd_ber": 0.027617640978327713,
+        "heldout_minus_original": 0.16071527392668727,
+        "bootstrap_scenes_ci95": [
+          0.01809727935306478,
+          0.37587171571800704
+        ],
+        "seeds_worse_than_original": 5
+      }
+    }
+  }
+}

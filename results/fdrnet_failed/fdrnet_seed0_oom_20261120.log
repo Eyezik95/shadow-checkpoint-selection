@@ -1,0 +1,80 @@
+Loaded pretrained weights for efficientnet-b3
+fdrnet_istd_seed0_20261120_232523: train 1210, val 120, test 540; device mps
+  batch 25/151  loss_det 0.1418  mps 5.6 GiB  62s
+  batch 50/151  loss_det 0.1391  mps 5.6 GiB  122s
+  batch 75/151  loss_det 0.1391  mps 5.6 GiB  184s
+  batch 100/151  loss_det 0.1514  mps 5.6 GiB  243s
+  batch 125/151  loss_det 0.1221  mps 5.6 GiB  303s
+  batch 150/151  loss_det 0.1235  mps 5.6 GiB  364s
+epoch  1/10: val BER 9.15  test BER 4.19  (392s)
+  batch 25/151  loss_det 0.1139  mps 5.7 GiB  58s
+  batch 50/151  loss_det 0.1067  mps 5.7 GiB  116s
+  batch 75/151  loss_det 0.0887  mps 5.7 GiB  173s
+  batch 100/151  loss_det 0.1221  mps 5.7 GiB  232s
+  batch 125/151  loss_det 0.0983  mps 5.7 GiB  291s
+  batch 150/151  loss_det 0.1189  mps 5.7 GiB  351s
+epoch  2/10: val BER 4.20  test BER 2.23  (379s)
+  batch 25/151  loss_det 0.0791  mps 5.8 GiB  58s
+  batch 50/151  loss_det 0.0935  mps 5.8 GiB  117s
+  batch 75/151  loss_det 0.1012  mps 5.8 GiB  175s
+  batch 100/151  loss_det 0.1135  mps 5.8 GiB  234s
+  batch 125/151  loss_det 0.0765  mps 5.8 GiB  292s
+  batch 150/151  loss_det 0.1140  mps 5.8 GiB  349s
+epoch  3/10: val BER 2.22  test BER 2.10  (378s)
+  batch 25/151  loss_det 0.0925  mps 5.8 GiB  59s
+  batch 50/151  loss_det 0.0936  mps 5.8 GiB  117s
+  batch 75/151  loss_det 0.0806  mps 5.8 GiB  175s
+  batch 100/151  loss_det 0.1037  mps 5.8 GiB  233s
+  batch 125/151  loss_det 0.0873  mps 5.8 GiB  290s
+  batch 150/151  loss_det 0.0702  mps 5.8 GiB  348s
+epoch  4/10: val BER 2.02  test BER 2.32  (376s)
+  batch 25/151  loss_det 0.0967  mps 5.8 GiB  58s
+  batch 50/151  loss_det 0.1170  mps 5.8 GiB  115s
+  batch 75/151  loss_det 0.0985  mps 5.8 GiB  173s
+  batch 100/151  loss_det 0.0969  mps 5.8 GiB  231s
+  batch 125/151  loss_det 0.0990  mps 5.8 GiB  289s
+  batch 150/151  loss_det 0.0756  mps 5.8 GiB  346s
+epoch  5/10: val BER 2.65  test BER 1.90  (374s)
+  batch 25/151  loss_det 0.0998  mps 5.8 GiB  58s
+  batch 50/151  loss_det 0.0741  mps 5.8 GiB  116s
+  batch 75/151  loss_det 0.0866  mps 5.8 GiB  174s
+  batch 100/151  loss_det 0.0699  mps 5.8 GiB  232s
+  batch 125/151  loss_det 0.0858  mps 5.8 GiB  290s
+  batch 150/151  loss_det 0.1107  mps 5.8 GiB  348s
+epoch  6/10: val BER 2.44  test BER 1.77  (377s)
+  batch 25/151  loss_det 0.0810  mps 5.8 GiB  57s
+  batch 50/151  loss_det 0.0463  mps 5.8 GiB  118s
+  batch 75/151  loss_det 0.1129  mps 5.8 GiB  177s
+  batch 100/151  loss_det 0.0832  mps 5.8 GiB  235s
+  batch 125/151  loss_det 0.1087  mps 5.8 GiB  293s
+  batch 150/151  loss_det 0.0515  mps 5.8 GiB  351s
+epoch  7/10: val BER 2.47  test BER 1.72  (380s)
+  batch 25/151  loss_det 0.0701  mps 5.8 GiB  58s
+  batch 50/151  loss_det 0.0752  mps 5.8 GiB  116s
+  batch 75/151  loss_det 0.0686  mps 5.8 GiB  174s
+  batch 100/151  loss_det 0.0598  mps 5.8 GiB  232s
+  batch 125/151  loss_det 0.0623  mps 5.8 GiB  290s
+  batch 150/151  loss_det 0.0953  mps 5.8 GiB  348s
+epoch  8/10: val BER 2.34  test BER 1.67  (376s)
+  batch 25/151  loss_det 0.0644  mps 5.8 GiB  58s
+  batch 50/151  loss_det 0.0734  mps 5.8 GiB  115s
+  batch 75/151  loss_det 0.0692  mps 5.8 GiB  172s
+  batch 100/151  loss_det 0.0756  mps 5.8 GiB  230s
+  batch 125/151  loss_det 0.0887  mps 5.8 GiB  287s
+  batch 150/151  loss_det 0.0798  mps 5.8 GiB  344s
+epoch  9/10: val BER 2.84  test BER 1.62  (372s)
+Traceback (most recent call last):
+  File "/Users/isaacolaleye/My projects/shadow-tmlr/code/fdrnet_dual_select.py", line 230, in <module>
+    main()
+    ~~~~^^
+  File "/Users/isaacolaleye/My projects/shadow-tmlr/code/fdrnet_dual_select.py", line 180, in main
+    _, f_inv_view2, delta_pred = model(view2)
+                                 ~~~~~^^^^^^^
+  File "/Users/isaacolaleye/My projects/phd_multicue/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/isaacolaleye/My projects/phd_multicue/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/isaacolaleye/My projects/shadow-tmlr/code/upstream/FDRNet/networks/fdrnet.py", line 221, in forward
+    cat_feature = torch.cat(proj_features, dim=1)
+RuntimeError: MPS backend out of memory (MPS allocated: 5.74 GiB, other allocations: 99.14 MiB, max allowed: 5.92 GiB). Tried to allocate 104.00 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

@@ -1,0 +1,8 @@
+QUEUE seed 0 start 2026-11-20 23:25:21
+QUEUE seed 0 exit 1 2026-11-21 00:22:12
+QUEUE STOP: seed 0 failed
+  File "/Users/isaacolaleye/My projects/phd_multicue/.venv/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/isaacolaleye/My projects/shadow-tmlr/code/upstream/FDRNet/networks/fdrnet.py", line 221, in forward
+    cat_feature = torch.cat(proj_features, dim=1)
+RuntimeError: MPS backend out of memory (MPS allocated: 5.74 GiB, other allocations: 99.14 MiB, max allowed: 5.92 GiB). Tried to allocate 104.00 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

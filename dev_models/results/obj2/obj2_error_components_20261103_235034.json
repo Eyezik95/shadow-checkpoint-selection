@@ -1,0 +1,250 @@
+{
+  "experiment": "obj2_error_components_siran_vs_ran",
+  "thesis_refs": [
+    "Section 4.4.6",
+    "Section 4.4.8",
+    "Eq 3.13"
+  ],
+  "created_utc": "2026-11-03T22:50:34.409251+00:00",
+  "config": {
+    "counts": {
+      "original": {
+        "siran": [
+          "results/obj2/obj2_counts_siran@original_20261102_212753.npz"
+        ],
+        "ran": [
+          "results/obj2/obj2_counts_ran@iter2_20261102_194216.npz"
+        ]
+      },
+      "heldout": {
+        "siran": [
+          "results/obj2/obj2_counts_siran@heldout_20261102_212753.npz",
+          "results/obj2/obj2_counts_siran@heldout_seed1_20261103_024305.npz",
+          "results/obj2/obj2_counts_siran@heldout_seed2_20261103_024305.npz"
+        ],
+        "ran": [
+          "results/obj2/obj2_counts_ran@heldout_seed0_20261103_190019.npz",
+          "results/obj2/obj2_counts_ran@heldout_seed1_20261103_190019.npz",
+          "results/obj2/obj2_counts_ran@heldout_seed2_20261103_190019.npz"
+        ]
+      }
+    },
+    "sha256": {
+      "results/obj2/obj2_counts_siran@original_20261102_212753.npz": "404fa86b93f2fd8ab0163b2df09f4693fcbb29682a856c35e709c3a1a6e6c007",
+      "results/obj2/obj2_counts_ran@iter2_20261102_194216.npz": "903437553b1fc9d7ed9abbc0eeb6fad97b217cf78b0307bc5b765498cf74bd59",
+      "results/obj2/obj2_counts_siran@heldout_20261102_212753.npz": "b2d5f2ad5b9d91d368dcf9cdfba98a054ba346e2a52f8fe7bf1b0d920cb866b5",
+      "results/obj2/obj2_counts_siran@heldout_seed1_20261103_024305.npz": "2d92cf69b44243a4d941e7681b62a5df024252adfabba23e23b5bce9cc76cbc1",
+      "results/obj2/obj2_counts_siran@heldout_seed2_20261103_024305.npz": "693169671d72fcc2687b3bd7242bef8c65c069be4f8cdc9b39df0039b14af7bf",
+      "results/obj2/obj2_counts_ran@heldout_seed0_20261103_190019.npz": "be5381918be504b5f7a95cce0c6933389d9f315f921ac3fab81e1b29536acf11",
+      "results/obj2/obj2_counts_ran@heldout_seed1_20261103_190019.npz": "6e10317fe116c4c5235ab976ec816b6090997d123a54c3aef77a7f3dccfde8c0",
+      "results/obj2/obj2_counts_ran@heldout_seed2_20261103_190019.npz": "094053b28f2a6f0091a788a84578f45c1741c28546dc09986b6aa28a1e1bd492"
+    },
+    "protocol": "thesis256",
+    "tau": 0.5,
+    "band_widths_px": [
+      2,
+      5,
+      10
+    ],
+    "bootstrap": {
+      "unit": "test scene",
+      "scenes": 46,
+      "draws": 10000,
+      "rng_seed": 0
+    }
+  },
+  "results": {
+    "original": {
+      "seeds": 1,
+      "mean": {
+        "siran": {
+          "shadow_err": 4.076010983368231,
+          "nonshadow_err": 1.1879015727289817,
+          "band2_err_rate": 11.57456084232232,
+          "band2_share_of_errors": 42.92532386593197,
+          "band5_err_rate": 7.924044116897546,
+          "band5_share_of_errors": 53.46027215913487,
+          "band10_err_rate": 5.822201702831571,
+          "band10_share_of_errors": 64.0461106001083
+        },
+        "ran": {
+          "shadow_err": 5.288669832865604,
+          "nonshadow_err": 0.7475318214342043,
+          "band2_err_rate": 12.391867910568156,
+          "band2_share_of_errors": 51.59343363668825,
+          "band5_err_rate": 8.282111658155204,
+          "band5_share_of_errors": 62.72980823980158,
+          "band10_err_rate": 5.894705517916991,
+          "band10_share_of_errors": 72.79745992530327
+        }
+      },
+      "sd": {
+        "siran": null,
+        "ran": null
+      },
+      "siran_minus_ran": {
+        "shadow_err": {
+          "diff": -1.2126588494973722,
+          "bootstrap_scenes_ci95": [
+            -2.8121378796030263,
+            0.4069424972025775
+          ]
+        },
+        "nonshadow_err": {
+          "diff": 0.4403697512947774,
+          "bootstrap_scenes_ci95": [
+            0.0287760211676993,
+            1.04640432957694
+          ]
+        },
+        "band2_err_rate": {
+          "diff": -0.8173070682458352,
+          "bootstrap_scenes_ci95": [
+            -1.3736884398386304,
+            -0.31943015256848295
+          ]
+        },
+        "band2_share_of_errors": {
+          "diff": -8.668109770756281,
+          "bootstrap_scenes_ci95": [
+            -13.604662222742672,
+            1.9915771080419058
+          ]
+        },
+        "band5_err_rate": {
+          "diff": -0.3580675412576575,
+          "bootstrap_scenes_ci95": [
+            -0.8645696341614203,
+            0.1655665115153394
+          ]
+        },
+        "band5_share_of_errors": {
+          "diff": -9.269536080666711,
+          "bootstrap_scenes_ci95": [
+            -15.122807301669537,
+            2.848199753778046
+          ]
+        },
+        "band10_err_rate": {
+          "diff": -0.07250381508541981,
+          "bootstrap_scenes_ci95": [
+            -0.5761630056771175,
+            0.5282189962608659
+          ]
+        },
+        "band10_share_of_errors": {
+          "diff": -8.751349325194965,
+          "bootstrap_scenes_ci95": [
+            -16.02625189436282,
+            3.702938924687513
+          ]
+        }
+      }
+    },
+    "heldout": {
+      "seeds": 3,
+      "mean": {
+        "siran": {
+          "shadow_err": 4.96964397664891,
+          "nonshadow_err": 1.0796954944340402,
+          "band2_err_rate": 12.049198516763063,
+          "band2_share_of_errors": 43.52491753979414,
+          "band5_err_rate": 8.335253084343327,
+          "band5_share_of_errors": 54.748804725466584,
+          "band10_err_rate": 6.136806889680629,
+          "band10_share_of_errors": 65.69806004199758
+        },
+        "ran": {
+          "shadow_err": 5.11415098208943,
+          "nonshadow_err": 0.7750832388643811,
+          "band2_err_rate": 12.271983844857225,
+          "band2_share_of_errors": 51.24716905566049,
+          "band5_err_rate": 8.2752566180443,
+          "band5_share_of_errors": 62.86484156608424,
+          "band10_err_rate": 5.945625420815957,
+          "band10_share_of_errors": 73.64358765382632
+        }
+      },
+      "sd": {
+        "siran": {
+          "shadow_err": 0.6705887819296796,
+          "nonshadow_err": 0.06220107994708685,
+          "band2_err_rate": 0.396959294677705,
+          "band2_share_of_errors": 2.5153219730759115,
+          "band5_err_rate": 0.3379493483923792,
+          "band5_share_of_errors": 2.7547993378554607,
+          "band10_err_rate": 0.2876651951791116,
+          "band10_share_of_errors": 2.8881026978561697
+        },
+        "ran": {
+          "shadow_err": 0.301139884771959,
+          "nonshadow_err": 0.049841130574066916,
+          "band2_err_rate": 0.21888208469106998,
+          "band2_share_of_errors": 0.5362566416998078,
+          "band5_err_rate": 0.17600593830382777,
+          "band5_share_of_errors": 0.9242118808422123,
+          "band10_err_rate": 0.15132069721868144,
+          "band10_share_of_errors": 1.3579625634775316
+        }
+      },
+      "siran_minus_ran": {
+        "shadow_err": {
+          "diff": -0.14450700544051998,
+          "bootstrap_scenes_ci95": [
+            -1.8224590704290722,
+            1.8244360704092841
+          ]
+        },
+        "nonshadow_err": {
+          "diff": 0.3046122555696591,
+          "bootstrap_scenes_ci95": [
+            0.02283586789371902,
+            0.646414624604131
+          ]
+        },
+        "band2_err_rate": {
+          "diff": -0.22278532809416163,
+          "bootstrap_scenes_ci95": [
+            -0.7478505358894187,
+            0.3838242308283728
+          ]
+        },
+        "band2_share_of_errors": {
+          "diff": -7.722251515866354,
+          "bootstrap_scenes_ci95": [
+            -14.636294778355772,
+            -1.609796674838418
+          ]
+        },
+        "band5_err_rate": {
+          "diff": 0.059996466299026,
+          "bootstrap_scenes_ci95": [
+            -0.5137940882663516,
+            0.7485014676247639
+          ]
+        },
+        "band5_share_of_errors": {
+          "diff": -8.116036840617653,
+          "bootstrap_scenes_ci95": [
+            -15.307566544597064,
+            -1.240275413177609
+          ]
+        },
+        "band10_err_rate": {
+          "diff": 0.1911814688646718,
+          "bootstrap_scenes_ci95": [
+            -0.3892901101238689,
+            0.9342245194188389
+          ]
+        },
+        "band10_share_of_errors": {
+          "diff": -7.945527611828737,
+          "bootstrap_scenes_ci95": [
+            -15.326932244168257,
+            -0.6656088167535046
+          ]
+        }
+      }
+    }
+  }
+}

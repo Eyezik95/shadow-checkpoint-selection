@@ -1,0 +1,248 @@
+{
+ "experiment": "FDRNet on ISTD, per-epoch held-out-val and test BER (checkpoint-selection study)",
+ "run": "fdrnet_istd_seed3_20261121_033123",
+ "created_utc": "2026-11-21T02:31:23.528402+00:00",
+ "config": {
+  "seed": 3,
+  "data": "/Users/isaacolaleye/My projects/shadow-tmlr/data/istd_struct",
+  "epochs": 10,
+  "lr": 0.0005,
+  "wd": 0.0001,
+  "lr_step": 1,
+  "lr_gamma": 0.7,
+  "batch": 8,
+  "accum": 4,
+  "size": 512,
+  "th": 0.5,
+  "workers": 0,
+  "max_batches": 0,
+  "out": "/Users/isaacolaleye/My projects/shadow-tmlr/results/fdrnet",
+  "ckpt_dir": "/Users/isaacolaleye/My projects/shadow-tmlr/checkpoints/fdrnet",
+  "tag": "",
+  "device": "mps",
+  "upstream": "https://github.com/rayleizhu/FDRNet",
+  "upstream_commit": "ea7e14730896225d12caaf4a4fb8c6ec3ec040ef",
+  "model_kwargs": {
+   "backbone": "efficientnet-b3",
+   "proj_planes": 16,
+   "pred_planes": 32,
+   "normalize": true,
+   "mu_init": 0.5,
+   "reweight_mode": "manual"
+  },
+  "aux_losses": "loss_det + 1.0*L1(f_inv(view2), f_inv) + 0.1*L1(delta_pred, delta), delta~U(-0.3,0.3)",
+  "mu_schedule": "after epoch e: mu = 1 - (e/total_ep)^2 (upstream)",
+  "split": {
+   "counts": {
+    "train_heldout": 1210,
+    "val_heldout": 120,
+    "test": 540
+   },
+   "val_scenes": [
+    "34",
+    "39",
+    "50",
+    "52",
+    "54",
+    "6",
+    "62",
+    "63",
+    "66"
+   ],
+   "rule": "scene = stem before '-', val_frac 0.10, random.Random(0)"
+  },
+  "train_images": 1210,
+  "val_images": 120,
+  "test_images": 540,
+  "ber": "pooled 100*(1-(TP/P+TN/N)/2), native mask resolution",
+  "torch": "2.15.0",
+  "efficientnet_pytorch": "0.7.1"
+ },
+ "epochs": [
+  {
+   "epoch": 1,
+   "lr_after": 0.00035,
+   "train_loss_mean": [
+    0.15154675784712004,
+    0.009659951621942555,
+    0.14507500031525083
+   ],
+   "val_ber": 7.143770859286558,
+   "val_pos_err": 11.186409339503111,
+   "val_neg_err": 3.101132379070004,
+   "test_ber": 3.8449832274524365,
+   "test_pos_err": 2.7597992796832282,
+   "test_neg_err": 4.930167175221644,
+   "seconds": 375.7
+  },
+  {
+   "epoch": 2,
+   "lr_after": 0.000245,
+   "train_loss_mean": [
+    0.11875169249004777,
+    0.0037943607315518244,
+    0.15266359962341036
+   ],
+   "val_ber": 2.890099112858424,
+   "val_pos_err": 3.969061323554246,
+   "val_neg_err": 1.8111369021626134,
+   "test_ber": 3.2441292391153453,
+   "test_pos_err": 1.438272205675628,
+   "test_neg_err": 5.049986272555051,
+   "seconds": 372.2
+  },
+  {
+   "epoch": 3,
+   "lr_after": 0.0001715,
+   "train_loss_mean": [
+    0.10255782707403137,
+    0.0023956892528437814,
+    0.13901929186413448
+   ],
+   "val_ber": 4.687529790019196,
+   "val_pos_err": 7.765927621661173,
+   "val_neg_err": 1.609131958377219,
+   "test_ber": 2.2126940153910812,
+   "test_pos_err": 1.7590786878006193,
+   "test_neg_err": 2.6663093429815543,
+   "seconds": 365.9
+  },
+  {
+   "epoch": 4,
+   "lr_after": 0.00012004999999999999,
+   "train_loss_mean": [
+    0.09274103388881051,
+    0.001964656494550919,
+    0.15309950382994575
+   ],
+   "val_ber": 3.290051272650718,
+   "val_pos_err": 5.151542997235026,
+   "val_neg_err": 1.4285595480664104,
+   "test_ber": 2.0088857424638507,
+   "test_pos_err": 1.5013177863695493,
+   "test_neg_err": 2.516453698558163,
+   "seconds": 365.8
+  },
+  {
+   "epoch": 5,
+   "lr_after": 8.403499999999999e-05,
+   "train_loss_mean": [
+    0.0867679479242062,
+    0.0016061899135676012,
+    0.14256993273199098
+   ],
+   "val_ber": 3.147937867515316,
+   "val_pos_err": 5.00161812694725,
+   "val_neg_err": 1.2942576080833823,
+   "test_ber": 1.8195976827802163,
+   "test_pos_err": 1.2227442014209222,
+   "test_neg_err": 2.4164511641395103,
+   "seconds": 366.5
+  },
+  {
+   "epoch": 6,
+   "lr_after": 5.882449999999999e-05,
+   "train_loss_mean": [
+    0.08321796372434162,
+    0.0015707768277524947,
+    0.15351283569844895
+   ],
+   "val_ber": 3.7124421929050744,
+   "val_pos_err": 5.896539349479513,
+   "val_neg_err": 1.5283450363306361,
+   "test_ber": 1.9236801897246414,
+   "test_pos_err": 1.1121393272180646,
+   "test_neg_err": 2.735221052231218,
+   "seconds": 366.4
+  },
+  {
+   "epoch": 7,
+   "lr_after": 4.117714999999999e-05,
+   "train_loss_mean": [
+    0.08047705545978287,
+    0.001485589123215366,
+    0.14647008715326965
+   ],
+   "val_ber": 2.1011602121518314,
+   "val_pos_err": 2.5412399335441593,
+   "val_neg_err": 1.6610804907594923,
+   "test_ber": 1.8676069523034577,
+   "test_pos_err": 1.062413558299835,
+   "test_neg_err": 2.6728003463070915,
+   "seconds": 372.0
+  },
+  {
+   "epoch": 8,
+   "lr_after": 2.8824004999999994e-05,
+   "train_loss_mean": [
+    0.07870965631407321,
+    0.0013813538789690938,
+    0.14274620078966663
+   ],
+   "val_ber": 2.169012807940651,
+   "val_pos_err": 2.8671960502982152,
+   "val_neg_err": 1.4708295655830872,
+   "test_ber": 1.768529836763455,
+   "test_pos_err": 1.0892900803968653,
+   "test_neg_err": 2.4477695931300447,
+   "seconds": 371.9
+  },
+  {
+   "epoch": 9,
+   "lr_after": 2.0176803499999996e-05,
+   "train_loss_mean": [
+    0.07756188297212518,
+    0.0013636319519526369,
+    0.14783933230240934
+   ],
+   "val_ber": 1.917869968072039,
+   "val_pos_err": 2.4329001451741994,
+   "val_neg_err": 1.4028397909698898,
+   "test_ber": 1.728186813391197,
+   "test_pos_err": 1.2429608176301121,
+   "test_neg_err": 2.213412809152282,
+   "seconds": 371.8
+  },
+  {
+   "epoch": 10,
+   "lr_after": 1.4123762449999997e-05,
+   "train_loss_mean": [
+    0.07665931529963747,
+    0.0014008064592224473,
+    0.15608424014282346
+   ],
+   "val_ber": 1.8315547751292405,
+   "val_pos_err": 2.046668520840156,
+   "val_neg_err": 1.616441029418314,
+   "test_ber": 1.8011548148547218,
+   "test_pos_err": 1.1898000198001357,
+   "test_neg_err": 2.412509609909308,
+   "seconds": 372.3
+  }
+ ],
+ "selection": {
+  "last": {
+   "epoch": 10,
+   "test_ber": 1.8011548148547218,
+   "val_ber": 1.8315547751292405
+  },
+  "val": {
+   "epoch": 10,
+   "test_ber": 1.8011548148547218,
+   "val_ber": 1.8315547751292405
+  },
+  "test": {
+   "epoch": 9,
+   "test_ber": 1.728186813391197,
+   "val_ber": 1.917869968072039
+  },
+  "inflation_test_minus_val_rule": 0.07296800146352478
+ },
+ "completed_utc": "2026-11-21T03:33:07.115712+00:00",
+ "total_seconds": 3703.6,
+ "checkpoint_sha256": {
+  "last": "0cac05f73abe6fc9d5008e5b9a869b94e245723e5d103b909682d131e356f6dc",
+  "val": "b9671f25f95f407046f1a046f7221836ac4f9c805c6dd8adb7d71209e615d724",
+  "test": "23e7ccffc63489c89c831cb646727c84a9bb3a540c698c0b82bb38adc662ee57"
+ }
+}
