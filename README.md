@@ -12,6 +12,7 @@ Every number in the paper is produced from the files in this repository by `code
 | `code/run_fdrnet_seeds.sh` | Runs seeds 0–4 one after another |
 | `code/fdrnet_analysis.py` | Three selection rules (last epoch, lowest validation BER, lowest test BER) and paired scene-bootstrap intervals |
 | `code/make_fdrnet_figure.py` | Per-epoch figure for FDRNet |
+| `code/make_rules_diagram.py` | Diagram of the three selection rules (Figure 1) |
 | `code/sbu_testnew_analysis.py` | Re-scores the development-sequence checkpoints on the relabelled SBU test set |
 | `code/make_numbers.py` | Writes every number used in the paper, with its source file and field (`paper/numbers.tsv`) |
 | `code/check_numbers.py` | Fails if a result-like number is typed into the manuscript instead of generated |
