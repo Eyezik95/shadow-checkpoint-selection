@@ -1,0 +1,11 @@
+{
+  "title": "shadow-checkpoint-selection: code, per-image confusion counts and result files for \"Is Your Shadow Detector Really Better? Checkpoint Choice, Seed Variance and Label Noise in Benchmark Rankings\"",
+  "upload_type": "software",
+  "description": "Code, per-image confusion counts and result files for the paper \"Is Your Shadow Detector Really Better? Checkpoint Choice, Seed Variance and Label Noise in Benchmark Rankings\". Every number in the paper is produced from the files in this repository by code/make_numbers.py. The SBU and ISTD datasets are not included and are available from their authors.",
+  "creators": [
+    {"name": "Olaleye, Isaac Olayemi", "affiliation": "Department of Computer Science and Artificial Intelligence, University of Ibadan"},
+    {"name": "Onifade, Olufade Falade Williams", "affiliation": "Department of Computer Science and Artificial Intelligence, University of Ibadan"}
+  ],
+  "license": "MIT",
+  "keywords": ["shadow detection", "checkpoint selection", "benchmark evaluation", "reproducibility", "seed variance", "label noise"]
+}

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this code or these results, please cite the paper and this archive."
+title: "shadow-checkpoint-selection: code, per-image confusion counts and result files"
+type: software
+license: MIT
+authors:
+  - family-names: Olaleye
+    given-names: Isaac Olayemi
+    affiliation: "Department of Computer Science and Artificial Intelligence, University of Ibadan"
+  - family-names: Onifade
+    given-names: Olufade Falade Williams
+    affiliation: "Department of Computer Science and Artificial Intelligence, University of Ibadan"
+repository-code: "https://github.com/Eyezik95/shadow-checkpoint-selection"
+version: 1.0.0
+date-released: 2026-11-22
