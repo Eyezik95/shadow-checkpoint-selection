@@ -1,0 +1,4 @@
+Loaded pretrained weights for efficientnet-b3
+sddnet_istd_seed0_smoke1ep_20261126_181533: train 1210, val 120, test 540; device mps
+  batch 50/302  loss_mask 0.0680  total 0.1415  mps 6.9 GiB  95s
+  batch 100/302  loss_mask 0.0772  total 0.1102  mps 6.9 GiB  511s

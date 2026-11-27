@@ -15,17 +15,23 @@ Reports, on ISTD test BER (pooled, %):
     difference between those checkpoints, not the variability of the selection itself;
   * per-epoch test and validation BER over seeds (mean, SD) for the figure.
 Fails on NaN, on a mismatch with the stored selection, and if validation and test names share a scene.
+
+Usage: python code/fdrnet_analysis.py [fdrnet|sddnet]  (default fdrnet; same analysis on results/<method>/,
+written to results/<method>_analysis_<timestamp>.json)
 """
 import glob
 import json
 import math
+import sys
 import time
 from pathlib import Path
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
-RES = ROOT / "results" / "fdrnet"
+METHOD = sys.argv[1] if len(sys.argv) > 1 else "fdrnet"
+assert METHOD in ("fdrnet", "sddnet"), METHOD
+RES = ROOT / "results" / METHOD
 DRAWS, RNG_SEED = 10_000, 0
 RULES = ("last", "val", "test")
 DIFFS = (("test", "last"), ("val", "last"), ("test", "val"))
@@ -52,7 +58,7 @@ def check(x, what):
 
 
 def main():
-    files = sorted(glob.glob(str(RES / "fdrnet_istd_seed*_2*.json")))
+    files = sorted(glob.glob(str(RES / f"{METHOD}_istd_seed*_2*.json")))
     runs = []
     for f in files:
         d = json.loads(Path(f).read_text())
@@ -149,7 +155,7 @@ def main():
                           "per_seed": val_ber.tolist()}}
 
     ts = time.strftime("%Y%m%d_%H%M%S")
-    out = {"experiment": "fdrnet_selection_rules_five_seeds", "created": ts,
+    out = {"experiment": f"{METHOD}_selection_rules_five_seeds", "created": ts,
            "config": {"inputs": [Path(f).name for f, _, _ in runs], "run_config": cfg0,
                       "rules": {"last": f"epoch {n_ep} (fixed schedule)",
                                 "val": "argmin BER on 120 held-out validation images (9 training scenes)",
@@ -159,7 +165,7 @@ def main():
                       "ber": "pooled 100*(1-(TP/P+TN/N)/2), native mask resolution",
                       "sd": "sample SD over seeds (ddof=1)"},
            "per_seed": out_seeds, "summary": summary, "mean_diffs": mean_diffs, "curves": curves}
-    path = ROOT / "results" / f"fdrnet_analysis_{ts}.json"
+    path = ROOT / "results" / f"{METHOD}_analysis_{ts}.json"
     path.write_text(json.dumps(out, indent=1))
     print(path)
     for r in RULES:

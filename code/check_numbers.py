@@ -21,6 +21,8 @@ ALLOW = {  # literal -> where the setting is documented
     "2.15": "PyTorch version, recorded in every result file's config (torch: 2.15.0)",
     "0.05": "threshold label (sweep row)", "0.25": "threshold label (sweep row)", "0.50": "threshold label (sweep row)",
     "0.75": "threshold label (sweep row)", "0.95": "threshold label (sweep row)",
+    "1.96": "normal quantile for a two-sided 95% interval (MDD definition, code/mdd_analysis.py)",
+    "2.80": "1.96 + 0.84, normal quantiles for alpha 0.05 two-sided and 80% power (code/mdd_analysis.py)",
 }
 
 

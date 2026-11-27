@@ -1,0 +1,41 @@
+Loaded pretrained weights for efficientnet-b3
+sddnet_istd_seed0_smoke_20261126_181448: train 1210, val 30, test 30; device mps
+  batch 1/302  loss_mask 0.1088  total 0.3577  mps 6.3 GiB  5s
+  batch 2/302  loss_mask 0.2027  total 0.4354  mps 6.5 GiB  6s
+  batch 3/302  loss_mask 0.1553  total 0.3848  mps 6.7 GiB  7s
+  batch 4/302  loss_mask 0.1970  total 0.4178  mps 6.8 GiB  8s
+  batch 5/302  loss_mask 0.0555  total 0.2829  mps 6.8 GiB  10s
+  batch 6/302  loss_mask 0.1561  total 0.3516  mps 6.8 GiB  12s
+  batch 7/302  loss_mask 0.1758  total 0.3719  mps 6.5 GiB  14s
+  batch 8/302  loss_mask 0.1870  total 0.3762  mps 6.7 GiB  15s
+  batch 9/302  loss_mask 0.1835  total 0.3638  mps 6.9 GiB  16s
+  batch 10/302  loss_mask 0.1236  total 0.2924  mps 6.9 GiB  18s
+  batch 11/302  loss_mask 0.1193  total 0.2981  mps 6.8 GiB  19s
+  batch 12/302  loss_mask 0.1171  total 0.2944  mps 6.6 GiB  20s
+  batch 13/302  loss_mask 0.1338  total 0.2906  mps 6.9 GiB  20s
+  batch 14/302  loss_mask 0.0848  total 0.2524  mps 6.9 GiB  21s
+  batch 15/302  loss_mask 0.1066  total 0.2616  mps 6.9 GiB  22s
+  batch 16/302  loss_mask 0.1601  total 0.3230  mps 6.9 GiB  23s
+  batch 17/302  loss_mask 0.0925  total 0.2562  mps 6.9 GiB  24s
+  batch 18/302  loss_mask 0.1916  total 0.3510  mps 6.9 GiB  25s
+  batch 19/302  loss_mask 0.1062  total 0.2359  mps 6.9 GiB  26s
+  batch 20/302  loss_mask 0.0584  total 0.2159  mps 6.0 GiB  27s
+epoch  1/1: val BER 32.46  test BER 12.18  (up512 11.84)  train 27s total 34s
+{
+ "last": {
+  "epoch": 1,
+  "test_ber": 12.183302562778863,
+  "val_ber": 32.45672989334187
+ },
+ "val": {
+  "epoch": 1,
+  "test_ber": 12.183302562778863,
+  "val_ber": 32.45672989334187
+ },
+ "test": {
+  "epoch": 1,
+  "test_ber": 12.183302562778863,
+  "val_ber": 32.45672989334187
+ },
+ "inflation_test_minus_val_rule": 0.0
+}

@@ -20,8 +20,13 @@ paper/*
 paper/figures/*
 !paper/figures/fig_fdrnet_epochs.pdf
 !paper/figures/fig_fdrnet_epochs.png
+!paper/figures/fig_sddnet_epochs.pdf
+!paper/figures/fig_sddnet_epochs.png
 !paper/figures/fig_rules.pdf
 !paper/figures/fig_rules.png
 
 # submission notes name the authors: never publish
 submission_form.md
+
+# package build metadata
+*.egg-info/

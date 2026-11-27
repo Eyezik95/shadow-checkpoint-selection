@@ -45,12 +45,16 @@ def fmt(v, kind):
         return f"{v:+.2f}".replace("-", "\\textminus ")
     if kind == "s3":
         return f"{v:+.3f}".replace("-", "\\textminus ")
+    if kind == "r2":                                   # unsigned style, but a proper minus for negatives
+        return f"{v:.2f}".replace("-", "\\textminus ")
     if kind == "p3":
         return f"{v:.3f}"
     if kind == "p4":
         return f"{v:.4f}"
     if kind == "p1":
         return f"{v:.1f}"
+    if kind == "intc":                                 # integer with thousands separator, e.g. 20,000
+        return f"{int(round(v)):,}"
     if kind == "int":
         return f"{int(round(v))}"
     raise ValueError(kind)
@@ -209,6 +213,88 @@ def fdrnet():
     put("fdr-ep3-test-mean", c["mean"][2], "p2", f, ["curves", "test_ber", "mean", "2"])
 
 
+def sddnet():
+    """SDDNet, five seeds, 20 epochs (code/sddnet_dual_select.py; code/fdrnet_analysis.py sddnet;
+    code/val_size_analysis.py sddnet; bercheck report on FDRNet + SDDNet). Keys prefixed sdd-, svs-, cmp-."""
+    ana = sorted(RES.glob("sddnet_analysis_*.json"))
+    if not ana:
+        return
+    a = load(ana[-1]); f = ana[-1].name
+    for rule in ("last", "val", "test"):
+        for k in ("mean", "sd", "min", "max", "range"):
+            put(f"sdd-{rule}-{k}", a["summary"][rule][k], "p2", f, ["summary", rule, k])
+        ep = a["summary"][rule]["epochs"]
+        put(f"sdd-{rule}-epmin", min(ep), "int", f, ["summary", rule, "epochs", "min"])
+        put(f"sdd-{rule}-epmax", max(ep), "int", f, ["summary", rule, "epochs", "max"])
+    put("sdd-epochs", a["config"]["run_config"]["epochs"], "int", f, ["config", "run_config", "epochs"])
+    for k, v in a["mean_diffs"].items():
+        key = "sdd-d-" + k.replace("_minus_", "").replace("_", "")
+        q = ["mean_diffs", k]
+        put(key, v["mean"], "s3", f, q + ["mean"]); put(key + "-sd", v["sd"], "p3", f, q + ["sd"])
+        put(key + "-min", v["min"], "s3", f, q + ["min"]); put(key + "-max", v["max"], "s3", f, q + ["max"])
+        put_ci(key, v["bootstrap_scenes_ci95"], f, q + ["bootstrap_scenes_ci95"], "s3")
+    for i, row in enumerate(a["per_seed"]):
+        s = row["seed"]
+        for rule in ("last", "val", "test"):
+            put(f"sdd-s{s}-{rule}-ber", row["rules"][rule]["test_ber"], "p2", f, ["per_seed", str(i), "rules", rule, "test_ber"])
+            put(f"sdd-s{s}-{rule}-epoch", row["rules"][rule]["epoch"], "int", f, ["per_seed", str(i), "rules", rule, "epoch"])
+        for k, v in row["diffs"].items():
+            key = f"sdd-s{s}-d-" + k.replace("_minus_", "").replace("_", "")
+            q = ["per_seed", str(i), "diffs", k]
+            put(key, v["ber_diff"], "s3", f, q + ["ber_diff"]); put_ci(key, v["bootstrap_scenes_ci95"], f, q + ["bootstrap_scenes_ci95"], "s3")
+    c = a["curves"]["test_ber"]["mean"]
+    put("sdd-ep3-test-mean", c[2], "p2", f, ["curves", "test_ber", "mean", "2"])
+    put("sdd-late-test-min", min(c[9:]), "p2", f, ["curves", "test_ber", "mean", "epochs 10-20 min"])
+    put("sdd-late-test-max", max(c[9:]), "p2", f, ["curves", "test_ber", "mean", "epochs 10-20 max"])
+    v = a["curves"]["val_ber"]["per_seed"]
+    put("sdd-s0-val-min", min(v[0]), "p1", f, ["curves", "val_ber", "per_seed", "0", "min"])
+    put("sdd-others-val-max-late", max(max(r[9:]) for r in v[1:]), "p1", f, ["curves", "val_ber", "per_seed", "1-4", "epochs 10-20 max"])
+    # validation-size repeat
+    vp = sorted(RES.glob("sddnet_val_size_analysis_*.json"))
+    if vp:
+        b = load(vp[-1]); r = b["results"]; g = vp[-1].name
+        for k in ("2", "6", "9", "23"):
+            put(f"svs-k{k}-cost", r[k]["cost_vs_last"]["mean"], "s3", g, ["results", k, "cost_vs_last", "mean"])
+            put(f"svs-k{k}-pworse", 100 * r[k]["p_worse"], "int", g, ["results", k, "p_worse x100"])
+        put("svs-oracle", np.mean([r[k]["oracle_gain"]["mean"] for k in r]), "s3", g, ["results", "*", "oracle_gain", "mean (avg over k)"])
+        o = b["observed_training_scene_validation"]
+        put("svs-obs-cost", o["val_minus_last_9_training_scenes"], "s3", g, ["observed_training_scene_validation", "val_minus_last_9_training_scenes"])
+        put("svs-obs-share", 100 * o["share_test_scene_splits_with_cost_ge_observed"], "int", g,
+            ["observed_training_scene_validation", "share_test_scene_splits_with_cost_ge_observed x100"])
+        put("svs-obs-p95", o["test_scene_split_cost_p95"], "s3", g, ["observed_training_scene_validation", "test_scene_split_cost_p95"])
+    # two-method report (bercheck, rule = last epoch) and validation-test curve agreement
+    bp = RES / "bercheck" / "fdrnet_sddnet_last.json"
+    if bp.exists():
+        b = load(bp); g = "bercheck/" + bp.name
+        pair = next(iter(b["comparison"]["pairs"])); v = b["comparison"]["pairs"][pair]
+        assert pair == "FDRNet - SDDNet", pair
+        put("cmp-diff", v["diff"], "s3", g, ["comparison", "pairs", pair, "diff"])
+        put_ci("cmp-diff", v["ci95"], g, ["comparison", "pairs", pair, "ci95"], "s2")
+        put("cmp-psingle", 100 * v["p_single_run_order_holds"], "int", g, ["comparison", "pairs", pair, "p_single_run_order_holds x100"])
+        for m, tag in (("FDRNet", "fdr"), ("SDDNet", "sdd")):
+            ca = b["curve_agreement"][m]
+            put(f"{tag}-rho-mean", ca["mean"], "p2", g, ["curve_agreement", m, "mean"])
+            for i, x in enumerate(ca["spearman_per_run"]):
+                put(f"{tag}-s{i}-rho", x, "r2", g, ["curve_agreement", m, "spearman_per_run", i])
+    lp = sorted(RES.glob("leaderboard_analysis_*.json"))[-1]
+    row = [r for r in load(lp)["rows"] if r["paper"] == "SDDNet" and r["dataset"] == "ISTD"]
+    assert len(row) == 1 and row[0]["checked"] == "yes" and row[0]["note"] == "CRF", row
+    put("sdd-pub-istd", float(row[0]["own_ber"]), "p2", lp.name, ["rows", "SDDNet/ISTD", "own_ber (with CRF, arXiv 2308.08935 Table 1)"])
+    up = RES / "bercheck" / "sddnet_up512.json"
+    if up.exists():
+        u = load(up); g = "bercheck/" + up.name; r = u["rules"]["SDDNet-up512"]
+        put("sdd-up-last-mean", r["summary"]["last"]["mean"], "p2", g, ["rules", "SDDNet-up512", "summary", "last", "mean"])
+        put("sdd-up-d-testlast", r["differences"]["test-last"]["mean"], "s3", g, ["rules", "SDDNet-up512", "differences", "test-last", "mean"])
+        put("sdd-up-d-vallast", r["differences"]["val-last"]["mean"], "s3", g, ["rules", "SDDNet-up512", "differences", "val-last", "mean"])
+    # pool with SDDNet added (mdd_analysis.py, istd_native_with_fdrnet_sddnet)
+    mp = sorted(RES.glob("mdd_analysis_*.json"))[-1]; m = load(mp)["results"]
+    if "istd_native_with_fdrnet_sddnet" in m:
+        x = m["istd_native_with_fdrnet_sddnet"]; key = "istd_native_with_fdrnet_sddnet"
+        put("mdd-sdd-sigma", x["sigma_s"]["sddnet"], "p3", mp.name, ["results", key, "sigma_s", "sddnet"])
+        put("mdd-sdd-sigma-lo", x["sigma_s_ci95"]["sddnet"][0], "p3", mp.name, ["results", key, "sigma_s_ci95", "sddnet", 0])
+        put("mdd-sdd-sigma-hi", x["sigma_s_ci95"]["sddnet"][1], "p3", mp.name, ["results", key, "sigma_s_ci95", "sddnet", 1])
+
+
 def histories():
     h = ROOT / "dev_models" / "data" / "raw" / "obj2_histories"
     p1 = load(h / "phase1_history_bifpn_rarm.json"); p2 = load(h / "phase2_history_bifpn_rarm.json")
@@ -262,13 +348,76 @@ def sbu_label_rise():
     put("sbunew-rise-max", max(rises), "p1", newp.name, ["relabelled minus original, phase1/fair-mean/original, max of 12"])
 
 
+def valsize_numbers():
+    """Validation-size simulation on FDRNet (code/val_size_analysis.py)."""
+    p = sorted(RES.glob("val_size_analysis_*.json"))[-1]; a = load(p); r = a["results"]
+    for k in ("2", "4", "6", "9", "15", "23"):
+        put(f"vs-k{k}-cost", r[k]["cost_vs_last"]["mean"], "s3", p.name, ["results", k, "cost_vs_last", "mean"])
+        put(f"vs-k{k}-flatter", -r[k]["optimism"]["mean"], "p2", p.name, ["results", k, "-optimism", "mean"])
+        put(f"vs-k{k}-pworse", 100 * r[k]["p_worse"], "int", p.name, ["results", k, "p_worse x100"])
+    put("vs-oracle", np.mean([r[k]["oracle_gain"]["mean"] for k in r]), "s3", p.name, ["results", "*", "oracle_gain", "mean (avg over k)"])
+    put("vs-splits", a["config"]["splits"], "intc", p.name, ["config", "splits"])
+    o = a["observed_training_scene_validation"]
+    put("vs-obs-cost", o["val_minus_last_9_training_scenes"], "s3", p.name, ["observed_training_scene_validation", "val_minus_last_9_training_scenes"])
+    put("vs-obs-draws", o["draws"], "intc", p.name, ["observed_training_scene_validation", "draws"])
+    put("vs-obs-max", o["test_scene_split_cost_max"], "s3", p.name, ["observed_training_scene_validation", "test_scene_split_cost_max"])
+    put("vs-obs-p95", o["test_scene_split_cost_p95"], "s3", p.name, ["observed_training_scene_validation", "test_scene_split_cost_p95"])
+
+
+def mdd_numbers():
+    """Minimum detectable difference (code/mdd_analysis.py)."""
+    p = sorted(RES.glob("mdd_analysis_*.json"))[-1]; m = load(p)["results"]
+    for tag, key in (("istd", "istd_native_with_fdrnet_sddnet"), ("sbu", "sbu_original"), ("sbunew", "sbu_relabelled")):
+        x = m[key]
+        put(f"mdd-{tag}-sigma", x["sigma_s_pooled"], "p3", p.name, ["results", key, "sigma_s_pooled"])
+        put(f"mdd-{tag}-sigma-lo", x["sigma_s_pooled_ci95"][0], "p3", p.name, ["results", key, "sigma_s_pooled_ci95", 0])
+        put(f"mdd-{tag}-sigma-hi", x["sigma_s_pooled_ci95"][1], "p3", p.name, ["results", key, "sigma_s_pooled_ci95", 1])
+        put(f"mdd-{tag}-sdt", x["mdd"]["1"]["sd_t"], "p2", p.name, ["results", key, "mdd", "1", "sd_t"])
+        for n in ("1", "3", "5", "10"):
+            for f, short in (("mdd_sig", "sig"), ("mdd_pow80", "pow"), ("mdd_seed_only", "seed")):
+                put(f"mdd-{tag}-{short}-n{n}", x["mdd"][n][f], "p2", p.name, ["results", key, "mdd", n, f])
+    put("mdd-fdr-sigma", m["istd_native_with_fdrnet_sddnet"]["sigma_s"]["fdrnet"], "p3", p.name,
+        ["results", "istd_native_with_fdrnet_sddnet", "sigma_s", "fdrnet"])
+    # earlier pool without SDDNet (four development models + FDRNet), kept for the limitations paragraph
+    x = m["istd_native_with_fdrnet"]; key = "istd_native_with_fdrnet"
+    put("mdd-istd5-sigma", x["sigma_s_pooled"], "p3", p.name, ["results", key, "sigma_s_pooled"])
+    for n in ("1", "5"):
+        put(f"mdd-istd5-seed-n{n}", x["mdd"][n]["mdd_seed_only"], "p2", p.name, ["results", key, "mdd", n, "mdd_seed_only"])
+        put(f"mdd-istd5-sig-n{n}", x["mdd"][n]["mdd_sig"], "p2", p.name, ["results", key, "mdd", n, "mdd_sig"])
+
+
+def leaderboard_numbers():
+    """Published claimed gains against the thresholds (code/leaderboard_analysis.py)."""
+    p = sorted(RES.glob("leaderboard_analysis_*.json"))[-1]; a = load(p)
+    rows_ = a["rows"]
+    put("lb-papers", len({r["paper"] for r in rows_}), "int", p.name, ["rows", "distinct paper"])
+    put("lb-rows", len(rows_), "int", p.name, ["rows", "count"])
+    for d, tag in (("ISTD", "istd"), ("SBU", "sbu")):
+        s = a["summary"][d]
+        put(f"lb-{tag}-n", s["papers"], "int", p.name, ["summary", d, "papers"])
+        put(f"lb-{tag}-below1", s["n_below_seed_only"], "int", p.name, ["summary", d, "n_below_seed_only"])
+        put(f"lb-{tag}-belowint", s["n_below_interval"], "int", p.name, ["summary", d, "n_below_interval"])
+        put(f"lb-{tag}-below5", s["n_below_seed_only_n5"], "int", p.name, ["summary", d, "n_below_seed_only_n5"])
+        rec = [r for r in rows_ if r["dataset"] == d and int(r["year"]) >= 2019]
+        g = [r["claimed_gain"] for r in rec]
+        put(f"lb-{tag}-recent-n", len(rec), "int", p.name, ["rows", d, "year>=2019", "count"])
+        put(f"lb-{tag}-recent-min", min(g), "p2", p.name, ["rows", d, "year>=2019", "min claimed_gain"])
+        put(f"lb-{tag}-recent-max", max(g), "p2", p.name, ["rows", d, "year>=2019", "max claimed_gain"])
+        put(f"lb-{tag}-recent-below1", sum(r["below_seed_only"] for r in rec), "int", p.name, ["rows", d, "year>=2019", "below_seed_only"])
+        put(f"lb-{tag}-recent-below5", sum(r["below_seed_only_n5"] for r in rec), "int", p.name, ["rows", d, "year>=2019", "below_seed_only_n5"])
+        old = [r["claimed_gain"] for r in rows_ if r["dataset"] == d and int(r["year"]) < 2019]
+        put(f"lb-{tag}-early-min", min(old), "p2", p.name, ["rows", d, "year<2019", "min claimed_gain"])
+        put(f"lb-{tag}-early-max", max(old), "p2", p.name, ["rows", d, "year<2019", "max claimed_gain"])
+
+
 def main():
     original_checkpoints(); seed_bias(); fair_and_selection(); error_components()
+    valsize_numbers(); mdd_numbers(); leaderboard_numbers()
     sbu("sbu", PHD / "obj2_sbu_analysis_20261111_115652.json",
         ("phase1_in_domain", "fair_phase2_on_sbu", "selection_effect_on_sbu"))
     new = sorted(RES.glob("sbu_testnew_analysis_*.json"))[-1]
     sbu("sbunew", new, ("phase1_in_domain", "fair_phase2", "selection_effect"))
-    histories(); derived(); selection_evidence(); sbu_label_rise(); fdrnet()
+    histories(); derived(); selection_evidence(); sbu_label_rise(); fdrnet(); sddnet()
     tex = ["% generated by code/make_numbers.py -- do not edit",
            "\\makeatletter",
            "\\newcommand{\\nv}[1]{\\ifcsname nv@#1\\endcsname\\csname nv@#1\\endcsname\\else"

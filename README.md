@@ -17,6 +17,7 @@ Every number in the paper is produced from the files in this repository by `code
 | `code/make_appendix_tables.py` | Appendix table of phase-2 settings, validation scenes and kept epochs, read from the retrain result files |
 | `code/sbu_testnew_analysis.py` | Re-scores the development-sequence checkpoints on the relabelled SBU test set |
 | `code/make_numbers.py` | Writes every number used in the paper, with its source file and field (`paper/numbers.tsv`) |
+| `tool/` | `bercheck`, a pip-installable package: selection rules, scene-bootstrap intervals, validation–test curve agreement, rank stability, minimum detectable difference and a filled-in reporting checklist from per-image, per-epoch counts (`pip install ./tool`) |
 | `code/check_numbers.py` | Fails if a result-like number is typed into the manuscript instead of generated |
 | `code/tools/make_istd_struct.py` | Builds the scene-disjoint held-out ISTD split (1,210 train / 120 validation, 9 scenes) |
 | `code/setup_fdrnet.sh` | Clones FDRNet at commit `ea7e147` |

@@ -1,0 +1,160 @@
+Loaded pretrained weights for efficientnet-b3
+sddnet_istd_seed3_20261126_235859: train 1210, val 120, test 540; device mps
+  batch 50/302  loss_mask 0.0584  total 0.1527  mps 4.3 GiB  39s
+  batch 100/302  loss_mask 0.0630  total 0.1002  mps 4.3 GiB  77s
+  batch 150/302  loss_mask 0.0405  total 0.0668  mps 4.3 GiB  116s
+  batch 200/302  loss_mask 0.0412  total 0.0636  mps 4.3 GiB  155s
+  batch 250/302  loss_mask 0.0294  total 0.0503  mps 4.3 GiB  194s
+  batch 300/302  loss_mask 0.0374  total 0.0651  mps 4.3 GiB  234s
+epoch  1/20: val BER 8.10  test BER 6.75  (up512 6.75)  train 235s total 268s
+  batch 50/302  loss_mask 0.0275  total 0.0456  mps 4.3 GiB  39s
+  batch 100/302  loss_mask 0.0253  total 0.0501  mps 4.3 GiB  79s
+  batch 150/302  loss_mask 0.0392  total 0.0654  mps 4.3 GiB  119s
+  batch 200/302  loss_mask 0.0224  total 0.0416  mps 4.3 GiB  157s
+  batch 250/302  loss_mask 0.0156  total 0.0297  mps 4.3 GiB  197s
+  batch 300/302  loss_mask 0.0141  total 0.0282  mps 4.3 GiB  235s
+epoch  2/20: val BER 2.97  test BER 2.48  (up512 2.51)  train 237s total 268s
+  batch 50/302  loss_mask 0.0095  total 0.0253  mps 4.3 GiB  39s
+  batch 100/302  loss_mask 0.0129  total 0.0383  mps 4.3 GiB  77s
+  batch 150/302  loss_mask 0.0129  total 0.0255  mps 4.3 GiB  115s
+  batch 200/302  loss_mask 0.0127  total 0.0360  mps 4.3 GiB  154s
+  batch 250/302  loss_mask 0.0108  total 0.0282  mps 4.3 GiB  192s
+  batch 300/302  loss_mask 0.0095  total 0.0242  mps 4.3 GiB  230s
+epoch  3/20: val BER 2.00  test BER 1.75  (up512 1.78)  train 232s total 263s
+  batch 50/302  loss_mask 0.0100  total 0.0241  mps 4.3 GiB  39s
+  batch 100/302  loss_mask 0.0086  total 0.0345  mps 4.3 GiB  77s
+  batch 150/302  loss_mask 0.0081  total 0.0217  mps 4.3 GiB  116s
+  batch 200/302  loss_mask 0.0200  total 0.0373  mps 4.3 GiB  154s
+  batch 250/302  loss_mask 0.0067  total 0.0225  mps 4.3 GiB  193s
+  batch 300/302  loss_mask 0.0086  total 0.0224  mps 4.3 GiB  231s
+epoch  4/20: val BER 2.40  test BER 1.85  (up512 1.88)  train 233s total 264s
+  batch 50/302  loss_mask 0.0068  total 0.0189  mps 4.3 GiB  38s
+  batch 100/302  loss_mask 0.0061  total 0.0176  mps 4.3 GiB  77s
+  batch 150/302  loss_mask 0.0135  total 0.0258  mps 4.3 GiB  115s
+  batch 200/302  loss_mask 0.0104  total 0.0236  mps 4.3 GiB  154s
+  batch 250/302  loss_mask 0.0100  total 0.0337  mps 4.3 GiB  192s
+  batch 300/302  loss_mask 0.0143  total 0.0293  mps 4.3 GiB  231s
+epoch  5/20: val BER 3.37  test BER 1.63  (up512 1.66)  train 232s total 264s
+  batch 50/302  loss_mask 0.0103  total 0.0211  mps 4.3 GiB  38s
+  batch 100/302  loss_mask 0.0075  total 0.0236  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0094  total 0.0295  mps 4.3 GiB  113s
+  batch 200/302  loss_mask 0.0059  total 0.0172  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0073  total 0.0222  mps 4.3 GiB  188s
+  batch 300/302  loss_mask 0.0067  total 0.0227  mps 4.3 GiB  225s
+epoch  6/20: val BER 3.11  test BER 1.61  (up512 1.64)  train 227s total 258s
+  batch 50/302  loss_mask 0.0132  total 0.0273  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0073  total 0.0293  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0083  total 0.0436  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0059  total 0.0208  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0079  total 0.0177  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0058  total 0.0205  mps 4.3 GiB  224s
+epoch  7/20: val BER 2.70  test BER 1.58  (up512 1.60)  train 226s total 257s
+  batch 50/302  loss_mask 0.0146  total 0.0331  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0052  total 0.0177  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0094  total 0.0229  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0075  total 0.0191  mps 4.3 GiB  149s
+  batch 250/302  loss_mask 0.0063  total 0.0388  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0088  total 0.0303  mps 4.3 GiB  225s
+epoch  8/20: val BER 2.20  test BER 1.71  (up512 1.75)  train 226s total 257s
+  batch 50/302  loss_mask 0.0035  total 0.0134  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0170  total 0.0338  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0057  total 0.0181  mps 4.3 GiB  113s
+  batch 200/302  loss_mask 0.0140  total 0.0262  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0078  total 0.0215  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0088  total 0.0223  mps 4.3 GiB  225s
+epoch  9/20: val BER 2.07  test BER 1.63  (up512 1.66)  train 226s total 257s
+  batch 50/302  loss_mask 0.0049  total 0.0212  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0061  total 0.0190  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0053  total 0.0192  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0144  total 0.0322  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0080  total 0.0216  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0051  total 0.0175  mps 4.3 GiB  224s
+epoch 10/20: val BER 2.78  test BER 1.63  (up512 1.67)  train 226s total 257s
+  batch 50/302  loss_mask 0.0166  total 0.0378  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0081  total 0.0228  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0085  total 0.0213  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0066  total 0.0192  mps 4.3 GiB  149s
+  batch 250/302  loss_mask 0.0076  total 0.0214  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0061  total 0.0196  mps 4.3 GiB  224s
+epoch 11/20: val BER 2.27  test BER 1.70  (up512 1.73)  train 226s total 257s
+  batch 50/302  loss_mask 0.0063  total 0.0282  mps 4.3 GiB  38s
+  batch 100/302  loss_mask 0.0051  total 0.0188  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0198  total 0.0386  mps 4.3 GiB  113s
+  batch 200/302  loss_mask 0.0112  total 0.0227  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0060  total 0.0185  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0037  total 0.0150  mps 4.3 GiB  225s
+epoch 12/20: val BER 2.31  test BER 1.64  (up512 1.67)  train 226s total 257s
+  batch 50/302  loss_mask 0.0059  total 0.0214  mps 4.3 GiB  38s
+  batch 100/302  loss_mask 0.0059  total 0.0298  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0215  total 0.0400  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0091  total 0.0207  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0043  total 0.0162  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0117  total 0.0298  mps 4.3 GiB  225s
+epoch 13/20: val BER 2.44  test BER 1.62  (up512 1.64)  train 226s total 257s
+  batch 50/302  loss_mask 0.0059  total 0.0274  mps 4.3 GiB  38s
+  batch 100/302  loss_mask 0.0057  total 0.0182  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0112  total 0.0234  mps 4.3 GiB  113s
+  batch 200/302  loss_mask 0.0064  total 0.0173  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0070  total 0.0285  mps 4.3 GiB  188s
+  batch 300/302  loss_mask 0.0038  total 0.0162  mps 4.3 GiB  225s
+epoch 14/20: val BER 2.64  test BER 1.67  (up512 1.71)  train 226s total 257s
+  batch 50/302  loss_mask 0.0083  total 0.0201  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0099  total 0.0295  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0059  total 0.0248  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0075  total 0.0286  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0059  total 0.0182  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0129  total 0.0264  mps 4.3 GiB  225s
+epoch 15/20: val BER 2.32  test BER 1.68  (up512 1.71)  train 226s total 257s
+  batch 50/302  loss_mask 0.0105  total 0.0380  mps 5.3 GiB  38s
+  batch 100/302  loss_mask 0.0066  total 0.0259  mps 5.3 GiB  75s
+  batch 150/302  loss_mask 0.0084  total 0.0238  mps 5.3 GiB  113s
+  batch 200/302  loss_mask 0.0067  total 0.0206  mps 5.3 GiB  151s
+  batch 250/302  loss_mask 0.0108  total 0.0271  mps 5.3 GiB  188s
+  batch 300/302  loss_mask 0.0034  total 0.0168  mps 5.3 GiB  225s
+epoch 16/20: val BER 2.66  test BER 1.67  (up512 1.70)  train 227s total 258s
+  batch 50/302  loss_mask 0.0048  total 0.0238  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0046  total 0.0208  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0073  total 0.0260  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0037  total 0.0136  mps 4.3 GiB  149s
+  batch 250/302  loss_mask 0.0071  total 0.0479  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0099  total 0.0289  mps 4.3 GiB  224s
+epoch 17/20: val BER 2.29  test BER 1.66  (up512 1.69)  train 225s total 256s
+  batch 50/302  loss_mask 0.0085  total 0.0208  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0051  total 0.0160  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0097  total 0.0250  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0057  total 0.0206  mps 4.3 GiB  149s
+  batch 250/302  loss_mask 0.0077  total 0.0326  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0063  total 0.0185  mps 4.3 GiB  224s
+epoch 18/20: val BER 2.28  test BER 1.67  (up512 1.71)  train 225s total 256s
+  batch 50/302  loss_mask 0.0081  total 0.0205  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0125  total 0.0274  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0042  total 0.0254  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0091  total 0.0216  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0070  total 0.0177  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0061  total 0.0240  mps 4.3 GiB  224s
+epoch 19/20: val BER 2.29  test BER 1.66  (up512 1.69)  train 226s total 257s
+  batch 50/302  loss_mask 0.0054  total 0.0255  mps 4.3 GiB  37s
+  batch 100/302  loss_mask 0.0116  total 0.0345  mps 4.3 GiB  75s
+  batch 150/302  loss_mask 0.0054  total 0.0170  mps 4.3 GiB  112s
+  batch 200/302  loss_mask 0.0037  total 0.0143  mps 4.3 GiB  150s
+  batch 250/302  loss_mask 0.0047  total 0.0171  mps 4.3 GiB  187s
+  batch 300/302  loss_mask 0.0078  total 0.0211  mps 4.3 GiB  225s
+epoch 20/20: val BER 2.17  test BER 1.64  (up512 1.67)  train 226s total 257s
+{
+ "last": {
+  "epoch": 20,
+  "test_ber": 1.637650654541667,
+  "val_ber": 2.1675509802074
+ },
+ "val": {
+  "epoch": 3,
+  "test_ber": 1.7544746562724312,
+  "val_ber": 1.9977382538394872
+ },
+ "test": {
+  "epoch": 7,
+  "test_ber": 1.5788661675077087,
+  "val_ber": 2.7025665201358295
+ },
+ "inflation_test_minus_val_rule": 0.17560848876472246
+}

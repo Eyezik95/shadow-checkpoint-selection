@@ -306,6 +306,108 @@ ec-heldout-diff-band10errrate-hi	+0.93	obj2_error_components_20261111_115829.jso
 ec-heldout-diff-band10shareoferrors	\textminus 8.45	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_share_of_errors/diff
 ec-heldout-diff-band10shareoferrors-lo	\textminus 16.20	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_share_of_errors/bootstrap_scenes_ci95/0
 ec-heldout-diff-band10shareoferrors-hi	\textminus 0.46	obj2_error_components_20261111_115829.json	results/heldout/siran_minus_ran/band10_share_of_errors/bootstrap_scenes_ci95/1
+vs-k2-cost	+0.017	val_size_analysis_20261126_141525.json	results/2/cost_vs_last/mean
+vs-k2-flatter	0.20	val_size_analysis_20261126_141525.json	results/2/-optimism/mean
+vs-k2-pworse	30	val_size_analysis_20261126_141525.json	results/2/p_worse x100
+vs-k4-cost	+0.002	val_size_analysis_20261126_141525.json	results/4/cost_vs_last/mean
+vs-k4-flatter	0.13	val_size_analysis_20261126_141525.json	results/4/-optimism/mean
+vs-k4-pworse	28	val_size_analysis_20261126_141525.json	results/4/p_worse x100
+vs-k6-cost	\textminus 0.004	val_size_analysis_20261126_141525.json	results/6/cost_vs_last/mean
+vs-k6-flatter	0.11	val_size_analysis_20261126_141525.json	results/6/-optimism/mean
+vs-k6-pworse	27	val_size_analysis_20261126_141525.json	results/6/p_worse x100
+vs-k9-cost	\textminus 0.016	val_size_analysis_20261126_141525.json	results/9/cost_vs_last/mean
+vs-k9-flatter	0.08	val_size_analysis_20261126_141525.json	results/9/-optimism/mean
+vs-k9-pworse	22	val_size_analysis_20261126_141525.json	results/9/p_worse x100
+vs-k15-cost	\textminus 0.031	val_size_analysis_20261126_141525.json	results/15/cost_vs_last/mean
+vs-k15-flatter	0.05	val_size_analysis_20261126_141525.json	results/15/-optimism/mean
+vs-k15-pworse	16	val_size_analysis_20261126_141525.json	results/15/p_worse x100
+vs-k23-cost	\textminus 0.043	val_size_analysis_20261126_141525.json	results/23/cost_vs_last/mean
+vs-k23-flatter	0.03	val_size_analysis_20261126_141525.json	results/23/-optimism/mean
+vs-k23-pworse	14	val_size_analysis_20261126_141525.json	results/23/p_worse x100
+vs-oracle	\textminus 0.068	val_size_analysis_20261126_141525.json	results/*/oracle_gain/mean (avg over k)
+vs-splits	2,000	val_size_analysis_20261126_141525.json	config/splits
+vs-obs-cost	+0.321	val_size_analysis_20261126_141525.json	observed_training_scene_validation/val_minus_last_9_training_scenes
+vs-obs-draws	20,000	val_size_analysis_20261126_141525.json	observed_training_scene_validation/draws
+vs-obs-max	+0.192	val_size_analysis_20261126_141525.json	observed_training_scene_validation/test_scene_split_cost_max
+vs-obs-p95	+0.057	val_size_analysis_20261126_141525.json	observed_training_scene_validation/test_scene_split_cost_p95
+mdd-istd-sigma	0.168	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s_pooled
+mdd-istd-sigma-lo	0.131	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s_pooled_ci95/0
+mdd-istd-sigma-hi	0.233	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s_pooled_ci95/1
+mdd-istd-sdt	0.47	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/1/sd_t
+mdd-istd-sig-n1	1.03	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/1/mdd_sig
+mdd-istd-pow-n1	1.47	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/1/mdd_pow80
+mdd-istd-seed-n1	0.46	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/1/mdd_seed_only
+mdd-istd-sig-n3	0.98	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/3/mdd_sig
+mdd-istd-pow-n3	1.40	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/3/mdd_pow80
+mdd-istd-seed-n3	0.27	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/3/mdd_seed_only
+mdd-istd-sig-n5	0.97	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/5/mdd_sig
+mdd-istd-pow-n5	1.38	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/5/mdd_pow80
+mdd-istd-seed-n5	0.21	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/5/mdd_seed_only
+mdd-istd-sig-n10	0.96	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/10/mdd_sig
+mdd-istd-pow-n10	1.37	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/10/mdd_pow80
+mdd-istd-seed-n10	0.15	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/mdd/10/mdd_seed_only
+mdd-sbu-sigma	0.191	mdd_analysis_20261127_025351.json	results/sbu_original/sigma_s_pooled
+mdd-sbu-sigma-lo	0.142	mdd_analysis_20261127_025351.json	results/sbu_original/sigma_s_pooled_ci95/0
+mdd-sbu-sigma-hi	0.291	mdd_analysis_20261127_025351.json	results/sbu_original/sigma_s_pooled_ci95/1
+mdd-sbu-sdt	0.32	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/1/sd_t
+mdd-sbu-sig-n1	0.81	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/1/mdd_sig
+mdd-sbu-pow-n1	1.16	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/1/mdd_pow80
+mdd-sbu-seed-n1	0.53	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/1/mdd_seed_only
+mdd-sbu-sig-n3	0.68	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/3/mdd_sig
+mdd-sbu-pow-n3	0.98	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/3/mdd_pow80
+mdd-sbu-seed-n3	0.31	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/3/mdd_seed_only
+mdd-sbu-sig-n5	0.65	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/5/mdd_sig
+mdd-sbu-pow-n5	0.94	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/5/mdd_pow80
+mdd-sbu-seed-n5	0.24	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/5/mdd_seed_only
+mdd-sbu-sig-n10	0.63	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/10/mdd_sig
+mdd-sbu-pow-n10	0.90	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/10/mdd_pow80
+mdd-sbu-seed-n10	0.17	mdd_analysis_20261127_025351.json	results/sbu_original/mdd/10/mdd_seed_only
+mdd-sbunew-sigma	0.161	mdd_analysis_20261127_025351.json	results/sbu_relabelled/sigma_s_pooled
+mdd-sbunew-sigma-lo	0.120	mdd_analysis_20261127_025351.json	results/sbu_relabelled/sigma_s_pooled_ci95/0
+mdd-sbunew-sigma-hi	0.245	mdd_analysis_20261127_025351.json	results/sbu_relabelled/sigma_s_pooled_ci95/1
+mdd-sbunew-sdt	0.30	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/1/sd_t
+mdd-sbunew-sig-n1	0.74	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/1/mdd_sig
+mdd-sbunew-pow-n1	1.06	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/1/mdd_pow80
+mdd-sbunew-seed-n1	0.45	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/1/mdd_seed_only
+mdd-sbunew-sig-n3	0.64	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/3/mdd_sig
+mdd-sbunew-pow-n3	0.92	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/3/mdd_pow80
+mdd-sbunew-seed-n3	0.26	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/3/mdd_seed_only
+mdd-sbunew-sig-n5	0.62	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/5/mdd_sig
+mdd-sbunew-pow-n5	0.88	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/5/mdd_pow80
+mdd-sbunew-seed-n5	0.20	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/5/mdd_seed_only
+mdd-sbunew-sig-n10	0.60	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/10/mdd_sig
+mdd-sbunew-pow-n10	0.86	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/10/mdd_pow80
+mdd-sbunew-seed-n10	0.14	mdd_analysis_20261127_025351.json	results/sbu_relabelled/mdd/10/mdd_seed_only
+mdd-fdr-sigma	0.137	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s/fdrnet
+mdd-istd5-sigma	0.144	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet/sigma_s_pooled
+mdd-istd5-seed-n1	0.40	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet/mdd/1/mdd_seed_only
+mdd-istd5-sig-n1	0.99	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet/mdd/1/mdd_sig
+mdd-istd5-seed-n5	0.18	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet/mdd/5/mdd_seed_only
+mdd-istd5-sig-n5	0.92	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet/mdd/5/mdd_sig
+lb-papers	15	leaderboard_analysis_20261127_034523.json	rows/distinct paper
+lb-rows	22	leaderboard_analysis_20261127_034523.json	rows/count
+lb-istd-n	10	leaderboard_analysis_20261127_034523.json	summary/ISTD/papers
+lb-istd-below1	8	leaderboard_analysis_20261127_034523.json	summary/ISTD/n_below_seed_only
+lb-istd-belowint	10	leaderboard_analysis_20261127_034523.json	summary/ISTD/n_below_interval
+lb-istd-below5	6	leaderboard_analysis_20261127_034523.json	summary/ISTD/n_below_seed_only_n5
+lb-istd-recent-n	9	leaderboard_analysis_20261127_034523.json	rows/ISTD/year>=2019/count
+lb-istd-recent-min	0.11	leaderboard_analysis_20261127_034523.json	rows/ISTD/year>=2019/min claimed_gain
+lb-istd-recent-max	0.52	leaderboard_analysis_20261127_034523.json	rows/ISTD/year>=2019/max claimed_gain
+lb-istd-recent-below1	8	leaderboard_analysis_20261127_034523.json	rows/ISTD/year>=2019/below_seed_only
+lb-istd-recent-below5	6	leaderboard_analysis_20261127_034523.json	rows/ISTD/year>=2019/below_seed_only_n5
+lb-istd-early-min	0.85	leaderboard_analysis_20261127_034523.json	rows/ISTD/year<2019/min claimed_gain
+lb-istd-early-max	0.85	leaderboard_analysis_20261127_034523.json	rows/ISTD/year<2019/max claimed_gain
+lb-sbu-n	12	leaderboard_analysis_20261127_034523.json	summary/SBU/papers
+lb-sbu-below1	8	leaderboard_analysis_20261127_034523.json	summary/SBU/n_below_seed_only
+lb-sbu-belowint	8	leaderboard_analysis_20261127_034523.json	summary/SBU/n_below_interval
+lb-sbu-below5	7	leaderboard_analysis_20261127_034523.json	summary/SBU/n_below_seed_only_n5
+lb-sbu-recent-n	7	leaderboard_analysis_20261127_034523.json	rows/SBU/year>=2019/count
+lb-sbu-recent-min	0.00	leaderboard_analysis_20261127_034523.json	rows/SBU/year>=2019/min claimed_gain
+lb-sbu-recent-max	0.30	leaderboard_analysis_20261127_034523.json	rows/SBU/year>=2019/max claimed_gain
+lb-sbu-recent-below1	7	leaderboard_analysis_20261127_034523.json	rows/SBU/year>=2019/below_seed_only
+lb-sbu-recent-below5	6	leaderboard_analysis_20261127_034523.json	rows/SBU/year>=2019/below_seed_only_n5
+lb-sbu-early-min	0.20	leaderboard_analysis_20261127_034523.json	rows/SBU/year<2019/min claimed_gain
+lb-sbu-early-max	1.95	leaderboard_analysis_20261127_034523.json	rows/SBU/year<2019/max claimed_gain
 sbu-p1-unetpp	4.74	obj2_sbu_analysis_20261111_115652.json	results/phase1_in_domain/unetpp
 sbu-fair-unetpp-mean	6.61	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/mean
 sbu-fair-unetpp-sd	0.13	obj2_sbu_analysis_20261111_115652.json	results/fair_phase2_on_sbu/unetpp/sd
@@ -583,3 +685,158 @@ fdr-pub-istd-nocrf	1.53	code/upstream/FDRNet/README.md @ ea7e147 (Results table,
 fdr-pub-istd-crf	1.55	code/upstream/FDRNet/README.md @ ea7e147 (Results table, L30-33)	ISTD/w/ CRF
 fdr-ep1-test-mean	4.33	fdrnet_analysis_20261121_053602.json	curves/test_ber/mean/0
 fdr-ep3-test-mean	2.26	fdrnet_analysis_20261121_053602.json	curves/test_ber/mean/2
+sdd-last-mean	1.79	sddnet_analysis_20261127_025305.json	summary/last/mean
+sdd-last-sd	0.25	sddnet_analysis_20261127_025305.json	summary/last/sd
+sdd-last-min	1.58	sddnet_analysis_20261127_025305.json	summary/last/min
+sdd-last-max	2.22	sddnet_analysis_20261127_025305.json	summary/last/max
+sdd-last-range	0.64	sddnet_analysis_20261127_025305.json	summary/last/range
+sdd-last-epmin	20	sddnet_analysis_20261127_025305.json	summary/last/epochs/min
+sdd-last-epmax	20	sddnet_analysis_20261127_025305.json	summary/last/epochs/max
+sdd-val-mean	1.96	sddnet_analysis_20261127_025305.json	summary/val/mean
+sdd-val-sd	0.38	sddnet_analysis_20261127_025305.json	summary/val/sd
+sdd-val-min	1.63	sddnet_analysis_20261127_025305.json	summary/val/min
+sdd-val-max	2.59	sddnet_analysis_20261127_025305.json	summary/val/max
+sdd-val-range	0.96	sddnet_analysis_20261127_025305.json	summary/val/range
+sdd-val-epmin	3	sddnet_analysis_20261127_025305.json	summary/val/epochs/min
+sdd-val-epmax	10	sddnet_analysis_20261127_025305.json	summary/val/epochs/max
+sdd-test-mean	1.73	sddnet_analysis_20261127_025305.json	summary/test/mean
+sdd-test-sd	0.25	sddnet_analysis_20261127_025305.json	summary/test/sd
+sdd-test-min	1.52	sddnet_analysis_20261127_025305.json	summary/test/min
+sdd-test-max	2.14	sddnet_analysis_20261127_025305.json	summary/test/max
+sdd-test-range	0.62	sddnet_analysis_20261127_025305.json	summary/test/range
+sdd-test-epmin	6	sddnet_analysis_20261127_025305.json	summary/test/epochs/min
+sdd-test-epmax	17	sddnet_analysis_20261127_025305.json	summary/test/epochs/max
+sdd-epochs	20	sddnet_analysis_20261127_025305.json	config/run_config/epochs
+sdd-d-testlast	\textminus 0.066	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_last/mean
+sdd-d-testlast-sd	0.043	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_last/sd
+sdd-d-testlast-min	\textminus 0.129	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_last/min
+sdd-d-testlast-max	\textminus 0.009	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_last/max
+sdd-d-testlast-lo	\textminus 0.130	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_last/bootstrap_scenes_ci95/0
+sdd-d-testlast-hi	\textminus 0.016	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_last/bootstrap_scenes_ci95/1
+sdd-d-vallast	+0.167	sddnet_analysis_20261127_025305.json	mean_diffs/val_minus_last/mean
+sdd-d-vallast-sd	0.153	sddnet_analysis_20261127_025305.json	mean_diffs/val_minus_last/sd
+sdd-d-vallast-min	+0.009	sddnet_analysis_20261127_025305.json	mean_diffs/val_minus_last/min
+sdd-d-vallast-max	+0.370	sddnet_analysis_20261127_025305.json	mean_diffs/val_minus_last/max
+sdd-d-vallast-lo	+0.023	sddnet_analysis_20261127_025305.json	mean_diffs/val_minus_last/bootstrap_scenes_ci95/0
+sdd-d-vallast-hi	+0.325	sddnet_analysis_20261127_025305.json	mean_diffs/val_minus_last/bootstrap_scenes_ci95/1
+sdd-d-testval	\textminus 0.233	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_val/mean
+sdd-d-testval-sd	0.188	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_val/sd
+sdd-d-testval-min	\textminus 0.448	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_val/min
+sdd-d-testval-max	\textminus 0.019	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_val/max
+sdd-d-testval-lo	\textminus 0.389	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_val/bootstrap_scenes_ci95/0
+sdd-d-testval-hi	\textminus 0.098	sddnet_analysis_20261127_025305.json	mean_diffs/test_minus_val/bootstrap_scenes_ci95/1
+sdd-s0-last-ber	1.73	sddnet_analysis_20261127_025305.json	per_seed/0/rules/last/test_ber
+sdd-s0-last-epoch	20	sddnet_analysis_20261127_025305.json	per_seed/0/rules/last/epoch
+sdd-s0-val-ber	2.01	sddnet_analysis_20261127_025305.json	per_seed/0/rules/val/test_ber
+sdd-s0-val-epoch	3	sddnet_analysis_20261127_025305.json	per_seed/0/rules/val/epoch
+sdd-s0-test-ber	1.60	sddnet_analysis_20261127_025305.json	per_seed/0/rules/test/test_ber
+sdd-s0-test-epoch	6	sddnet_analysis_20261127_025305.json	per_seed/0/rules/test/epoch
+sdd-s0-d-testlast	\textminus 0.129	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/test_minus_last/ber_diff
+sdd-s0-d-testlast-lo	\textminus 0.296	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/test_minus_last/bootstrap_scenes_ci95/0
+sdd-s0-d-testlast-hi	\textminus 0.005	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/test_minus_last/bootstrap_scenes_ci95/1
+sdd-s0-d-vallast	+0.284	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/val_minus_last/ber_diff
+sdd-s0-d-vallast-lo	\textminus 0.117	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/val_minus_last/bootstrap_scenes_ci95/0
+sdd-s0-d-vallast-hi	+0.882	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/val_minus_last/bootstrap_scenes_ci95/1
+sdd-s0-d-testval	\textminus 0.412	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/test_minus_val/ber_diff
+sdd-s0-d-testval-lo	\textminus 0.985	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/test_minus_val/bootstrap_scenes_ci95/0
+sdd-s0-d-testval-hi	\textminus 0.072	sddnet_analysis_20261127_025305.json	per_seed/0/diffs/test_minus_val/bootstrap_scenes_ci95/1
+sdd-s1-last-ber	2.22	sddnet_analysis_20261127_025305.json	per_seed/1/rules/last/test_ber
+sdd-s1-last-epoch	20	sddnet_analysis_20261127_025305.json	per_seed/1/rules/last/epoch
+sdd-s1-val-ber	2.59	sddnet_analysis_20261127_025305.json	per_seed/1/rules/val/test_ber
+sdd-s1-val-epoch	4	sddnet_analysis_20261127_025305.json	per_seed/1/rules/val/epoch
+sdd-s1-test-ber	2.14	sddnet_analysis_20261127_025305.json	per_seed/1/rules/test/test_ber
+sdd-s1-test-epoch	11	sddnet_analysis_20261127_025305.json	per_seed/1/rules/test/epoch
+sdd-s1-d-testlast	\textminus 0.078	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/test_minus_last/ber_diff
+sdd-s1-d-testlast-lo	\textminus 0.173	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/test_minus_last/bootstrap_scenes_ci95/0
+sdd-s1-d-testlast-hi	+0.000	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/test_minus_last/bootstrap_scenes_ci95/1
+sdd-s1-d-vallast	+0.370	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/val_minus_last/ber_diff
+sdd-s1-d-vallast-lo	\textminus 0.068	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/val_minus_last/bootstrap_scenes_ci95/0
+sdd-s1-d-vallast-hi	+0.804	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/val_minus_last/bootstrap_scenes_ci95/1
+sdd-s1-d-testval	\textminus 0.448	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/test_minus_val/ber_diff
+sdd-s1-d-testval-lo	\textminus 0.910	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/test_minus_val/bootstrap_scenes_ci95/0
+sdd-s1-d-testval-hi	\textminus 0.005	sddnet_analysis_20261127_025305.json	per_seed/1/diffs/test_minus_val/bootstrap_scenes_ci95/1
+sdd-s2-last-ber	1.80	sddnet_analysis_20261127_025305.json	per_seed/2/rules/last/test_ber
+sdd-s2-last-epoch	20	sddnet_analysis_20261127_025305.json	per_seed/2/rules/last/epoch
+sdd-s2-val-ber	1.81	sddnet_analysis_20261127_025305.json	per_seed/2/rules/val/test_ber
+sdd-s2-val-epoch	10	sddnet_analysis_20261127_025305.json	per_seed/2/rules/val/epoch
+sdd-s2-test-ber	1.79	sddnet_analysis_20261127_025305.json	per_seed/2/rules/test/test_ber
+sdd-s2-test-epoch	13	sddnet_analysis_20261127_025305.json	per_seed/2/rules/test/epoch
+sdd-s2-d-testlast	\textminus 0.009	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/test_minus_last/ber_diff
+sdd-s2-d-testlast-lo	\textminus 0.064	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/test_minus_last/bootstrap_scenes_ci95/0
+sdd-s2-d-testlast-hi	+0.038	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/test_minus_last/bootstrap_scenes_ci95/1
+sdd-s2-d-vallast	+0.009	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/val_minus_last/ber_diff
+sdd-s2-d-vallast-lo	\textminus 0.064	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/val_minus_last/bootstrap_scenes_ci95/0
+sdd-s2-d-vallast-hi	+0.079	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/val_minus_last/bootstrap_scenes_ci95/1
+sdd-s2-d-testval	\textminus 0.019	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/test_minus_val/ber_diff
+sdd-s2-d-testval-lo	\textminus 0.059	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/test_minus_val/bootstrap_scenes_ci95/0
+sdd-s2-d-testval-hi	+0.015	sddnet_analysis_20261127_025305.json	per_seed/2/diffs/test_minus_val/bootstrap_scenes_ci95/1
+sdd-s3-last-ber	1.64	sddnet_analysis_20261127_025305.json	per_seed/3/rules/last/test_ber
+sdd-s3-last-epoch	20	sddnet_analysis_20261127_025305.json	per_seed/3/rules/last/epoch
+sdd-s3-val-ber	1.75	sddnet_analysis_20261127_025305.json	per_seed/3/rules/val/test_ber
+sdd-s3-val-epoch	3	sddnet_analysis_20261127_025305.json	per_seed/3/rules/val/epoch
+sdd-s3-test-ber	1.58	sddnet_analysis_20261127_025305.json	per_seed/3/rules/test/test_ber
+sdd-s3-test-epoch	7	sddnet_analysis_20261127_025305.json	per_seed/3/rules/test/epoch
+sdd-s3-d-testlast	\textminus 0.059	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/test_minus_last/ber_diff
+sdd-s3-d-testlast-lo	\textminus 0.175	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/test_minus_last/bootstrap_scenes_ci95/0
+sdd-s3-d-testlast-hi	+0.022	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/test_minus_last/bootstrap_scenes_ci95/1
+sdd-s3-d-vallast	+0.117	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/val_minus_last/ber_diff
+sdd-s3-d-vallast-lo	\textminus 0.164	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/val_minus_last/bootstrap_scenes_ci95/0
+sdd-s3-d-vallast-hi	+0.341	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/val_minus_last/bootstrap_scenes_ci95/1
+sdd-s3-d-testval	\textminus 0.176	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/test_minus_val/ber_diff
+sdd-s3-d-testval-lo	\textminus 0.347	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/test_minus_val/bootstrap_scenes_ci95/0
+sdd-s3-d-testval-hi	+0.010	sddnet_analysis_20261127_025305.json	per_seed/3/diffs/test_minus_val/bootstrap_scenes_ci95/1
+sdd-s4-last-ber	1.58	sddnet_analysis_20261127_025305.json	per_seed/4/rules/last/test_ber
+sdd-s4-last-epoch	20	sddnet_analysis_20261127_025305.json	per_seed/4/rules/last/epoch
+sdd-s4-val-ber	1.63	sddnet_analysis_20261127_025305.json	per_seed/4/rules/val/test_ber
+sdd-s4-val-epoch	6	sddnet_analysis_20261127_025305.json	per_seed/4/rules/val/epoch
+sdd-s4-test-ber	1.52	sddnet_analysis_20261127_025305.json	per_seed/4/rules/test/test_ber
+sdd-s4-test-epoch	17	sddnet_analysis_20261127_025305.json	per_seed/4/rules/test/epoch
+sdd-s4-d-testlast	\textminus 0.055	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/test_minus_last/ber_diff
+sdd-s4-d-testlast-lo	\textminus 0.107	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/test_minus_last/bootstrap_scenes_ci95/0
+sdd-s4-d-testlast-hi	\textminus 0.013	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/test_minus_last/bootstrap_scenes_ci95/1
+sdd-s4-d-vallast	+0.058	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/val_minus_last/ber_diff
+sdd-s4-d-vallast-lo	\textminus 0.058	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/val_minus_last/bootstrap_scenes_ci95/0
+sdd-s4-d-vallast-hi	+0.178	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/val_minus_last/bootstrap_scenes_ci95/1
+sdd-s4-d-testval	\textminus 0.112	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/test_minus_val/ber_diff
+sdd-s4-d-testval-lo	\textminus 0.252	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/test_minus_val/bootstrap_scenes_ci95/0
+sdd-s4-d-testval-hi	+0.004	sddnet_analysis_20261127_025305.json	per_seed/4/diffs/test_minus_val/bootstrap_scenes_ci95/1
+sdd-ep3-test-mean	2.06	sddnet_analysis_20261127_025305.json	curves/test_ber/mean/2
+sdd-late-test-min	1.78	sddnet_analysis_20261127_025305.json	curves/test_ber/mean/epochs 10-20 min
+sdd-late-test-max	1.99	sddnet_analysis_20261127_025305.json	curves/test_ber/mean/epochs 10-20 max
+sdd-s0-val-min	6.1	sddnet_analysis_20261127_025305.json	curves/val_ber/per_seed/0/min
+sdd-others-val-max-late	5.1	sddnet_analysis_20261127_025305.json	curves/val_ber/per_seed/1-4/epochs 10-20 max
+svs-k2-cost	+0.124	sddnet_val_size_analysis_20261127_025307.json	results/2/cost_vs_last/mean
+svs-k2-pworse	55	sddnet_val_size_analysis_20261127_025307.json	results/2/p_worse x100
+svs-k6-cost	+0.093	sddnet_val_size_analysis_20261127_025307.json	results/6/cost_vs_last/mean
+svs-k6-pworse	51	sddnet_val_size_analysis_20261127_025307.json	results/6/p_worse x100
+svs-k9-cost	+0.079	sddnet_val_size_analysis_20261127_025307.json	results/9/cost_vs_last/mean
+svs-k9-pworse	48	sddnet_val_size_analysis_20261127_025307.json	results/9/p_worse x100
+svs-k23-cost	+0.007	sddnet_val_size_analysis_20261127_025307.json	results/23/cost_vs_last/mean
+svs-k23-pworse	36	sddnet_val_size_analysis_20261127_025307.json	results/23/p_worse x100
+svs-oracle	\textminus 0.071	sddnet_val_size_analysis_20261127_025307.json	results/*/oracle_gain/mean (avg over k)
+svs-obs-cost	+0.167	sddnet_val_size_analysis_20261127_025307.json	observed_training_scene_validation/val_minus_last_9_training_scenes
+svs-obs-share	16	sddnet_val_size_analysis_20261127_025307.json	observed_training_scene_validation/share_test_scene_splits_with_cost_ge_observed x100
+svs-obs-p95	+0.249	sddnet_val_size_analysis_20261127_025307.json	observed_training_scene_validation/test_scene_split_cost_p95
+cmp-diff	\textminus 0.064	bercheck/fdrnet_sddnet_last.json	comparison/pairs/FDRNet - SDDNet/diff
+cmp-diff-lo	\textminus 0.42	bercheck/fdrnet_sddnet_last.json	comparison/pairs/FDRNet - SDDNet/ci95/0
+cmp-diff-hi	+0.33	bercheck/fdrnet_sddnet_last.json	comparison/pairs/FDRNet - SDDNet/ci95/1
+cmp-psingle	52	bercheck/fdrnet_sddnet_last.json	comparison/pairs/FDRNet - SDDNet/p_single_run_order_holds x100
+fdr-rho-mean	0.57	bercheck/fdrnet_sddnet_last.json	curve_agreement/FDRNet/mean
+fdr-s0-rho	0.12	bercheck/fdrnet_sddnet_last.json	curve_agreement/FDRNet/spearman_per_run/0
+fdr-s1-rho	0.19	bercheck/fdrnet_sddnet_last.json	curve_agreement/FDRNet/spearman_per_run/1
+fdr-s2-rho	0.90	bercheck/fdrnet_sddnet_last.json	curve_agreement/FDRNet/spearman_per_run/2
+fdr-s3-rho	0.77	bercheck/fdrnet_sddnet_last.json	curve_agreement/FDRNet/spearman_per_run/3
+fdr-s4-rho	0.87	bercheck/fdrnet_sddnet_last.json	curve_agreement/FDRNet/spearman_per_run/4
+sdd-rho-mean	0.36	bercheck/fdrnet_sddnet_last.json	curve_agreement/SDDNet/mean
+sdd-s0-rho	0.46	bercheck/fdrnet_sddnet_last.json	curve_agreement/SDDNet/spearman_per_run/0
+sdd-s1-rho	0.45	bercheck/fdrnet_sddnet_last.json	curve_agreement/SDDNet/spearman_per_run/1
+sdd-s2-rho	0.73	bercheck/fdrnet_sddnet_last.json	curve_agreement/SDDNet/spearman_per_run/2
+sdd-s3-rho	\textminus 0.12	bercheck/fdrnet_sddnet_last.json	curve_agreement/SDDNet/spearman_per_run/3
+sdd-s4-rho	0.26	bercheck/fdrnet_sddnet_last.json	curve_agreement/SDDNet/spearman_per_run/4
+sdd-pub-istd	1.27	leaderboard_analysis_20261127_034523.json	rows/SDDNet/ISTD/own_ber (with CRF, arXiv 2308.08935 Table 1)
+sdd-up-last-mean	1.82	bercheck/sddnet_up512.json	rules/SDDNet-up512/summary/last/mean
+sdd-up-d-testlast	\textminus 0.064	bercheck/sddnet_up512.json	rules/SDDNet-up512/differences/test-last/mean
+sdd-up-d-vallast	+0.158	bercheck/sddnet_up512.json	rules/SDDNet-up512/differences/val-last/mean
+mdd-sdd-sigma	0.254	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s/sddnet
+mdd-sdd-sigma-lo	0.152	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s_ci95/sddnet/0
+mdd-sdd-sigma-hi	0.730	mdd_analysis_20261127_025351.json	results/istd_native_with_fdrnet_sddnet/sigma_s_ci95/sddnet/1
